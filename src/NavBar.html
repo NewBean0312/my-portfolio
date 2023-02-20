@@ -9,8 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville"
       rel="stylesheet"
     />
     <title>Navbar</title>
@@ -51,12 +53,14 @@
         <div class="whiteBox"></div>
         <div class="whiteBox">
           <button>
+            <div class="buttonText mainFont">Main</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
           <button>
+            <div class="buttonText aboutFont">About</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
@@ -70,6 +74,22 @@
       <div class="boxGroup">
         <div class="whiteBox">
           <button>
+            <div class="buttonText carrerFont">Carrer</div>
+            <i class="fa-brands fa-itunes-note"></i>
+          </button>
+        </div>
+        <div class="whiteBox">
+          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileButton 실행 -->
+          <button class="mobileButton">
+            <i class="fa-brands fa-itunes-note"></i>
+          </button>
+        </div>
+        <div class="whiteBox">
+          <button class="mobileButton">
+            <i class="fa-brands fa-itunes-note"></i>
+          </button>
+          <button>
+            <div class="buttonText skillsFont">Skills</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
@@ -83,6 +103,7 @@
             <i class="fa-brands fa-itunes-note"></i>
           </button>
           <button>
+            <div class="buttonText projectFont">Project</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
@@ -96,19 +117,7 @@
             <i class="fa-brands fa-itunes-note"></i>
           </button>
           <button>
-            <i class="fa-brands fa-itunes-note"></i>
-          </button>
-        </div>
-        <div class="whiteBox">
-          <button class="mobileButton">
-            <i class="fa-brands fa-itunes-note"></i>
-          </button>
-        </div>
-        <div class="whiteBox">
-          <button class="mobileButton">
-            <i class="fa-brands fa-itunes-note"></i>
-          </button>
-          <button>
+          <div class="buttonText contactFont">Contact</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>

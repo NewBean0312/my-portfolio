@@ -11,7 +11,7 @@
   width: 100%;
   height: 110px;
   display: flex;
-  transition: height .5s;
+  transition: height 0.5s;
 }
 .Navbar:hover {
   height: 200px;
@@ -67,6 +67,7 @@
 
 /* Navbar_button_start */
 .Navbar .whiteBox > button {
+  cursor: pointer;
   position: absolute;
   bottom: 5px;
   left: 3%;
@@ -75,34 +76,44 @@
   margin: 0 auto;
   border: 1px solid white;
   border-radius: 50%;
-  background-color: #6A3B28;
+  background-color: #6a3b28;
+  transition: background-color 0.3s;
 }
 
 .Navbar .whiteBox > button > i {
   font-size: 1.7rem;
   text-align: center;
-  color: #F4F2EC;
+  color: #f4f2ec;
 }
 
 .Navbar .whiteBox > button:hover {
   background-color: white;
-  transition: background-color .3s;
 }
 
 .Navbar .whiteBox > button:hover > i {
-  color: #6A3B28;
-  transition: color .3s;
-} 
+  color: #6a3b28;
+  transition: color 0.3s;
+}
+
+.Navbar .whiteBox > button:hover .buttonText {
+  display: block;
+  transform: translateY(-45px);
+}
+
+.Navbar .buttonText {
+  font-family: "Libre Baskerville", serif;
+  position: absolute;
+  background-color: red;
+  color: #6a3b28;
+  font-size: 120%;
+  font-weight: bold;
+  display: none;
+}
 
 .Navbar .mobileButton {
   display: none;
 }
 /* Navbar_button_end */
-
-/* 임시 */
-.Navbar > .boxGroup:nth-child(4) {
-  background-color: lightgoldenrodyellow;
-}
 /* Navbar_end */
 
 /* media */
@@ -141,14 +152,6 @@
 
   .Navbar .whiteBox > button > i {
     font-size: 2rem;
-  }
-
-  .Navbar .whiteBox > button:hover {
-    transition: background-color .3s;
-  }
-
-  .Navbar .whiteBox > button:hover > i {
-    transition: color .3s;
   }
 }
 /* Navbar_end */
