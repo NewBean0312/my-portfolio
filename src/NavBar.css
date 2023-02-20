@@ -96,18 +96,22 @@
 }
 
 .Navbar .whiteBox > button:hover .buttonText {
-  display: block;
-  transform: translateY(-45px);
+  justify-content: center;
+  visibility: visible;
+  transform: translateY(-15px);
+  color: #6a3b28;
 }
 
 .Navbar .buttonText {
   font-family: "Libre Baskerville", serif;
+  width: 90%;
   position: absolute;
-  background-color: red;
-  color: #6a3b28;
-  font-size: 120%;
+  top: -18px;
+  color: white;
+  font-size: 100%;
   font-weight: bold;
-  display: none;
+  visibility: hidden;
+  transition: color .3s, visibility .5s, transform .5s;
 }
 
 .Navbar .mobileButton {

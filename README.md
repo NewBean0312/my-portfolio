@@ -27,7 +27,7 @@
     - About Page
     - Career Page
     - Skills Page
-    - Project Page
+    - work Page
     - Contact Page
 - 중앙 자기소개 텍스트
 - 하단 사진
@@ -50,7 +50,7 @@
   - 각 Skill들을 음표 표시
 ---
   
-#### 5. Project Page
+#### 5. work Page
 - 상단 메뉴
   - About Page와 동일
 - 왼쪽 상단 소제목 표시
