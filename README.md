@@ -85,8 +85,8 @@
 
 ---
 ---
-## step 1. Navbar 생성
-### navigate로 활용할 Navbar 제작
+## step 1. NavBar 생성
+### navigate로 활용할 NavBar 제작
 - [@media를 활용한 반응형 box 및 버튼 생성](https://github.com/NewBean0312/my-portfolio/commit/082b7a669ed9473e8d0b92cd60b4a42e00dfa9dc)
 
-- [Navbar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)
+- [NavBar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)
