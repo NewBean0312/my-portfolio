@@ -75,7 +75,7 @@
 ---
 ### 유용한 사이트
 - [daisyUI](https://daisyui.com/) : Tailwind CSS 사이트
-- [React Router](https://reactrouter.com/en/main) : 리액트 Router 사이트
+- [React RsnowBox](https://reactrsnowBox.com/en/main) : 리액트 RsnowBox 사이트
 - [Tailwind cheat sheet](https://nerdcave.com/tailwind-cheat-sheet) : Tailwind 치트 시트 사이트
 - [Fontawsome](https://fontawesome.com/icons/) : 무료 아이콘 사이트
 
@@ -85,8 +85,8 @@
 
 ---
 ---
-## step 1. NavBar 생성
-### navigate로 활용할 NavBar 제작
+## step 1. navBar 생성
+### navigate로 활용할 navBar 제작
 - [@media를 활용한 반응형 box 및 버튼 생성](https://github.com/NewBean0312/my-portfolio/commit/082b7a669ed9473e8d0b92cd60b4a42e00dfa9dc)
 
-- [NavBar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)
+- [navBar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)

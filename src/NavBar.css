@@ -9,8 +9,8 @@ body {
 }
 /* Normalize_end */
 
-/* NavBar_start */
-.NavBar {
+/* navBar_start */
+.navBar {
   border: 3px solid black;
   position: fixed;
   width: 100%;
@@ -18,11 +18,11 @@ body {
   display: flex;
   transition: height 0.5s;
 }
-.NavBar:hover {
+.navBar:hover {
   height: 200px;
 }
 
-.NavBar > .boxGroup {
+.navBar > .boxGroup {
   position: relative;
   display: flex;
   flex: 1;
@@ -31,7 +31,7 @@ body {
   height: 100%;
 }
 
-.NavBar .whiteBox {
+.navBar .whiteBox {
   position: relative;
   flex: 1;
   border: 1px solid black;
@@ -39,8 +39,8 @@ body {
   height: 100%;
 }
 
-/* NavBar_blackBox_start */
-.NavBar .blackBox {
+/* navBar_blackBox_start */
+.navBar .blackBox {
   position: absolute;
   border: 1px solid black;
   width: 9%;
@@ -49,29 +49,29 @@ body {
   top: 1;
 }
 
-.NavBar .blackBox:nth-child(8) {
+.navBar .blackBox:nth-child(8) {
   left: 9.97%;
 }
 
-.NavBar .blackBox:nth-child(9) {
+.navBar .blackBox:nth-child(9) {
   left: 23.9%;
 }
 
-.NavBar .blackBox:nth-child(10) {
+.navBar .blackBox:nth-child(10) {
   left: 52.5%;
 }
 
-.NavBar .blackBox:nth-child(11) {
+.navBar .blackBox:nth-child(11) {
   left: 66.8%;
 }
 
-.NavBar .blackBox:nth-child(12) {
+.navBar .blackBox:nth-child(12) {
   left: 80.8%;
 }
-/* NavBar_blackBox_end */
+/* navBar_blackBox_end */
 
-/* NavBar_button_start */
-.NavBar .whiteBox > button {
+/* navBar_button_start */
+.navBar .whiteBox > button {
   cursor: pointer;
   position: absolute;
   bottom: 5px;
@@ -85,29 +85,29 @@ body {
   transition: background-color 0.3s;
 }
 
-.NavBar .whiteBox > button > i {
+.navBar .whiteBox > button > i {
   font-size: 1.7rem;
   text-align: center;
   color: #f4f2ec;
 }
 
-.NavBar .whiteBox > button:hover {
+.navBar .whiteBox > button:hover {
   background-color: white;
 }
 
-.NavBar .whiteBox > button:hover > i {
+.navBar .whiteBox > button:hover > i {
   color: #6a3b28;
   transition: color 0.3s;
 }
 
-.NavBar .whiteBox > button:hover .buttonText {
+.navBar .whiteBox > button:hover .buttonText {
   justify-content: center;
   visibility: visible;
   transform: translateY(-15px);
   color: #6a3b28;
 }
 
-.NavBar .buttonText {
+.navBar .buttonText {
   width: 90%;
   position: absolute;
   left: -1px;
@@ -119,52 +119,52 @@ body {
   transition: color .3s, visibility .5s, transform .5s;
 }
 
-.NavBar .carrerFont {
+.navBar .carrerFont {
   font-size: 98%;
 }
 
-.NavBar .mobileButton {
+.navBar .mobileButton {
   display: none;
 }
-/* NavBar_button_end */
-/* NavBar_end */
+/* navBar_button_end */
+/* navBar_end */
 
 /* media */
-/* NavBar_start */
+/* navBar_start */
 @media screen and (max-aspect-ratio: 11/6) {
-  .NavBar > .boxGroup:nth-child(1) {
+  .navBar > .boxGroup:nth-child(1) {
     display: none;
   }
 }
 
 @media screen and (max-aspect-ratio: 9/6) {
-  .NavBar > .boxGroup:nth-child(5) {
+  .navBar > .boxGroup:nth-child(5) {
     display: none;
   }
 }
 
 @media screen and (max-aspect-ratio: 7/6) {
-  .NavBar > .boxGroup:nth-child(2) {
+  .navBar > .boxGroup:nth-child(2) {
     display: none;
   }
 }
 
 @media screen and (max-aspect-ratio: 5/6) {
-  .NavBar > .boxGroup:nth-child(3) {
+  .navBar > .boxGroup:nth-child(3) {
     display: none;
   }
 
-  .NavBar .whiteBox > button {
+  .navBar .whiteBox > button {
     border-radius: 25px;
     display: none;
   }
 
-  .NavBar .whiteBox .mobileButton {
+  .navBar .whiteBox .mobileButton {
     display: block;
   }
 
-  .NavBar .whiteBox > button > i {
+  .navBar .whiteBox > button > i {
     font-size: 2rem;
   }
 }
-/* NavBar_end */
+/* navBar_end */
