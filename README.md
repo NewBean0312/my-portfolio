@@ -12,6 +12,7 @@
   - 노래 재생 및 일시정지 버튼
   - 다크모드
 - 중앙 공백
+  - 음표가 내리는 애니메이션 추가
 - 하단 메뉴 바
   - 건반에 마우스를 hover 시, 음표가 아래에서 위로 올라오면서 사라짐
   - 음표버튼에 마우스를 hover 시, 메뉴명이 아래에서 위로 나타남
@@ -27,7 +28,7 @@
     - About Page
     - Career Page
     - Skills Page
-    - work Page
+    - Project Page
     - Contact Page
 - 중앙 자기소개 텍스트
 - 하단 사진
@@ -50,7 +51,7 @@
   - 각 Skill들을 음표 표시
 ---
   
-#### 5. work Page
+#### 5. Project Page
 - 상단 메뉴
   - About Page와 동일
 - 왼쪽 상단 소제목 표시
@@ -75,9 +76,11 @@
 ---
 ### 유용한 사이트
 - [daisyUI](https://daisyui.com/) : Tailwind CSS 사이트
-- [React RsnowBox](https://reactrsnowBox.com/en/main) : 리액트 RsnowBox 사이트
+- [React Router](https://reactrouter.com/en/main) : 리액트 Router 사이트
 - [Tailwind cheat sheet](https://nerdcave.com/tailwind-cheat-sheet) : Tailwind 치트 시트 사이트
 - [Fontawsome](https://fontawesome.com/icons/) : 무료 아이콘 사이트
+- [미디어 쿼리 (다크모드)](https://www.daleseo.com/css-prefers-color-scheme/)
+- [다크모드 버튼 생성](https://velog.io/@rmaomina/darkmode-toggle-button)
 
 ### 시작용 코드
 - [시작용 HTML, CSS, JS](https://codepen.io/hjyee/pen/WNyoYQv)
@@ -85,8 +88,23 @@
 
 ---
 ---
-## step 1. navBar 생성
-### navigate로 활용할 navBar 제작
+## step 1. Navbar 생성
+### navigate로 활용할 Navbar 제작
 - [@media를 활용한 반응형 box 및 버튼 생성](https://github.com/NewBean0312/my-portfolio/commit/082b7a669ed9473e8d0b92cd60b4a42e00dfa9dc)
+- [Top-bar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)
+- [브라우저를 가장 작은 너비로 줄일 경우, 기존 버튼이 사라지고 새로운 버튼 6개가 정렬됨 / 박스가 사라지는 순서 변경 / 파일명 및 클래스명 변경](https://github.com/NewBean0312/my-portfolio/commit/94b20479980584e692f75bc664d8ef298d5c2955)
+- [버튼에 hover 시, 글씨가 나타나게 설정](https://github.com/NewBean0312/my-portfolio/commit/afe2d9b132accbed7cc5cc15ae62b96e08ec3b0f)
+  - 글짜가 가려지는 현상 
+- [버튼 텍스트 정렬 및 hover 시, 나타나는 효과 설정](https://github.com/NewBean0312/my-portfolio/commit/f1e78421f704b1f37d8c4e17737ad55c211f87cd)
+  - 글씨가 가려지는 현상 수정
+- [Navbar 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/a255649b189acd16c070fbafd948643b8f726823)
 
-- [navBar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)
+## step 2. MainPage 생성
+### MainPage 제작
+- [MainPage 기초 완성](https://github.com/NewBean0312/my-portfolio/commit/ff8ce159d51da136954ebce3e8ca1f882ee2d2a7)
+- [MainPage 1차 완성]()
+  - 상단 header 생성
+  - 건반 hover 시, 그라데이션 추가
+  - 건반 hover 시, 음표가 올라오는 효과 추가
+  - 버튼 hover 시, 버튼 명 나타나는 효과 추가
+  - 음표가 내리는 효과 추가
