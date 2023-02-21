@@ -1,25 +1,66 @@
 /* Normalize_start */
-html {
+* {
+  margin: 0 auto;
+  padding: 0 auto;
   font-family: "Libre Baskerville", serif;
 }
 
 body {
-  margin: 0 auto;
-  padding: 0 auto;
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 /* Normalize_end */
+
+/* header_start */
+header {
+  width: 100%;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+}
+
+header > .logo {
+  flex: 1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+header > .logo > img {
+  width: 100px;
+  height: 70px;
+}
+
+header > .titleText {
+  flex: 4;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+header > .titleText h1 {
+  text-align: center;
+  color: #6a3b28;
+  font-size: 4rem;
+}
+
+header > .headerFun {
+  flex: 1;
+  background-color: lightcoral;
+}
+/* header_end */
 
 /* NavBar_start */
 .NavBar {
   border: 3px solid black;
-  position: fixed;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 110px;
+  height: 200px;
   display: flex;
   transition: height 0.5s;
-}
-.NavBar:hover {
-  height: 200px;
 }
 
 .NavBar > .boxGroup {
@@ -37,6 +78,7 @@ body {
   border: 1px solid black;
   width: 100%;
   height: 100%;
+  background-color: #f4f2ec;
 }
 
 /* NavBar_blackBox_start */
@@ -79,7 +121,7 @@ body {
   width: 95%;
   height: 47px;
   margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid #f4f2ec;
   border-radius: 50%;
   background-color: #6a3b28;
   transition: background-color 0.3s;
@@ -92,7 +134,7 @@ body {
 }
 
 .NavBar .whiteBox > button:hover {
-  background-color: white;
+  background-color: #f4f2ec;
 }
 
 .NavBar .whiteBox > button:hover > i {
@@ -103,7 +145,7 @@ body {
 .NavBar .whiteBox > button:hover .buttonText {
   justify-content: center;
   visibility: visible;
-  transform: translateY(-15px);
+  transform: translateY(-20px);
   color: #6a3b28;
 }
 
@@ -111,16 +153,12 @@ body {
   width: 90%;
   position: absolute;
   left: -1px;
-  top: -18px;
-  color: white;
-  font-size: 100%;
+  top: -180px;
+  color: #f4f2ec;
+  font-size: 150%;
   font-weight: bold;
   visibility: hidden;
   transition: color .3s, visibility .5s, transform .5s;
-}
-
-.NavBar .carrerFont {
-  font-size: 98%;
 }
 
 .NavBar .mobileButton {
