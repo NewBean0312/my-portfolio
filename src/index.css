@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  outline: none;
 }
 /* Normalize_end */
 
@@ -72,6 +73,24 @@ header > .headerFun {
   font-family: Arial;
 }
 
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 700px;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+  }
+}
+
 @keyframes snowflakes-fall {
   0% {
     top: -10%;
@@ -94,6 +113,13 @@ header > .headerFun {
   position: absolute;
   top: -10%;
   z-index: 1;
+  -webkit-user-select: none;
+  -webkit-cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 15s, 5s, 5s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
   user-select: none;
   cursor: default;
   animation-name: snowflakes-fall, snowflakes-shake;
@@ -105,86 +131,107 @@ header > .headerFun {
 
 .snowflake:nth-of-type(0) {
   left: 1%;
+  -webkit-animation-delay: 4s, 0s;
   animation-delay: 4s, 0s;
 }
 .snowflake:nth-of-type(1) {
   left: 5%;
+  -webkit-animation-delay: 8s, 2s;
   animation-delay: 8s, 2s;
 }
 .snowflake:nth-of-type(2) {
   left: 10%;
+  -webkit-animation-delay: 9.5s, 0.5s;
   animation-delay: 9.5s, 0.5s;
 }
 .snowflake:nth-of-type(3) {
   left: 15%;
+  -webkit-animation-delay: 7s, 2s;
   animation-delay: 7s, 2s;
 }
 .snowflake:nth-of-type(4) {
   left: 20%;
+  -webkit-animation-delay: 0s, 3s;
   animation-delay: 0s, 3s;
 }
 .snowflake:nth-of-type(5) {
   left: 25%;
+  -webkit-animation-delay: 4.5s, 3s;
   animation-delay: 4.5s, 3s;
 }
 .snowflake:nth-of-type(6) {
   left: 30%;
+  -webkit-animation-delay: 9s, 2s;
   animation-delay: 9s, 2s;
 }
 .snowflake:nth-of-type(7) {
   left: 35%;
+  -webkit-animation-delay: 6s, 1s;
   animation-delay: 6s, 1s;
 }
 .snowflake:nth-of-type(8) {
   left: 40%;
+  -webkit-animation-delay: 12s, 1s;
   animation-delay: 12s, 1s;
 }
 .snowflake:nth-of-type(9) {
   left: 45%;
+  -webkit-animation-delay: 1s, 1.5s;
   animation-delay: 1s, 1.5s;
 }
 .snowflake:nth-of-type(10) {
   left: 50%;
+  -webkit-animation-delay: 4.5s, 0s;
   animation-delay: 4.5s, 0s;
 }
 .snowflake:nth-of-type(11) {
   left: 55%;
+  -webkit-animation-delay: 5s, 1s;
   animation-delay: 5s, 1s;
 }
 .snowflake:nth-of-type(12) {
   left: 60%;
+  -webkit-animation-delay: 2s, 0.5s;
   animation-delay: 2s, 0.5s;
 }
 .snowflake:nth-of-type(13) {
   left: 65%;
+  -webkit-animation-delay: 6.5s, 3s;
   animation-delay: 6.5s, 3s;
 }
 .snowflake:nth-of-type(14) {
   left: 70%;
+  -webkit-animation-delay: 10s, 2s;
   animation-delay: 10s, 2s;
 }
 .snowflake:nth-of-type(15) {
   left: 75%;
+  -webkit-animation-delay: 5.5s, 5s;
   animation-delay: 5.5s, 5s;
 }
 .snowflake:nth-of-type(16) {
   left: 80%;
+  -webkit-animation-delay: 2.5s, 2s;
   animation-delay: 2.5s, 2s;
 }
 .snowflake:nth-of-type(17) {
   left: 85%;
+  -webkit-animation-delay: 3s, 2.5s;
   animation-delay: 3s, 2.5s;
 }
 .snowflake:nth-of-type(18) {
   left: 90%;
+  -webkit-animation-delay: 11s, 4.5s;
   animation-delay: 11s, 4.5s;
 }
 .snowflake:nth-of-type(19) {
   left: 90%;
+  -webkit-animation-delay: 4s, 1.5s;
   animation-delay: 4s, 1.5s;
 }
 .snowflake:nth-of-type(20) {
   left: 90%;
+  -webkit-animation-delay: 1.5s, 3.5s;
   animation-delay: 1.5s, 3.5s;
 }
 /* snowBox_end */
@@ -204,7 +251,6 @@ header > .headerFun {
   position: relative;
   display: flex;
   flex: 1;
-  border: 1px solid black;
   width: 100%;
   height: 100%;
 }
@@ -221,10 +267,10 @@ header > .headerFun {
 /* navBar_blackBox_start */
 .navBar .blackBox {
   position: absolute;
-  border: 1px solid black;
+  border: 1px solid #121212;
   width: 9%;
   height: 50%;
-  background-color: black;
+  background-color: #121212;
   top: 1;
 }
 
@@ -258,6 +304,10 @@ header > .headerFun {
   color: #f6f0e1;
   visibility: hidden;
   transition: color 0.2s, transform 2s;
+}
+
+.navBar .mobileAni {
+  display: none;
 }
 
 .navBar .whiteBox:hover {
@@ -335,9 +385,8 @@ header > .headerFun {
   color: #6a3b28;
 }
 
-.navBar .mobileButton:hover a {
-  text-decoration: none;
-  color: #6a3b28;
+.navBar .buttonText div {
+  font-size: 0.3rem;
 }
 /* navBar_button_end */
 /* navBar_end */
@@ -363,6 +412,10 @@ header > .headerFun {
 }
 
 @media screen and (max-aspect-ratio: 5/6) {
+  body {
+    -webkit-tap-highlight-color : transparent;
+  }
+
   header > .titleText h1 {
     font-size: 2rem;
   }
@@ -376,7 +429,15 @@ header > .headerFun {
     display: none;
   }
 
-  .navBar .whiteBox > .mobileAni {
+  .navBar .mobileAni {
+    display: block;
+  }
+
+  .navBar .buttonText {
+    top: -190px;
+  }
+
+  .navBar .whiteBox > .mobileAniHidden {
     display: none;
   }
 

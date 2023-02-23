@@ -26,7 +26,6 @@ body {
   position: relative;
   display: flex;
   flex: 1;
-  border: 1px solid black;
   width: 100%;
   height: 100%;
 }
@@ -37,6 +36,10 @@ body {
   border: 1px solid black;
   width: 100%;
   height: 100%;
+}
+
+.navBar .whiteBox:hover {
+  background: linear-gradient(to bottom, #f4f2ec, #dedede);
 }
 
 /* navBar_blackBox_start */
@@ -92,7 +95,8 @@ body {
 }
 
 .navBar .whiteBox > button:hover {
-  background-color: white;
+  background-color: #dedede;
+  border: 1px solid #dedede;
 }
 
 .navBar .whiteBox > button:hover > i {
