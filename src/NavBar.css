@@ -17,7 +17,9 @@ body {
   height: 110px;
   display: flex;
   transition: height 0.5s;
+  background-color: white;
 }
+
 .navBar:hover {
   height: 200px;
 }
@@ -30,6 +32,7 @@ body {
   height: 100%;
 }
 
+/* navBar_whiteBox_start */
 .navBar .whiteBox {
   position: relative;
   flex: 1;
@@ -41,6 +44,7 @@ body {
 .navBar .whiteBox:hover {
   background: linear-gradient(to bottom, #f4f2ec, #dedede);
 }
+/* navBar_whiteBox_end */
 
 /* navBar_blackBox_start */
 .navBar .blackBox {
@@ -120,6 +124,8 @@ body {
   font-size: 100%;
   font-weight: bold;
   visibility: hidden;
+  cursor: default;
+  user-select:none;
   transition: color .3s, visibility .5s, transform .5s;
 }
 

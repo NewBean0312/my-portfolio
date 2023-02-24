@@ -1,0 +1,65 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* aboutBox_start */
+.aboutBox {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 900px;
+  border: 3px solid red;
+}
+/* aboutHeader_start */
+.aboutBox .aboutHeader {
+  flex: 1;
+  width: 100%;
+}
+
+.aboutBox .aboutHeader > h1 {
+  color: #6a3b28;
+  font-size: 3rem;
+  margin: 20px 20px;
+}
+/* aboutHeader_end */
+
+/* aboutArticle_start */
+.aboutBox .aboutArticle {
+  flex: 6;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.aboutBox .aboutArticle > p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.aboutBox .aboutArticle > p > span {
+  font-family: "Nanum Myeongjo", serif;
+  color: #6a3b28;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+/* aboutArticle_end */
+/* aboutBox_end */

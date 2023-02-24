@@ -366,6 +366,7 @@ header > .headerFun {
   visibility: hidden;
   user-select: none;
   cursor: default;
+  user-select:none;
   transition: color 0.3s, visibility 0.5s, transform 0.5s;
 }
 
