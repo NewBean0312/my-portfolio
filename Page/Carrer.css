@@ -1,0 +1,120 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* carrerBox_start */
+.carrerBox {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  top: 15%;
+}
+/* carrerHeader_start */
+.carrerBox .carrerHeader {
+  text-align: center;
+  width: 100%;
+}
+
+.carrerBox .carrerHeader > h1 {
+  color: #6a3b28;
+  font-size: 3rem;
+  margin: 20px 20px;
+}
+/* carreHeader_end */
+
+.carrerBox .carrerArticle {
+  position: relative;
+  width: 100%;
+  height: 120%;
+}
+
+.carrerBox .whiteBox {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* blackBox_start */
+.carrerBox .blackBox {
+    position: absolute;
+    width: 55%;
+    right: 0;
+    height: 250px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.carrerBox .blackBox:nth-child(5) {
+    top: 5.5%;
+}
+
+.carrerBox .blackBox:nth-child(6) {
+    top: 25.5%;
+}
+
+.carrerBox .blackBox:nth-child(7) {
+    top: 45.5%;
+}
+/* blackBox_end */
+
+/* contentBox_start */
+.carrerBox .contentBox {
+  position: relative;
+  display: flex;
+  margin-left: 0;
+  width: 700px;
+  height: 100%;
+}
+
+.carrerBox .contentBox > .img {
+  flex: 0.8;
+  margin: 5px 50px 5px 50px;
+}
+
+.carrerBox .contentBox > .img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.carrerBox .contentBox > .content {
+  flex: 1.2;
+}
+
+.carrerBox .contentBox > .content > h2 {
+  color: #6a3b28;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+.carrerBox .contentBox > .content > p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 35px;
+  margin-top: 50px;
+}
+
+.carrerBox .blackBox .content > h2 {
+    color: #f8efce;
+}
+
+.carrerBox .blackBox .content > p {
+    color: white;
+}
+/* contentBox_end */
+/* carrerBox_end */

@@ -2,6 +2,7 @@
 - [위키 바로가기](https://to2.kr/ehI)
 - [git 바로가기](https://github.com/NewBean0312/my-portfolio)
 - [포트폴리오 예상 디자인 바로가기](https://newbean0312.wixsite.com/newbean-sportfolio)
+- [포트폴리오 바로가기(미완)](https://newbean0312.github.io/portfolio/)
 ---
 ---
 ### 레이아웃
@@ -81,6 +82,8 @@
 - [Fontawsome](https://fontawesome.com/icons/) : 무료 아이콘 사이트
 - [미디어 쿼리 (다크모드)](https://www.daleseo.com/css-prefers-color-scheme/)
 - [다크모드 버튼 생성](https://velog.io/@rmaomina/darkmode-toggle-button)
+- [눈내리기 css](https://ddamddon.tistory.com/10833)
+- [XEIcon](https://xpressengine.github.io/XEIcon/index.html)
 
 ### 시작용 코드
 - [시작용 HTML, CSS, JS](https://codepen.io/hjyee/pen/WNyoYQv)
@@ -88,8 +91,8 @@
 
 ---
 ---
-## step 1. Navbar 생성
-### navigate로 활용할 Navbar 제작
+## step 1. navBar 생성
+### navigate로 활용할 navBar 제작
 - [@media를 활용한 반응형 box 및 버튼 생성](https://github.com/NewBean0312/my-portfolio/commit/082b7a669ed9473e8d0b92cd60b4a42e00dfa9dc)
 - [Top-bar에 hover 시, 늘어나게 설정](https://github.com/NewBean0312/my-portfolio/commit/6d024aadfa2ca9cea88f0e596f7287d078f5e1de)
 - [브라우저를 가장 작은 너비로 줄일 경우, 기존 버튼이 사라지고 새로운 버튼 6개가 정렬됨 / 박스가 사라지는 순서 변경 / 파일명 및 클래스명 변경](https://github.com/NewBean0312/my-portfolio/commit/94b20479980584e692f75bc664d8ef298d5c2955)
@@ -99,12 +102,32 @@
   - 글씨가 가려지는 현상 수정
 - [Navbar 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/a255649b189acd16c070fbafd948643b8f726823)
 
+- [각 건반을 hover 시, 그라데이션 생성](https://github.com/NewBean0312/my-portfolio/blob/0d8ecd13d350d31e96f571d2471ea26ccdd0fbc7/src/NavBar.css)
+---
+
 ## step 2. MainPage 생성
-### MainPage 제작
 - [MainPage 기초 완성](https://github.com/NewBean0312/my-portfolio/commit/ff8ce159d51da136954ebce3e8ca1f882ee2d2a7)
-- [MainPage 1차 완성]()
+- [MainPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/fc5a7b7b9b7594f7c1d275b3dcef645a0998afaf)
   - 상단 header 생성
   - 건반 hover 시, 그라데이션 추가
   - 건반 hover 시, 음표가 올라오는 효과 추가
   - 버튼 hover 시, 버튼 명 나타나는 효과 추가
   - 음표가 내리는 효과 추가
+  
+- [MainPage 2차 완성](https://github.com/NewBean0312/my-portfolio/commit/b08548d5fdeee4ca88cebe6d0b79aae678f1b8bf)
+  - 배포를 위해 파일명을 index.html로 변경
+  - 모바일로 접속 시, hover 제거
+  - 파비콘 생성 및 적용
+  - 아이콘 일부 변경
+  
+- [index 3차 완성](https://github.com/NewBean0312/my-portfolio/commit/0d8ecd13d350d31e96f571d2471ea26ccdd0fbc7)
+  - 최소너비(모바일) 시, 하이라이트 제거
+  - 기타 오류 수정
+  
+---  
+
+## step 3. AboutPage 생성
+- [aboutPage 1차 완성]()
+  - navBar 첨부
+  - 글이 가운데 오게끔 정렬
+  - 본문은 다른 글꼴을 적용
