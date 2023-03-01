@@ -48,16 +48,16 @@ body {
 }
 
 .aboutBox .aboutArticle > p {
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 1.1rem;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 1.2rem;
   font-weight: bold;
   line-height: 35px;
 }
 
 .aboutBox .aboutArticle > p > span {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: 'Gamja Flower', cursive;
   color: #6a3b28;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-style: italic;
   text-decoration: underline;
 }
