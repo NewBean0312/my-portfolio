@@ -48,16 +48,16 @@ body {
 }
 
 .aboutBox .aboutArticle > p {
-  font-family: 'Gamja Flower', cursive;
-  font-size: 1.2rem;
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.1rem;
   font-weight: bold;
   line-height: 35px;
 }
 
 .aboutBox .aboutArticle > p > span {
-  font-family: 'Gamja Flower', cursive;
+  font-family: "Noto Serif KR", serif;
   color: #6a3b28;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: italic;
   text-decoration: underline;
 }

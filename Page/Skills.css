@@ -1,0 +1,78 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+.skillsSection {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20%;
+}
+
+/* skillsHeader_start */
+.skillsSection > .skillsHeader {
+  width: 35%;
+  height: 50px;
+  text-align: center;
+  color: #6a3b28;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #404040;
+}
+
+.skillsSection > .skillsHeader > div {
+  width: 100%;
+  height: 4px;
+  border-bottom: 3px solid #404040;
+}
+/* skillsHeader_end */
+
+.skillsSection .skillsArticle {
+  width: 95%;
+  height: 100%;
+}
+
+.skillsSection .skillsArticle > .noteBox {
+  display: flex;
+  width: 95%;
+  height: 160px;
+  border-top: 2px solid #404040;
+  margin-top: 6%;
+}
+
+.skillsSection .skillsArticle > .noteBox > .noteBoxRow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 7px solid #404040;
+}
+
+.skillsSection .skillsArticle > .noteBox > .noteBoxRow > .noteBoxCol {
+  flex: 1;
+  width: 100%;
+  border-bottom: 2px solid #404040;
+}
+
+.skillsSection .skillsArticle > .noteBox .noteLastLine {
+    position: relative;
+    border-right: 10px solid #404040;
+}
+
+.skillsSection .skillsArticle > .noteBox .noteLine {
+    position: absolute;
+    height: 160px;
+    right: 6%;
+    border-right: 6px solid #404040;
+}

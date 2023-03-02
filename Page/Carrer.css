@@ -14,8 +14,8 @@ body {
 }
 /* Normalize_end */
 
-/* carrerBox_start */
-.carrerBox {
+/* carrerSection_start */
+.carrerSection {
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -23,25 +23,25 @@ body {
   top: 15%;
 }
 /* carrerHeader_start */
-.carrerBox .carrerHeader {
+.carrerSection .carrerHeader {
   text-align: center;
   width: 100%;
 }
 
-.carrerBox .carrerHeader > h1 {
+.carrerSection .carrerHeader > h1 {
   color: #6a3b28;
   font-size: 3rem;
   margin: 20px 20px;
 }
 /* carreHeader_end */
 
-.carrerBox .carrerArticle {
+.carrerSection .carrerArticle {
   position: relative;
   width: 100%;
   height: 120%;
 }
 
-.carrerBox .whiteBox {
+.carrerSection .whiteBox {
   position: relative;
   width: 100%;
   height: 23%;
@@ -49,12 +49,12 @@ body {
   border: 2px solid black;
 }
 
-.carrerBox .whiteBox:first-child {
+.carrerSection .whiteBox:first-child {
   border-top: 5px solid black;
 }
 
 /* blackBox_start */
-.carrerBox .blackBox {
+.carrerSection .blackBox {
   position: absolute;
   width: 55%;
   right: 0;
@@ -64,22 +64,22 @@ body {
   transition: width 1s;
 }
 
-.carrerBox .blackBox:nth-child(2) {
+.carrerSection .blackBox:nth-child(2) {
   z-index: 2;
   top: 5%;
 }
 
-.carrerBox .blackBox:nth-child(4) {
+.carrerSection .blackBox:nth-child(4) {
   z-index: 2;
   top: 35%;
 }
 
-.carrerBox .blackBox:nth-child(6) {
+.carrerSection .blackBox:nth-child(6) {
   z-index: 2;
   top: 65%;
 }
 
-.carrerBox .blackBox:nth-child(9) {
+.carrerSection .blackBox:nth-child(9) {
   z-index: 2;
   top: 100%;
   height: 16%;
@@ -88,7 +88,7 @@ body {
 /* blackBox_end */
 
 /* contentBox_start */
-.carrerBox .contentBox {
+.carrerSection .contentBox {
   position: relative;
   display: flex;
   margin-left: 0;
@@ -96,110 +96,110 @@ body {
   height: 100%;
 }
 
-.carrerBox .contentBox > .img {
+.carrerSection .contentBox > .img {
   flex: 0.8;
   margin: 20px 87.5px;
   transition: margin 1s;
 }
 
-.carrerBox .contentBox > .img > img {
+.carrerSection .contentBox > .img > img {
   width: 100%;
   height: 100%;
 }
 
-.carrerBox .contentBox > .content {
+.carrerSection .contentBox > .content {
   flex: 1.2;
 }
 
-.carrerBox .contentBox > .content > h2 {
+.carrerSection .contentBox > .content > h2 {
   color: #6a3b28;
   margin-left: 0;
   margin-top: 40px;
 }
 
-.carrerBox .contentBox > .content > p {
-  font-family: "Gamja Flower", cursive;
-  font-size: 1.5rem;
+.carrerSection .contentBox > .content > p {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.3rem;
   font-weight: bold;
   line-height: 35px;
   margin-top: 50px;
 }
 
-.carrerBox .blackBox .content > h2 {
+.carrerSection .blackBox .content > h2 {
   color: #f8efce;
 }
 
-.carrerBox .blackBox .content > p {
+.carrerSection .blackBox .content > p {
   color: white;
 }
 /* contentBox_end */
-/* carrerBox_end */
+/* carrerSection_end */
 
 /* media */
 /* blackBox_start */
 @media screen and (max-aspect-ratio: 11/6) {
-  .carrerBox .blackBox {
+  .carrerSection .blackBox {
     width: 50%;
   }
 }
 
 @media screen and (max-aspect-ratio: 9/6) {
-  .carrerBox .blackBox {
+  .carrerSection .blackBox {
     width: 45%;
   }
 
-  .carrerBox .contentBox > .img {
+  .carrerSection .contentBox > .img {
     flex: 0.3;
     margin: 30px 30.5px;
   }
 }
 
 @media screen and (max-aspect-ratio: 7/6) {
-  .carrerBox .blackBox {
+  .carrerSection .blackBox {
     width: 50%;
   }
 
-  .carrerBox .contentBox > .content > p {
+  .carrerSection .contentBox > .content > p {
     margin-top: 15px;
     font-size: 1rem;
   }
 }
 
 @media screen and (max-aspect-ratio: 5/6) {
-  .carrerBox .whiteBox {
+  .carrerSection .whiteBox {
     height: 200px;
   }
   
-  .carrerBox .whiteBox:nth-child(8) {
+  .carrerSection .whiteBox:nth-child(8) {
     display: none;
   }
 
-  .carrerBox .blackBox {
+  .carrerSection .blackBox {
     width: 100%;
     height: 200px;
     position: relative;
   }
 
-  .carrerBox .blackBox:nth-child(2) {
+  .carrerSection .blackBox:nth-child(2) {
     z-index: 2;
     top: 0;
   }
 
-  .carrerBox .blackBox:nth-child(4) {
+  .carrerSection .blackBox:nth-child(4) {
     z-index: 2;
     top: 0;
   }
 
-  .carrerBox .blackBox:nth-child(6) {
+  .carrerSection .blackBox:nth-child(6) {
     z-index: 2;
     top: 0;
   }
 
-  .carrerBox .contentBox > .content > p {
+  .carrerSection .contentBox > .content > p {
     font-size: 1.3rem;
   }
 
-  .carrerBox .blackBox:nth-child(9) {
+  .carrerSection .blackBox:nth-child(9) {
     display: none;
   }
 }
