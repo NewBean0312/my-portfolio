@@ -127,7 +127,19 @@
 ---  
 
 ## step 3. AboutPage 생성
-- [aboutPage 1차 완성]()
+- [aboutPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/c5615d3ca4c48db6d3e269f0a0556a2653f45b3d)
   - navBar 첨부
   - 글이 가운데 오게끔 정렬
   - 본문은 다른 글꼴을 적용
+  
+## step 4. CarrerPage 생성
+- [CarrerPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/9e2f982dfe32c8d9ce560f839ebe73a89c61639d)
+  - navBar 첨부
+  - 피아노 건반 정렬
+- [CarrerPage 2차 완성](https://github.com/NewBean0312/my-portfolio/commit/f5e791b010d7f22df93f3cd83589251c65e97e14)
+  - Carrer 박스 반응형으로 설정
+  
+## step 5. SkillsPage 생성
+- [SkillsPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/851d11aea97018fe75d12fe759acffd7e085840e)
+  - nabBar 첨부
+  - 피아노 악보 생성
