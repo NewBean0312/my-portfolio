@@ -29,8 +29,9 @@ body {
 }
 
 .projectSection > .projectShow {
-  flex: 1;
-  background-color: lightblue;
+  flex: 1.2;
+  background-color: white;
+  border: 5px solid #6a3b28;
 }
 
 .projectSection .projectTitle {
@@ -40,8 +41,8 @@ body {
   margin-top: 20px;
 }
 
-.projectSection .lpListBox {
-  background-color: lightcoral;
+.projectSection .sliderBox {
+  position: relative;
   width: 100%;
   height: 600px;
   margin-top: 80px;
@@ -50,49 +51,146 @@ body {
 
 /* lpBox_start */
 .projectSection .lpBox {
-  background-color: white;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   margin-top: 50px;
-  margin-left: 150px;
   display: inline-block;
+  border-radius: 50%;
 }
 
 .projectSection .lpBox > .main {
   position: relative;
-  width: 100%;
-  display:block;
-  margin:0 auto;
 }
 
 .projectSection .lpBox > .main .slide-show {
   height: 250px;
-  background-color: red;
+  transform: translateX(-50%);
 }
 
-.projectSection .lpBox .main slider > div {
-  
-    position: relative;
-    text-align: center;
-} 
+.projectSection .lpBox > .main .slide-show img {
+  width: 100%;
+  height: 230px;
+  border-radius: 50%;
+  transition: .5s transform;
+}
+
+.projectSection .lpBox > .main .slide-show .lpRecord:hover > img {
+  transform: translateX(60px);
+}
 
 .projectSection .lpBox .arrows > .btn-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  right: calc(100% + 50px);
-  
+  transform: translateY(400%);
+  right: calc(80%);
+  font-size: 2rem;
+  color: #6a3b28;
 }
 
 .projectSection .lpBox .arrows > .btn-arrow:active {
-  transform: translateY(-45%);
+  transform: translateY(410%);
 }
 
 .projectSection .lpBox .arrows > .btn-arrow.btn-arrow-right {
-  left: calc(100% + 50px);
+  left: calc(80%);
   right: auto;
 }
-
-
 /* lpBox_end */
+
+/* lpListBox_start */
+.projectSection .sliderBox > .lpListBox {
+  z-index: 1;
+  position: absolute;
+  right: 100px;
+  transform: scale(110%);
+  border-radius: 0;
+}
+
+.projectSection .lpListBox > .lpBox .slide-show img {
+  border-radius: 0;
+  width: 95%;
+  height: 220px;
+  border: 5px solid black;
+}
+
+/* lpListBox_end */
+
+/* projectShow_start */
+.projectSection .projectShow > .showBox {
+  width: 800px;
+  height: 400px;
+}
+
+.projectSection .projectShow > .showBox .slide-show {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display:block;
+  margin-top: 70px;
+  display: flex;
+}
+
+.projectSection .projectShow > .showBox > .main > .slide-show img {
+  width: 100%;
+  height: 400px;
+}
+
+.projectSection .projectShow > .showBox .slide-show button {
+  color: white;
+  background-color: #404040;
+  border: 0;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.projectSection .projectShow > .showBox > .main > .slide-show button:hover {
+  transform: translateY(-5px);
+}
+
+.projectSection .projectShow .showBox p {
+  color: black;
+  display: inline;
+  height: 100px;
+  margin-left: 80px;
+  /* margin-top: 30px; */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* projectShow_end */
 /* projectSection_end */
+
+.projectSection .sliderBox > .lpListBox {
+  right: 100px;
+}
+
+/* media */
+@media screen and (max-aspect-ratio: 11/6) {
+  .projectSection .sliderBox > .lpListBox {
+    right: 30%;
+  }
+  .projectShow {
+    display: none;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/6) {
+  .projectSection .sliderBox > .lpListBox {
+    right: 25%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 7/6) {
+  .projectSection .sliderBox > .lpListBox {
+    right: 20%;
+  }
+}
+
+@media screen and (max-aspect-ratio: 5/6) {
+  .projectSection .sliderBox > .lpListBox {
+    right: 15%;
+  }
+}
+/* navBar_end */
