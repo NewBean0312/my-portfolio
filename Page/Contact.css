@@ -1,0 +1,56 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* contactSection_start */
+.contactSection {
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 12%;
+}
+
+.contactSection > .contactBox {
+  flex: 1;
+  background-color: lightcoral;
+}
+
+.contactSection > .contactImgBox {
+  flex: 1.2;
+}
+
+.contactSection .ContactTitle {
+  color: #6a3b28;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+
+.contactSection .contactList {
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactSection .contactList > .contactItem {
+  flex: 1;
+  margin-left: 0;
+  text-align: left;
+}

@@ -10,8 +10,7 @@
     <!-- 외부 파일 -->
     <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="../src/NavBar.css" />
-    <link rel="stylesheet" href="./Project.css" />
-    <link rel="stylesheet" href="./Project.js" />
+    <link rel="stylesheet" href="./Contact.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -27,26 +26,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap"
       rel="stylesheet"
-    />
-    <!-- jquery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    ></script>
-    <!-- Slick -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
     />
   </head>
   <title>YuBeen's Portfolio</title>
@@ -183,94 +162,22 @@
       </div>
     </nav>
     <!-- navbar end -->
-    <section class="projectSection">
-      <article class="projectBox">
-        <div class="projectTitle">
-          <h1><i>Project</i></h1>
+    <section class="contactSection">
+      <article class="contactBox">
+        <div class="ContactTitle">
+          <h1><i>Contact</i></h1>
         </div>
-        <div class="sliderBox">
-          <div class="lpListBox">
-            <div class="lpBox">
-              <div class="main">
-                <div class="slide-show">
-                  <div>
-                    <img src="../img/Kakaobank_Img.png" alt="Kakaobank_Img" />
-                  </div>
-                  <div><img src="../img/Todo_Img.png" alt="Todo_Img" /></div>
-                </div>
-              </div>
-            </div>
+        <div class="contactList">
+          <div class="contactItem">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#">juv6262@naver.com</a>
           </div>
-          <div class="lpBox">
-            <div class="main">
-              <div class="slide-show">
-                <div class="lpRecord">
-                  <img src="../img/LpRecord_1.png" alt="LpRecord_1" />
-                </div>
-                <div class="lpRecord">
-                  <img src="../img/LpRecord_2.png" alt="LpRecord_2" />
-                </div>
-              </div>
-              <div class="arrows">
-                <div class="btn-arrow btn-arrow-left">
-                  <i class="fa-solid fa-backward-fast"></i>
-                </div>
-                <div class="btn-arrow btn-arrow-right">
-                  <i class="fa-solid fa-forward-fast"></i>
-                </div>
-              </div>
-              <div class="slider-nav">
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
+          <div class="contactItem"></div>
+          <div class="contactItem"></div>
+          <div class="contactItem"></div>
         </div>
       </article>
-      <article class="projectShow">
-        <div class="showBox">
-          <div class="main">
-            <div class="slide-show">
-              <div>
-                <img src="../img/Kakaobank_Img.png" alt="Kakaobank_Img" />
-                <button><i>More View</i></button>
-                <button class="mobilePlayButton">
-                  <i class="fa-solid fa-play"></i>
-                </button>
-                <p>Kakaobank (클론코딩)</p>
-              </div>
-              <div>
-                <img src="../img/Todo_Img.png" alt="Todo_Img" />
-                <button><i>More View</i></button>
-                <button class="mobilePlayButton">
-                  <i class="fa-solid fa-play"></i>
-                </button>
-                <p>Todo List 제작 (생성, 수정, 삭제 가능)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+      <article class="contactImgBox"></article>
     </section>
   </body>
-  <script>
-    $(".slide-show").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: ".slider-nav",
-    });
-    $(".slider-nav").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: ".slide-show",
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      arrows: true,
-      prevArrow: ".arrows > .btn-arrow-left",
-      nextArrow: ".arrows > .btn-arrow-right",
-    });
-  </script>
 </html>
