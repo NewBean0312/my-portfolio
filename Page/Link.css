@@ -1,0 +1,115 @@
+/* Normalize_start */
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: #f6f0e1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  outline: none;
+}
+/* Normalize_end */
+
+/* linkSection_start */
+.linkSection {
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 12%;
+}
+
+.linkSection > .linkBox {
+  flex: 1;
+}
+
+.linkSection > .linkImgBox {
+  flex: 1.2;
+}
+
+.linkSection .LinkTitle {
+  color: #6a3b28;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+
+.linkSection .linkList {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkSection .linkList > .linkItem {
+  width: 100%;
+  flex: 1;
+  margin-left: 0;
+  margin-top: 50px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.linkSection .linkList > .linkItem > button {
+  color: black;
+  background-color: #f6f0e1;
+  margin-left: 10px;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.linkSection .linkImgBox > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* media */
+@media screen and (max-aspect-ratio: 12/6) {
+  .linkSection > .linkImgBox {
+    flex: 0.9;
+  }
+}
+
+@media screen and (max-aspect-ratio: 11/6) {
+  .linkSection > .linkImgBox {
+    flex: 0.8;
+  }
+}
+
+@media screen and (max-aspect-ratio: 10/6) {
+  .linkSection > .linkImgBox {
+    flex: 0.7;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/6) {
+  .linkSection > .linkImgBox {
+    flex: 0.6;
+  }
+}
+
+@media screen and (max-aspect-ratio: 8/6) {
+  .linkSection > .linkImgBox {
+    flex: 0.5;
+  }
+}
+
+@media screen and (max-aspect-ratio: 7/6) {
+  .linkSection .linkImgBox {
+    display: none;
+  }
+  .linkSection .linkList {
+    width: 100%;
+    flex-direction: column;
+  }
+  .linkSection .linkList > .linkItem {
+    text-align: center;
+  }
+}

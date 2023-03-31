@@ -153,3 +153,17 @@
   - 아이콘 배치
   
 ---    
+
+## step 6. ProjectPage 생성
+- [ProjectPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/d1f3854cd4defa5d8abedfbebf8f9869e7ccdef0)
+  - navBar 첨부
+  - slick을 적용한 슬라이더 배너 생성
+- [ProjectPage 2차 완성](https://github.com/NewBean0312/my-portfolio/commit/586e758e6b32c9884fac257099b57570e3e7955b)
+  - 슬라이드 배너 수정
+  - 슬라이드 배너에 따른 박스 생성
+- [ProjectPage 3차 완성](https://github.com/NewBean0312/my-portfolio/commit/ae12913921b61cb9e7bc5dd7804df9714e6dc240)
+  - 반응형 웹으로 수정
+  - 재생버튼 생성
+  
+## step 7. 마무리
+- [포트폴리오 1차 완성]()

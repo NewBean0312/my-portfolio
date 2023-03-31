@@ -10,7 +10,7 @@
     <!-- 외부 파일 -->
     <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="../src/NavBar.css" />
-    <link rel="stylesheet" href="./Contact.css" />
+    <link rel="stylesheet" href="./Link.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -65,14 +65,14 @@
         <div class="whiteBox"></div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button>
+          <button type="button" onClick="location.href='../index.html'">
             <div class="buttonText">Main</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button>
+          <button type="button" onClick="location.href='./About.html'">
             <div class="buttonText">About</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
@@ -86,56 +86,80 @@
       </div>
       <div class="boxGroup">
         <div class="whiteBox">
-          <button>
+          <button type="button" onClick="location.href='./Carrer.html'">
             <div class="buttonText carrerFont">Carrer</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
           <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileButton 실행 -->
-          <button class="mobileButton">
+          <button
+            class="mobileButton"
+            type="button"
+            onClick="location.href='../index.html'"
+          >
             <div class="buttonText">Main</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button class="mobileButton">
+          <button
+            class="mobileButton"
+            type="button"
+            onClick="location.href='./About.html'"
+          >
             <div class="buttonText">About</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
-          <button>
+          <button type="button" onClick="location.href='./Skills.html'">
             <div class="buttonText">Skills</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button class="mobileButton">
+          <button
+            class="mobileButton"
+            type="button"
+            onClick="location.href='./Carrer.html'"
+          >
             <div class="buttonText carrerFont">Carrer</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button class="mobileButton">
+          <button
+            class="mobileButton"
+            type="button"
+            onClick="location.href='./Skills.html'"
+          >
             <div class="buttonText">Skills</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
-          <button>
+          <button type="button" onClick="location.href='./Work.html'">
             <div class="buttonText">Work</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button class="mobileButton">
+          <button
+            class="mobileButton"
+            type="button"
+            onClick="location.href='./Work.html'"
+          >
             <div class="buttonText">Work</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button class="mobileButton">
+          <button
+            class="mobileButton"
+            type="button"
+            onClick="location.href='./Link.html'"
+          >
             <div class="buttonText">Link</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
-          <button>
+          <button type="button" onClick="location.href='./Link.html'">
             <div class="buttonText">Link</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
@@ -162,31 +186,54 @@
       </div>
     </nav>
     <!-- navbar end -->
-    <section class="contactSection">
-      <article class="contactBox">
-        <div class="ContactTitle">
-          <h1><i>Contact</i></h1>
+    <section class="linkSection">
+      <article class="linkBox">
+        <div class="LinkTitle">
+          <h1><i>Link</i></h1>
         </div>
-        <div class="contactList">
-          <div class="contactItem">
+        <div class="linkList">
+          <div class="linkItem">
             <i class="fa-solid fa-envelope fa-lg"></i>
-            <button>juv6262@naver.com</button>
+            <button
+              type="button"
+              onClick="window.open('https://mail.naver.com/v2/new')"
+            >
+              juv6262@naver.com
+            </button>
           </div>
-          <div class="contactItem">
-            <i class="fa-brands fa-instagram fa-lg"></i>
-            <button>instagram.com/new_bean_j/</button>
-          </div>
-          <div class="contactItem">
+
+          <div class="linkItem">
             <i class="fa-brands fa-github fa-lg"></i>
-            <button>github.com/NewBean0312</button>
+            <button
+              type="button"
+              onClick="window.open('https://github.com/NewBean0312')"
+            >
+              github.com/NewBean0312
+            </button>
           </div>
-          <div class="contactItem">
+          <div class="linkItem">
             <i class="fa-solid fa-t fa-lg"></i>
-            <button>newbean-j.tistory.com</button>
+            <button
+              type="button"
+              onClick="window.open('https://newbean-j.tistory.com/')"
+            >
+              newbean-j.tistory.com
+            </button>
+          </div>
+          <div class="linkItem">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <button
+              type="button"
+              onClick="window.open('https://www.instagram.com/new_bean_j/')"
+            >
+              instagram.com/new_bean_j
+            </button>
           </div>
         </div>
       </article>
-      <article class="contactImgBox"></article>
+      <article class="linkImgBox">
+        <img src="../img/linkImage.jpg" alt="이미지 로드" />
+      </article>
     </section>
   </body>
 </html>
