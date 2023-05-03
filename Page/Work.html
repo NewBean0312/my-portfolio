@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 외부 파일 -->
-    <link rel="shortcut icon" href="./img/favicon.ico" />
-    <link rel="stylesheet" href="../src/NavBar.css" />
-    <link rel="stylesheet" href="./Work.css" />
-    <link rel="stylesheet" href="./Work.js" />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../cssFile/NavBar.css" />
+    <link rel="stylesheet" href="../cssFile/Work.css" />
+    <script src="../jsFile/Work.js" defer></script>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -48,10 +44,16 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
     />
+    <title>YuBeen's Portfolio</title>
   </head>
-  <title>YuBeen's Portfolio</title>
   <body>
-    <!-- navbar start -->
+    <!-- cursor_Start -->
+    <div class="mouseCursor">
+      <i class="fa-solid fa-arrow-pointer"></i>
+    </div>
+    <!-- cursor_End -->
+
+    <!-- navBar start -->
     <nav class="navBar">
       <div class="boxGroup">
         <div class="whiteBox"></div>
@@ -88,14 +90,14 @@
         <div class="whiteBox">
           <button type="button" onClick="location.href='../index.html'">
             <div class="buttonText">Main</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-m"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
           <button type="button" onClick="location.href='./About.html'">
             <div class="buttonText">About</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-a"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
@@ -109,80 +111,56 @@
         <div class="whiteBox">
           <button type="button" onClick="location.href='./Carrer.html'">
             <div class="buttonText carrerFont">Carrer</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="whiteBox">
           <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileButton 실행 -->
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='../index.html'"
-          >
+          <button class="mobileButton" type="button" onClick="location.href='../index.html'">
             <div class="buttonText">Main</div>
             <i class="fa-brands fa-itunes-note"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./About.html'"
-          >
+          <button class="mobileButton" type="button" onClick="location.href='./About.html'">
             <div class="buttonText">About</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-a"></i>
           </button>
           <button type="button" onClick="location.href='./Skills.html'">
             <div class="buttonText">Skills</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-s"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Carrer.html'"
-          >
+          <button class="mobileButton" type="button" onClick="location.href='./Carrer.html'">
             <div class="buttonText carrerFont">Carrer</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Skills.html'"
-          >
+          <button class="mobileButton" type="button" onClick="location.href='./Skills.html'">
             <div class="buttonText">Skills</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-s"></i>
           </button>
           <button type="button" onClick="location.href='./Work.html'">
             <div class="buttonText">Work</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-w"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Work.html'"
-          >
+          <button class="mobileButton" type="button" onClick="location.href='./Work.html'">
             <div class="buttonText">Work</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-w"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Link.html'"
-          >
+          <button class="mobileButton" type="button" onClick="location.href='./Link.html'">
             <div class="buttonText">Link</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-l"></i>
           </button>
           <button type="button" onClick="location.href='./Link.html'">
             <div class="buttonText">Link</div>
-            <i class="fa-brands fa-itunes-note"></i>
+            <i class="fa-solid fa-l"></i>
           </button>
         </div>
         <div class="blackBox"></div>
@@ -206,7 +184,9 @@
         <div class="blackBox"></div>
       </div>
     </nav>
-    <!-- navbar end -->
+    <!-- navBar end -->
+
+    <!-- content_start -->
     <section class="workSection">
       <article class="workBox">
         <div class="workTitle">
@@ -294,25 +274,6 @@
         </div>
       </article>
     </section>
+    <!-- content_end -->
   </body>
-  <script>
-    $(".slide-show").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: ".slider-nav",
-    });
-    $(".slider-nav").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: ".slide-show",
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      arrows: true,
-      prevArrow: ".arrows > .btn-arrow-left",
-      nextArrow: ".arrows > .btn-arrow-right",
-    });
-  </script>
 </html>

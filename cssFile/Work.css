@@ -3,16 +3,34 @@
   margin: 0 auto;
   padding: 0 auto;
   font-family: "Libre Baskerville", serif;
+  user-select:none;
+  cursor: none;
 }
 
 body {
-  background-color: #f6f0e1;
+  background-color: #453630;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   outline: none;
 }
 /* Normalize_end */
+
+/* mouseCursor_start */
+.mouseCursor {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  color: #9b7e4b;
+  transform: translate(-50%, -50%);
+}
+
+.mouseCursor > i {
+  font-size: 30px;
+}
+/* mouseCursor_end */
 
 /* workSection_start */
 .workSection {
@@ -31,11 +49,11 @@ body {
 .workSection > .workShow {
   flex: 1.2;
   background-color: white;
-  border: 5px solid #6a3b28;
+  border: 5px solid #9b7e4b;
 }
 
 .workSection .workTitle {
-  color: #6a3b28;
+  color: #9b7e4b;
   text-align: center;
   font-size: 2.5rem;
   margin-top: 20px;
@@ -84,7 +102,7 @@ body {
   transform: translateY(400%);
   right: calc(80%);
   font-size: 2rem;
-  color: #6a3b28;
+  color: #9b7e4b;
 }
 
 .workSection .lpBox .arrows > .btn-arrow:active {
@@ -147,7 +165,6 @@ body {
   margin-left: 50px;
   width: 150px;
   height: 40px;
-  cursor: pointer;
 }
 
 .workSection .workShow > .showBox > .main > .slide-show button:hover {
@@ -160,8 +177,8 @@ body {
   height: 50px;
   margin: 0 21%;
   margin-top: 50px;
-  background-color: #f6f0e1;
-  color: #6a3b28;
+  background-color: #453630;
+  color: #9b7e4b;
   font-size: 2rem;
 }
 
@@ -217,7 +234,7 @@ body {
 
   .workSection > .workShow {
     width: 80%;
-    background-color: #f6f0e1;
+    background-color: #453630;
     border: 0;
   }
 
@@ -241,6 +258,6 @@ body {
     display: block;
     font-size: 1rem;
     margin-top: 20px;
-    color: #6a3b28;
+    color: #9b7e4b;
   }
 }

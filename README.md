@@ -2,7 +2,7 @@
 - [위키 바로가기](https://to2.kr/ehI)
 - [git 바로가기](https://github.com/NewBean0312/my-portfolio)
 - [포트폴리오 예상 디자인 바로가기](https://newbean0312.wixsite.com/newbean-sportfolio)
-- [포트폴리오 바로가기(미완)](https://newbean0312.github.io/portfolio/)
+- [포트폴리오 바로가기(1차 완성)](https://newbean0312.github.io/portfolio/)
 ---
 ---
 ### 레이아웃
@@ -10,8 +10,6 @@
 - 상단 프로필
   - 로고
   - 포트폴리오 명
-  - 노래 재생 및 일시정지 버튼
-  - 다크모드
 - 중앙 공백
   - 음표가 내리는 애니메이션 추가
 - 하단 메뉴 바
@@ -166,4 +164,20 @@
   - 재생버튼 생성
   
 ## step 7. 마무리
-- [포트폴리오 1차 완성]()
+- [포트폴리오 1차 완성](https://newbean0312.github.io/portfolio/)
+
+---
+---
+# 포트폴리오 수정
+- [포트폴리오 v1.1](https://github.com/NewBean0312/my-portfolio/commit/8bc8d6469ba251b0a14cece4185e6afffc756e63)
+  - 색감 변경
+  - 마우스 포인터 사용
+  - 건반 디자인 변경
+  - 메뉴 아이콘 수정
+  
+- [포트폴리오 v1.2]()
+  - 건반 색상 변경
+  - 스크롤 버그 수정
+  - 마우스 포인터 변경
+  - 레이아웃 간견 조절
+  - 파일 분류 수정

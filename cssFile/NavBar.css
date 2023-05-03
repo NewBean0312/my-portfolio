@@ -1,6 +1,7 @@
 /* Normalize_start */
 html {
   font-family: "Libre Baskerville", serif;
+  user-select:none;
 }
 
 body {
@@ -11,8 +12,7 @@ body {
 
 /* navBar_start */
 .navBar {
-  z-index: 999;
-  border: 3px solid black;
+  z-index: 99;
   position: fixed;
   width: 100%;
   height: 110px;
@@ -37,9 +37,11 @@ body {
 .navBar .whiteBox {
   position: relative;
   flex: 1;
-  border: 1px solid black;
+  border: 2px solid #453630;
+  border-top: 0 solid #453630;
   width: 100%;
   height: 100%;
+  background-color: #f4f2ec;
 }
 
 .navBar .whiteBox:hover {
@@ -50,10 +52,9 @@ body {
 /* navBar_blackBox_start */
 .navBar .blackBox {
   position: absolute;
-  border: 1px solid black;
   width: 9%;
   height: 50%;
-  background-color: black;
+  background-color: #453630;
   top: 1;
 }
 
@@ -80,7 +81,6 @@ body {
 
 /* navBar_button_start */
 .navBar .whiteBox > button {
-  cursor: pointer;
   position: absolute;
   bottom: 5px;
   left: 3%;
@@ -89,12 +89,12 @@ body {
   margin: 0 auto;
   border: 1px solid white;
   border-radius: 50%;
-  background-color: #6a3b28;
+  background-color: #453630;
   transition: background-color 0.3s;
 }
 
 .navBar .whiteBox > button > i {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #f4f2ec;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .navBar .whiteBox > button:hover > i {
-  color: #6a3b28;
+  color: #9b7e4b;
   transition: color 0.3s;
 }
 
@@ -113,7 +113,7 @@ body {
   justify-content: center;
   visibility: visible;
   transform: translateY(-15px);
-  color: #6a3b28;
+  color: #9b7e4b;
 }
 
 .navBar .buttonText {
@@ -125,7 +125,6 @@ body {
   font-size: 100%;
   font-weight: bold;
   visibility: hidden;
-  cursor: default;
   user-select:none;
   transition: color .3s, visibility .5s, transform .5s;
 }
