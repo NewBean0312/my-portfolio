@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 auto;
   font-family: "Libre Baskerville", serif;
-  user-select:none;
+  user-select: none;
   cursor: none;
 }
 /* Normalize_end */
@@ -236,8 +236,9 @@ body {
   font-size: 2rem;
 }
 
-.workSection .workShow .showBox h3, p {
-  font-family: 'Noto Serif KR', serif;
+.workSection .workShow .showBox h3,
+p {
+  font-family: "Noto Serif KR", serif;
   color: black;
   display: inline;
   height: 100px;
@@ -315,10 +316,18 @@ body {
     transform: translateY(5px);
   }
 
-  .workSection .workShow > .showBox .slide-show p {
+  .workSection .workShow > .showBox .slide-show h3 {
     display: block;
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: #9b7e4b;
+  }
+
+  .projectDescriptionBox {
+    margin-left: 35px;
+  }
+
+  .projectDescriptionBox p {
     color: #9b7e4b;
   }
 }
