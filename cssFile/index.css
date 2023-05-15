@@ -5,6 +5,7 @@
   font-family: "Libre Baskerville", serif;
   cursor: none;
 }
+/* Normalize_end */
 
 body {
   background-color: #453630;
@@ -13,7 +14,53 @@ body {
   overflow: hidden;
   outline: none;
 }
-/* Normalize_end */
+
+/* 화면 전환 CSS */
+body {
+  animation: fadein 2000ms ease-out;
+  -moz-animation: fadein 2000ms ease-out; /* Firefox */
+  -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+  -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* header_start */
 header {
@@ -90,6 +137,7 @@ header > .headerFun {
     top: 700px;
   }
 }
+
 @-webkit-keyframes snowflakes-shake {
   0%,
   100% {
@@ -108,6 +156,7 @@ header > .headerFun {
     top: 700px;
   }
 }
+
 @keyframes snowflakes-shake {
   0%,
   100% {
@@ -215,8 +264,8 @@ header > .headerFun {
   left: 75%;
   -webkit-animation-delay: 5.5s, 5s;
   animation-delay: 5.5s, 5s;
-}cursor
-.snowflake:nth-of-type(16) {
+}
+cursor .snowflake:nth-of-type(16) {
   left: 80%;
   -webkit-animation-delay: 2.5s, 2s;
   animation-delay: 2.5s, 2s;
@@ -455,7 +504,7 @@ header > .headerFun {
   }
 
   .navBar .buttonText {
-    top: -190px;
+    top: -240px;
   }
 
   .navBar .whiteBox > .mobileAniHidden {

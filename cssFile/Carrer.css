@@ -6,6 +6,7 @@
   user-select:none;
   cursor: none;
 }
+/* Normalize_end */
 
 body {
   background-color: #453630;
@@ -14,7 +15,53 @@ body {
   overflow: hidden;
   outline: none;
 }
-/* Normalize_end */
+
+/* 화면 전환 CSS */
+body {
+  animation: fadein 2000ms ease-out;
+  -moz-animation: fadein 2000ms ease-out; /* Firefox */
+  -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+  -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* mouseCursor_start */
 .mouseCursor {
@@ -41,6 +88,33 @@ body {
   top: 15%;
   overflow-y: scroll;
 }
+
+/* scroll_start */
+.section::-webkit-scrollbar {
+  width: 16px;
+}
+
+.section::-webkit-scrollbar-track {
+  background-color: #453630;
+  border-radius: 100px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}
+
+.section {
+  scrollbar-color: #D4AA70 #453630;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #9b7e4b 0%, #453630 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+/* scroll_end */
+
 /* carrerHeader_start */
 .carrerSection .carrerHeader {
   text-align: center;
@@ -213,8 +287,8 @@ body {
     font-size: 1.3rem;
   }
 
-  .carrerSection .blackBox:nth-child(9) {
-    display: none;
+  .carrerSection .whiteBox {
+    border: none;
   }
 }
 /* blackBox_end */

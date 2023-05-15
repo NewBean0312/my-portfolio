@@ -13,11 +13,25 @@ const content = "Hi. I'm YuBeen, Front-End Developer.";
 const text = document.querySelector(".text");
 let i = 0;
 
-function typing(){
+function typing() {
   if (i < content.length) {
-  let txt = content.charAt(i);
-  text.innerHTML += txt;
-  i++;
+    let txt = content.charAt(i);
+    text.innerHTML += txt;
+    i++;
   }
 }
 setInterval(typing, 150);
+
+// 화면 전환 이벤트
+jQuery(function ($) {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+  $("a.transition").click(function (event) {
+    event.preventDefault();
+    linkLocation = this.href;
+    $("body").fadeOut(1000, redirectPage);
+  });
+  function redirectPage() {
+    window.location = linkLocation;
+  }
+});

@@ -6,15 +6,62 @@
   user-select:none;
   cursor: none;
 }
+/* Normalize_end */
 
 body {
   background-color: #453630;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   outline: none;
 }
-/* Normalize_end */
+
+/* 화면 전환 CSS */
+body {
+  animation: fadein 2000ms ease-out;
+  -moz-animation: fadein 2000ms ease-out; /* Firefox */
+  -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+  -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* mouseCursor_start */
 .mouseCursor {
@@ -48,7 +95,7 @@ body {
 
 .workSection > .workShow {
   flex: 1.2;
-  background-color: white;
+  background-color: #f4f2ec;
   border: 5px solid #9b7e4b;
 }
 
