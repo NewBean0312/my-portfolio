@@ -218,6 +218,13 @@ body {
   transform: translateY(-5px);
 }
 
+.projectDescriptionBox {
+  display: inline-block;
+  width: 65%;
+  margin-left: 245px;
+  height: 130px;
+}
+
 .workSection .workShow > .showBox .slide-show .mobilePlayButton {
   display: none;
   width: 50px;
@@ -229,16 +236,23 @@ body {
   font-size: 2rem;
 }
 
-.workSection .workShow .showBox p {
+.workSection .workShow .showBox h3, p {
   font-family: 'Noto Serif KR', serif;
   color: black;
   display: inline;
   height: 100px;
-  margin-left: 80px;
-  /* margin-top: 30px; */
-  font-size: 1.4rem;
   font-weight: bold;
 }
+
+.workSection .workShow .showBox h3 {
+  margin-left: 40px;
+  font-size: 1.4rem;
+}
+
+.workSection .workShow .showBox p {
+  font-size: 1.1rem;
+}
+
 /* workShow_end */
 /* workSection_end */
 
