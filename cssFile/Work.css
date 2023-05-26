@@ -97,6 +97,7 @@ body {
   flex: 1.2;
   background-color: #f4f2ec;
   border: 5px solid #9b7e4b;
+  border-radius: 25px;
 }
 
 .workSection .workTitle {
@@ -120,7 +121,6 @@ body {
   height: 230px;
   margin-top: 50px;
   display: inline-block;
-  border-radius: 50%;
 }
 
 .workSection .lpBox > .main {
@@ -162,7 +162,7 @@ body {
 }
 /* lpBox_end */
 
-/* lpListBox_start */
+/* lpListBox_Area */
 .workSection .sliderBox > .lpListBox {
   z-index: 1;
   position: absolute;
@@ -182,29 +182,22 @@ body {
   transform: translateY(-5px);
 }
 
-/* lpListBox_end */
-
-/* workShow_start */
-.workSection .workShow > .showBox {
+/* showBox_Area */
+.showBox {
   width: 800px;
-  height: 400px;
 }
 
-.workSection .workShow > .showBox .slide-show {
-  position: relative;
+.showBox .slide-show {
   width: 100%;
-  height: 600px;
-  display: block;
   margin-top: 70px;
-  display: flex;
 }
 
-.workSection .workShow > .showBox > .main > .slide-show img {
+.showBox .slide-show img {
   width: 100%;
   height: 400px;
 }
 
-.workSection .workShow > .showBox .slide-show button {
+.showBox .slide-show button {
   color: white;
   background-color: #404040;
   border: 0;
@@ -214,18 +207,18 @@ body {
   height: 40px;
 }
 
-.workSection .workShow > .showBox > .main > .slide-show button:hover {
-  transform: translateY(-5px);
+.showBox .slide-show button:hover {
+  transform: translateY(5px);
 }
 
-.projectDescriptionBox {
+.descriptionBox {
   display: inline-block;
   width: 65%;
   margin-left: 245px;
   height: 130px;
 }
 
-.workSection .workShow > .showBox .slide-show .mobilePlayButton {
+.showBox .mobilePlayButton {
   display: none;
   width: 50px;
   height: 50px;
@@ -236,21 +229,20 @@ body {
   font-size: 2rem;
 }
 
-.workSection .workShow .showBox h3,
+.showBox h3,
 p {
   font-family: "Noto Serif KR", serif;
   color: black;
   display: inline;
-  height: 100px;
   font-weight: bold;
 }
 
-.workSection .workShow .showBox h3 {
+.showBox h3 {
   margin-left: 40px;
   font-size: 1.4rem;
 }
 
-.workSection .workShow .showBox p {
+.showBox p {
   font-size: 1.1rem;
 }
 
@@ -271,66 +263,62 @@ p {
   }
 }
 
+
 @media screen and (max-aspect-ratio: 7/6) {
   .workSection {
-    flex-direction: column;
+    display: block;
   }
 
-  .workShow {
-    width: 100%;
-  }
-
-  .workSection > .workBox {
+  .workBox {
     height: 500px;
   }
 
-  .workSection .sliderBox {
-    margin-top: 10px;
-  }
-
-  .workSection > .workBox {
-    height: 300px;
+  .workBox .lpBox {
+    margin-top: 0;
   }
 
   .workSection > .workShow {
-    width: 80%;
-    background-color: #453630;
+    width: 100%;
+    background: none;
     border: 0;
   }
 
-  .workSection .slide-show {
-    text-align: center;
+  .showBox {
+    height: 150px;
   }
 
-  .workSection .showBox .slide-show img {
+  .showBox .slide-show {
+    margin-top: 0;
+  }
+
+  .showBox .slide-show img {
     display: none;
   }
 
-  .workSection .workShow .slide-show button {
-    display: none;
+  .showBox .slide-show button {
+    color: white;
+    background-color: #9b7e4b;
+    border: 0;
+    margin-top: 0;
+    margin-left: 5px;
+    width: 90px;
+    height: 40px;
   }
 
-  .workSection .workShow > .showBox .slide-show .mobilePlayButton {
-    display: block;
-    text-align: center;
-  }
-
-  .workSection .workShow > .showBox > .main > .slide-show button:hover {
-    transform: translateY(5px);
-  }
-
-  .workSection .workShow > .showBox .slide-show h3 {
-    display: block;
-    font-size: 1rem;
+  .showBox .slide-show h3 {
+    display: inline-block;
     margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1rem;
     color: #9b7e4b;
   }
 
-  .projectDescriptionBox {
-    margin-left: 35px;
+  .showBox .slide-show p {
+    font-size: 1rem;
+    color: #9b7e4b;
   }
 
-  .projectDescriptionBox p {
-    color: #9b7e4b;
+  .descriptionBox {
+    margin-left: 13%;
   }
 }
