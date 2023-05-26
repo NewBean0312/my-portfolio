@@ -6,6 +6,7 @@ $(".slide-show").slick({
   fade: true,
   asNavFor: ".slider-nav",
 });
+
 $(".slider-nav").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
