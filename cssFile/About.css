@@ -91,41 +91,63 @@ body {
   margin: 20px 20px;
 }
 
-/* aboutContent_Area */
-.aboutBox .aboutContent {
+/* aboutContainer_Area */
+.aboutBox .aboutContainer {
   width: 100%;
   height: 700px;
   margin: 0;
   display: flex;
-  border: 3px solid blue;
 }
-/* aboutArticle_Area */
-.aboutContent .aboutArticle {
+
+/* aboutShow_Area */
+.aboutContainer .aboutShow {
+  width: 40%;
+  border: 3px solid gold;
+  position: relative;
+}
+
+.aboutShow > div {
+  position: absolute;
+  width: 400px;
+  display: none;
+}
+
+.aboutShow #imgBox1 {
+  top: 40px;
+  left: 30px;
+}
+
+.aboutShow img {
+  width: 100%;
+}
+
+/* aboutContent_Area */
+.aboutContainer .aboutContent {
   width: 60%;
   border: 3px solid red;
 }
 
-.aboutArticle > p {
+.aboutContent > h4 {
+  color: #947d60;
+}
+
+.aboutContent > p {
+  margin-top: 10px;
   font-family: "Noto Serif KR", serif;
   color: #bda486;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   line-height: 35px;
 }
 
-.aboutArticle > p > span {
+.aboutContent span {
   font-family: "Noto Serif KR", serif;
   color: #9b7e4b;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: italic;
   text-decoration: underline;
 }
 
-/* aboutShow_Area */
-.aboutContent .aboutShow {
-  width: 40%;
-  border: 3px solid gold;
-}
 /* media */
 @media screen and (max-aspect-ratio: 11/6) {
   .aboutBox {
@@ -146,9 +168,6 @@ body {
 }
 
 @media screen and (max-aspect-ratio: 5/6) {
-  body {
-    overflow-y: hidden;
-  }
   .aboutBox {
     margin-left: 0;
     left: 46%;

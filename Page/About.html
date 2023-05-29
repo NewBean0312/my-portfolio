@@ -189,16 +189,28 @@
       </div>
     </nav>
 
-    <!-- content_Area -->
+    <!-- About_Area -->
     <main class="aboutBox">
       <header class="aboutHeader">
-        <h1><i>About me.</i></h1>
+        <h1><i>About me</i></h1>
       </header>
-      <section class="aboutContent">
-        <article class="aboutArticle">
+      <section class="aboutContainer">
+        <article class="aboutShow">
+          <div id="imgBox1">
+            <img src="../img/gifFolder/imgBox1.gif" alt="imgBox1Gif">
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </article>
+        <article class="aboutContent">
+          <h4>글씨에 마우스를 갖다 대보세요!</h4>
           <p>
-            안녕하세요! <span>여행하는 홈페이지</span>를 만들고자 하는 Front-End
-            Developer <span>전유빈</span>입니다.<br />
+            안녕하세요! <span id="imgSpan1">여행하는 홈페이지</span>를 만들고자
+            하는 Front-End Developer <span>전유빈</span>입니다.<br />
             저는 마치 여행하듯이 아름답고, 편리한 홈페이지를 만들어,<br />
             사용자의 <span>기억 속에 조금이라도 남는 홈페이지</span>를 제작하는
             것이 목표이자 신념입니다.<br />
@@ -209,12 +221,29 @@
             <br />
             저의 장점인 <span>섬세함과 근성</span>을 주 무기로 삼아 꾸준히
             공부하고 나아가면서,<br />
-            새로운 것을 계속 시도할 수 있는 <span>창의적인 개발자</span>로 임하고
-            싶습니다!
+            새로운 것을 계속 시도할 수 있는 <span>창의적인 개발자</span>로
+            임하고 싶습니다!
           </p>
         </article>
-        <article class="aboutShow"></article>
       </section>
     </main>
   </body>
+  <script>
+    // hover 시, 이미지 나타나기
+    
+    const spanElement = document.getElementById("imgSpan1"); // span 태그 요소
+    const imgBox1 = document.getElementById("imgBox1"); // 이미지박스 요소
+
+    // 마우스 진입 이벤트 핸들러를 추가.
+    spanElement.addEventListener("mouseenter", function () {
+      // display: block;
+      imgBox1.style.display = "block";
+    });
+
+    // 마우스 이탈 이벤트 핸들러를 추가합니다.
+    spanElement.addEventListener("mouseleave", function () {
+      // display: none;
+      imgBox1.style.display = "";
+    });
+  </script>
 </html>
