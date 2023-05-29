@@ -1,9 +1,7 @@
 /* Normalize_start */
 * {
-  margin: 0 auto;
-  padding: 0 auto;
   font-family: "Libre Baskerville", serif;
-  user-select:none;
+  user-select: none;
   cursor: none;
 }
 
@@ -15,10 +13,7 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
-}
-
-/* 화면 전환 CSS */
-body {
+  /* 화면 전환 CSS */
   animation: fadein 2000ms ease-out;
   -moz-animation: fadein 2000ms ease-out; /* Firefox */
   -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
@@ -64,8 +59,7 @@ body {
   }
 }
 
-
-/* mouseCursor_start */
+/* mouseCursor_Area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -79,43 +73,39 @@ body {
 .mouseCursor > i {
   font-size: 30px;
 }
-/* mouseCursor_end */
 
-/* aboutBox_start */
+/* aboutBox_Area */
 .aboutBox {
   z-index: -1;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 12%;
   width: 100%;
-  height: 900px;
-  margin-left: 25%;
+  height: 88%;
 }
 
-/* aboutHeader_start */
-.aboutBox .aboutHeader {
-  flex: 1;
-  width: 100%;
-}
-
-.aboutBox .aboutHeader > h1 {
+/* aboutHeader_Area */
+.aboutHeader {
+  text-align: center;
   color: #9b7e4b;
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin: 20px 20px;
 }
-/* aboutHeader_end */
 
-/* aboutArticle_start */
-.aboutBox .aboutArticle {
-  flex: 6;
+/* aboutContent_Area */
+.aboutBox .aboutContent {
   width: 100%;
-  margin: 0 20px;
+  height: 700px;
+  margin: 0;
+  display: flex;
+  border: 3px solid blue;
+}
+/* aboutArticle_Area */
+.aboutContent .aboutArticle {
+  width: 60%;
+  border: 3px solid red;
 }
 
-.aboutBox .aboutArticle > p {
+.aboutArticle > p {
   font-family: "Noto Serif KR", serif;
   color: #bda486;
   font-size: 1.1rem;
@@ -123,16 +113,19 @@ body {
   line-height: 35px;
 }
 
-.aboutBox .aboutArticle > p > span {
+.aboutArticle > p > span {
   font-family: "Noto Serif KR", serif;
   color: #9b7e4b;
   font-size: 1.2rem;
   font-style: italic;
   text-decoration: underline;
 }
-/* aboutArticle_end */
-/* aboutBox_end */
 
+/* aboutShow_Area */
+.aboutContent .aboutShow {
+  width: 40%;
+  border: 3px solid gold;
+}
 /* media */
 @media screen and (max-aspect-ratio: 11/6) {
   .aboutBox {
