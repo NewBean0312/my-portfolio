@@ -102,8 +102,22 @@ body {
 /* aboutShow_Area */
 .aboutContainer .aboutShow {
   width: 40%;
+  background: url("../img/imgBoxBoard.jpg");
+  background-size: cover;
   border: 3px solid gold;
   position: relative;
+}
+
+.aboutShow::before {
+  /* aboutSHow의 배경화면에 투명도를 주기 위한 CSS */
+  content: "";
+  opacity: 0.7; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
 }
 
 .aboutShow > div {
@@ -115,10 +129,48 @@ body {
 .aboutShow #imgBox1 {
   top: 40px;
   left: 30px;
+  width: 400px;
+}
+
+.aboutShow #imgBox2 {
+  top: 80px;
+  right: 60px;
+  width: 300px;
+}
+
+.aboutShow #imgBox3 {
+  top: 160px;
+  left: 70px;
+  width: 350px;
+}
+
+.aboutShow #imgBox4 {
+  top: 200px;
+  right: 90px;
+  width: 400px;
+}
+
+.aboutShow #imgBox5 {
+  top: 240px;
+  left: 90px;
+  width: 400px;
+}
+
+.aboutShow #imgBox6 {
+  top: 300px;
+  right: 50px;
+  width: 350px;
+}
+
+.aboutShow #imgBox7 {
+  top: 350px;
+  right: 150px;
+  width: 250px;
 }
 
 .aboutShow img {
   width: 100%;
+  border-radius: 25px;
 }
 
 /* aboutContent_Area */
@@ -128,11 +180,15 @@ body {
 }
 
 .aboutContent > h4 {
-  color: #947d60;
+  color: #9b7e4b;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 .aboutContent > p {
-  margin-top: 10px;
+  margin-top: 90px;
+  margin-left: 20px;
   font-family: "Noto Serif KR", serif;
   color: #bda486;
   font-size: 1.4rem;
@@ -146,6 +202,10 @@ body {
   font-size: 1.5rem;
   font-style: italic;
   text-decoration: underline;
+}
+
+.aboutContent span:hover {
+  color: #ffce78;
 }
 
 /* media */
