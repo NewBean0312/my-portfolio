@@ -1,12 +1,11 @@
-/* Normalize_start */
+/* Normalize_Area */
 * {
   margin: 0 auto;
   padding: 0 auto;
   font-family: "Libre Baskerville", serif;
-  user-select:none;
+  user-select: none;
   cursor: none;
 }
-/* Normalize_end */
 
 body {
   background-color: #453630;
@@ -63,7 +62,7 @@ body {
   }
 }
 
-/* mouseCursor_start */
+/* mouseCursor_Area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -77,9 +76,8 @@ body {
 .mouseCursor > i {
   font-size: 30px;
 }
-/* mouseCursor_end */
 
-/* linkSection_start */
+/* linkSection_Area */
 .linkSection {
   z-index: -1;
   display: flex;
@@ -122,13 +120,17 @@ body {
   font-size: 1.5rem;
 }
 
+.linkSection .linkList > .linkItem:hover > button,
+.linkSection .linkList > .linkItem:hover > i {
+  color: #ffce78;
+}
+
 .linkSection .linkList > .linkItem > button {
   color: #9b7e4b;
   background-color: #453630;
   margin-left: 10px;
   border: 0;
   font-size: 1.5rem;
-  cursor: pointer;
 }
 
 .linkSection .linkImgBox > img {
