@@ -21,3 +21,4 @@ jQuery(function ($) {
     window.location = linkLocation;
   }
 });
+

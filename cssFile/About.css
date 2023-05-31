@@ -104,7 +104,6 @@ body {
   width: 40%;
   background: url("../img/imgBoxBoard.jpg");
   background-size: cover;
-  border: 3px solid gold;
   position: relative;
 }
 
@@ -176,7 +175,6 @@ body {
 /* aboutContent_Area */
 .aboutContainer .aboutContent {
   width: 60%;
-  border: 3px solid red;
 }
 
 .aboutContent > h4 {
@@ -263,7 +261,6 @@ body {
 
   .aboutContainer {
     flex-direction: column-reverse;
-    border: 1px solid gold;
   }
 
   .aboutShow {
