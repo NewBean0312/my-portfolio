@@ -1,12 +1,9 @@
-/* Normalize_start */
+/* Normalize_Area */
 * {
-  margin: 0 auto;
-  padding: 0 auto;
   font-family: "Libre Baskerville", serif;
   user-select:none;
   cursor: none;
 }
-/* Normalize_end */
 
 body {
   background-color: #453630;
@@ -14,10 +11,7 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
-}
-
-/* 화면 전환 CSS */
-body {
+  /* 화면 전환 CSS */
   animation: fadein 2000ms ease-out;
   -moz-animation: fadein 2000ms ease-out; /* Firefox */
   -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
@@ -63,7 +57,7 @@ body {
   }
 }
 
-/* mouseCursor_start */
+/* mouseCursor_Area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -77,8 +71,8 @@ body {
 .mouseCursor > i {
   font-size: 30px;
 }
-/* mouseCursor_end */
 
+/* .skillsSection_Area */
 .skillsSection {
   z-index: -1;
   position: absolute;
@@ -87,38 +81,42 @@ body {
   top: 17%;
 }
 
-/* skillsHeader_start */
+/* skillsHeader_Area */
 .skillsSection > .skillsHeader {
   width: 35%;
   height: 50px;
   text-align: center;
   color: #9b7e4b;
   font-size: 1.7rem;
+  margin: 0 auto;
   border-bottom: 1px solid #9b7e4b;
 }
 
-.skillsSection > .skillsHeader > div {
+.skillsHeader > div {
   width: 100%;
   height: 4px;
-  border-bottom: 3px solid #9b7e4b;
+  border-top: 3px solid #9b7e4b;
+  transform: translateY(-25px);
 }
-/* skillsHeader_end */
 
-/* skillsArticle_start */
+/* skillsArticle_Area */
 .skillsSection .skillsArticle {
   width: 95%;
   height: 100%;
+  margin: 0 auto;
 }
 
-.skillsSection .skillsArticle > .noteBox {
+.skillsArticle > .noteBox {
   display: flex;
   width: 95%;
   height: 160px;
   border-top: 2px solid #9b7e4b;
   margin-top: 3.5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.skillsSection .skillsArticle > .noteBox > .noteBoxRow {
+.skillsArticle .noteBoxRow {
   flex: 1;
   position: relative;
   display: flex;
@@ -126,140 +124,137 @@ body {
   border-right: 7px solid #9b7e4b;
 }
 
-.skillsSection .skillsArticle > .noteBox .noteBoxCol {
+.skillsArticle .noteBoxCol {
   position: relative;
   flex: 1;
   width: 100%;
   border-bottom: 2px solid #9b7e4b;
 }
 
-.skillsSection .skillsArticle > .noteBox .noteBoxTitle {
+.skillsArticle .noteBoxTitle {
   color: #9b7e4b;
   font-size: 1.1rem;
   font-weight: bold;
   transform: translateY(-25px);
 }
 
-.skillsSection .skillsArticle > .noteBox .imgIcon {
+.skillsArticle .imgIcon {
   z-index: 1;
   position: absolute;
   width: 50px;
   height: 50px;
 }
 
-.skillsSection .skillsArticle > .noteBox .imgIcon > img {
+.imgIcon > img {
   width: 100%;
   height: 100%;
 }
 
-/* img_percent_start */ 
-.skillsSection .skillsArticle > .noteBox .htmlPercent {
+/* Icon_img Area */ 
+.htmlIcon {
   left: 10%;
   top: -12px;
 }
 
-.skillsSection .skillsArticle > .noteBox .cssPercent {
+.cssIcon {
   left: 40%;
   top: -12px;
 }
 
-.skillsSection .skillsArticle > .noteBox .jsPercent {
+.jsIcon {
   left: 75%;
   top: 8px;
 }
 
-.skillsSection .skillsArticle > .noteBox .reactPercent {
+.reactIcon {
   left: 10%;
   top: 17px;
 }
 
-.skillsSection .skillsArticle > .noteBox .dbmsPercent {
+.dbmsIcon {
   left: 10%;
   top: -6px;
 }
 
-.skillsSection .skillsArticle > .noteBox .linuxPercent {
+.linuxIcon {
   left: 75%;
   top: 40px;
 }
 
-.skillsSection .skillsArticle > .noteBox .gitPercent {
+.gitIcon {
   left: 10%;
   top: 12px;
 }
 
-.skillsSection .skillsArticle > .noteBox .githubPercent {
+.githubIcon {
   left: 75%;
   top: 12px;
 }
 
-.skillsSection .skillsArticle > .noteBox .rPercent {
+.rIcon {
   left: 10%;
   top: 75px;
 }
-/* img_percent_end */ 
 
-.skillsSection .skillsArticle > .noteBox > .noteLastLine {
+/* noteLastLine_Area */
+.noteBox > .noteLastLine {
   position: relative;
   border-right: 10px solid #9b7e4b;
 }
 
-.skillsSection .skillsArticle > .noteBox .noteLine {
+.noteBox .noteLine {
   position: absolute;
   height: 160px;
   right: 6%;
   border-right: 6px solid #9b7e4b;
 }
-/* skillsArticle_end */
 
 /* media */
-/* noteBox_start */
 @media screen and (max-aspect-ratio: 5/6) {
-  .skillsSection .skillsArticle > .noteBox {
+  .skillsArticle > .noteBox {
     width: 85%;
   }
 
-  .skillsSection .skillsArticle .noteBoxRow:nth-child(4) {
+  .noteBoxRow:nth-child(4) {
     display: none;
   }
 
-  .skillsSection .skillsArticle .noteBoxRow:nth-child(5) {
+  .noteBoxRow:nth-child(5) {
     display: none;
   }
 
-  .skillsSection .skillsArticle > .noteBox .noteLine {
+  .noteBox .noteLine {
     right: 12%;
     border-right: 4px solid #9b7e4b;
   }
 
-  .skillsSection .skillsArticle > .noteBox .noteBoxTitle {
+  .noteBox .noteBoxTitle {
     font-size: 0.8rem;
     transform: translateY(-17px);
   }
 
-  .skillsSection .skillsArticle > .noteBox .imgIcon {
+  .noteBox .imgIcon {
     width: 40px;
     height: 40px;
   }
 
-  .skillsSection .skillsArticle > .noteBox .jsPercent {
+  .jsIcon {
     left: 110%;
   }
 
-  .skillsSection .skillsArticle > .noteBox .reactPercent {
+  .reactIcon {
     left: 60%;
   }
 
-  .skillsSection .skillsArticle > .noteBox .linuxPercent {
+  .linuxIcon {
     left: 110%;
   }
 
-  .skillsSection .skillsArticle > .noteBox .githubPercent {
+  .githubIcon {
     left: 110%;
   }
 
-  .skillsSection .skillsArticle > .noteBox .rPercent {
+  .rIcon {
     left: 60%;
   }
 }
-/* noteBox_end */
