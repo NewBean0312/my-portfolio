@@ -164,7 +164,7 @@ body {
 .aboutShow #imgBox7 {
   top: 350px;
   right: 150px;
-  width: 250px;
+  width: 350px;
 }
 
 .aboutShow img {
@@ -180,12 +180,12 @@ body {
 .aboutContent > h4 {
   color: #9b7e4b;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-left: 20px;
 }
 
 .aboutContent > p {
-  margin-top: 90px;
+  margin-top: 60px;
   margin-left: 20px;
   font-family: "Noto Serif KR", serif;
   color: #bda486;

@@ -140,24 +140,6 @@ body {
   transform: translateY(-25px);
 }
 
-.skillsSection .skillsArticle > .noteBox .percent100 {
-  position: absolute;
-  color: #9b7e4b;
-  font-size: 0.8rem;
-  font-weight: bold;
-  top: -9px;
-  left: -37px;
-}
-
-.skillsSection .skillsArticle > .noteBox .percent0 {
-  position: absolute;
-  color: #9b7e4b;
-  font-size: 0.8rem;
-  font-weight: bold;
-  bottom: -8px;
-  left: -33px;
-}
-
 .skillsSection .skillsArticle > .noteBox .imgIcon {
   z-index: 1;
   position: absolute;
@@ -247,7 +229,7 @@ body {
 
   .skillsSection .skillsArticle > .noteBox .noteLine {
     right: 12%;
-    border-right: 4px solid #404040;
+    border-right: 4px solid #9b7e4b;
   }
 
   .skillsSection .skillsArticle > .noteBox .noteBoxTitle {
