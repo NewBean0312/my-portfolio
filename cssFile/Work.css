@@ -174,48 +174,47 @@ body {
   border-radius: 25px;
 }
 
+.showBox {
+  width: 80%;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .showBox .slide-show {
   width: 100%;
-  margin-top: 70px;
-  margin-left: 80px;
-  border: 1px solid red;
+}
+
+.showBox .slide-show > div {
+  height: 700px;
+  border-radius: 25px;
 }
 
 .showBox .slide-show img {
   width: 100%;
-  height: 400px;
+  height: 450px;
 }
 
 .showBox .slide-show button {
-  color: white;
-  background-color: #404040;
-  border: 0;
-  margin-top: 20px;
-  margin-left: 50px;
   width: 150px;
   height: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #f4f2ec;
+  background-color: #453630;
+  border: 0;
+  border-radius: 10px;
 }
 
 .showBox .slide-show button:hover {
   transform: translateY(5px);
 }
 
-.descriptionBox {
+.showBox .descriptionBox {
   display: inline-block;
   width: 65%;
   margin-left: 245px;
-  height: 130px;
-}
-
-.showBox .mobilePlayButton {
-  display: none;
-  width: 50px;
-  height: 50px;
-  margin: 0 21%;
-  margin-top: 50px;
-  background-color: #453630;
-  color: #9b7e4b;
-  font-size: 2rem;
+  height: 60px;
 }
 
 .showBox h3,
@@ -237,7 +236,7 @@ p {
 
 /* media */
 @media screen and (max-aspect-ratio: 11/6) {
-  .workSection .sliderBox > .lpListBox {
+  .workBox .lpCase {
     left: 50%;
     right: 50%;
   }
@@ -248,16 +247,21 @@ p {
     width: 50%;
   }
 
+  .showBox button {
+    margin-left: 0;
+  }
+
   .descriptionBox {
-    margin-left: 210px;
+    margin-left: 175px;
   }
 
   .showBox h3 {
-    margin-left: 6px;
+    margin-left: 22px;
+    font-size: 1.2rem;
   }
 
   .showBox p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -287,6 +291,7 @@ p {
 
   .showBox .slide-show {
     margin-top: 0;
+    border: 1px solid red;
   }
 
   .showBox .slide-show img {
@@ -306,7 +311,7 @@ p {
   .showBox .slide-show h3 {
     display: inline-block;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 80px !important;
     font-size: 1rem;
     color: #9b7e4b;
   }
@@ -317,7 +322,6 @@ p {
   }
 
   .descriptionBox {
-    margin-left: 13%;
   }
 }
 

@@ -1,16 +1,21 @@
-/* Normalize_start */
+/* Normalize_Area */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Libre Baskerville", serif;
-  user-select:none;
+  user-select: none;
 }
 
 body {
   margin: 0 auto;
   padding: 0 auto;
 }
-/* Normalize_end */
 
-/* navBar_start */
+/* mobile_screen_media */
+/* navBar_Area */
 .navBar {
   z-index: 99;
   position: fixed;
@@ -21,9 +26,7 @@ body {
   background-color: white;
 }
 
-.navBar:hover {
-  height: 200px;
-}
+
 
 .navBar > .boxGroup {
   position: relative;
@@ -33,7 +36,7 @@ body {
   height: 100%;
 }
 
-/* navBar_whiteBox_start */
+/* navBar_whiteBox_Area */
 .navBar .whiteBox {
   position: relative;
   flex: 1;
@@ -47,9 +50,8 @@ body {
 .navBar .whiteBox:hover {
   background: linear-gradient(to bottom, #f4f2ec, #dedede);
 }
-/* navBar_whiteBox_end */
 
-/* navBar_blackBox_start */
+/* navBar_blackBox_Area */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -77,24 +79,24 @@ body {
 .navBar .blackBox:nth-child(12) {
   left: 80.8%;
 }
-/* navBar_blackBox_end */
 
-/* navBar_button_start */
+/* navBar_button_Area */
 .navBar .whiteBox > button {
+  display: none;
   position: absolute;
   bottom: 5px;
   left: 3%;
   width: 95%;
   height: 47px;
   margin: 0 auto;
-  border: 1px solid white;
-  border-radius: 50%;
+  border: none;
   background-color: #453630;
+  border-radius: 20px;
   transition: background-color 0.3s;
 }
 
 .navBar .whiteBox > button > i {
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: center;
   color: #f4f2ec;
 }
@@ -109,72 +111,98 @@ body {
   transition: color 0.3s;
 }
 
-.navBar .whiteBox > button:hover .buttonText {
-  justify-content: center;
-  visibility: visible;
-  transform: translateY(-15px);
-  color: #9b7e4b;
+
+
+.navBar .whiteBox .mobileBtn {
+  display: block;
 }
 
-.navBar .buttonText {
-  width: 90%;
-  position: absolute;
-  left: -1px;
-  top: -18px;
-  color: white;
-  font-size: 100%;
-  font-weight: bold;
-  visibility: hidden;
-  user-select:none;
-  transition: color .3s, visibility .5s, transform .5s;
-}
-
-.navBar .carrerFont {
-  font-size: 98%;
-}
-
-.navBar .mobileButton {
+/* 모바일 버전 메뉴바 축소를 위한 CSS */
+.navBar > .boxGroup:nth-child(1) {
   display: none;
 }
-/* navBar_button_end */
-/* navBar_end */
 
-/* media */
-/* navBar_start */
-@media screen and (max-aspect-ratio: 11/6) {
-  .navBar > .boxGroup:nth-child(1) {
-    display: none;
-  }
+.navBar > .boxGroup:nth-child(5) {
+  display: none;
 }
 
-@media screen and (max-aspect-ratio: 9/6) {
-  .navBar > .boxGroup:nth-child(5) {
-    display: none;
-  }
+.navBar > .boxGroup:nth-child(2) {
+  display: none;
 }
 
-@media screen and (max-aspect-ratio: 7/6) {
+.navBar > .boxGroup:nth-child(3) {
+  display: none;
+}
+
+/* mobileBtn_Area */
+.mobileBtnText {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.mobileBtn:hover {
+  background-color: #dedede;
+  border: 1px solid #dedede;
+}
+
+.mobileBtn:hover .mobileBtnText {
+  color: #453630;
+}
+
+/* mobile_screen_media */
+@media all and (min-width: 768px) {
   .navBar > .boxGroup:nth-child(2) {
-    display: none;
+    display: flex;
   }
 }
 
-@media screen and (max-aspect-ratio: 5/6) {
+@media all and (min-width: 1024px) {
+  .navBar:hover {
+    height: 200px;
+  }
+
+  .navBar > .boxGroup:nth-child(1) {
+    display: flex;
+  }
+
   .navBar > .boxGroup:nth-child(3) {
+    display: flex;
+  }
+  
+  .navBar > .boxGroup:nth-child(5) {
+    display: flex;
+  }
+
+  .navBar .whiteBox .mobileBtn {
     display: none;
   }
 
   .navBar .whiteBox > button {
-    border-radius: 25px;
-    display: none;
-  }
-
-  .navBar .whiteBox .mobileButton {
     display: block;
+    border-radius: 50%;
+  }
+  
+  .navBar .whiteBox > button > i {
+    font-size: 1.3rem;
   }
 
-  .navBar .whiteBox > button > i {
-    font-size: 2rem;
+  .navBar .buttonText {
+    width: 100%;
+    position: absolute;
+    left: -1.5px;
+    top: -18px;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    visibility: hidden;
+    transition: color 0.3s, visibility 0.5s, transform 0.5s;
+  }
+
+  .navBar .whiteBox > button:hover .buttonText {
+    justify-content: center;
+    visibility: visible;
+    transform: translateY(-15px);
+    color: #9b7e4b;
   }
 }
-/* navBar_end */
