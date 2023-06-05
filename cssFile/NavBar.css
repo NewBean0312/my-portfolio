@@ -176,7 +176,7 @@ html {
     border-radius: 50%;
   }
 
-  .navBar .buttonText {
+  .navBar .btnText {
     width: 100%;
     position: absolute;
     left: -1.5px;
@@ -189,7 +189,7 @@ html {
     transition: color 0.3s, visibility 0.5s, transform 0.5s;
   }
 
-  .navBar .whiteBox > .pcBtn:hover .buttonText {
+  .navBar .whiteBox > .pcBtn:hover .btnText {
     justify-content: center;
     visibility: visible;
     transform: translateY(-15px);
