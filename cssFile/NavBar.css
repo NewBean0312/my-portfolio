@@ -15,7 +15,7 @@ body {
 }
 
 /* mobile_screen_media */
-/* navBar_Area */
+/* navBar_area */
 .navBar {
   z-index: 99;
   position: fixed;
@@ -26,8 +26,6 @@ body {
   background-color: white;
 }
 
-
-
 .navBar > .boxGroup {
   position: relative;
   display: flex;
@@ -36,7 +34,7 @@ body {
   height: 100%;
 }
 
-/* navBar_whiteBox_Area */
+/* navBar_whiteBox_area */
 .navBar .whiteBox {
   position: relative;
   flex: 1;
@@ -51,7 +49,7 @@ body {
   background: linear-gradient(to bottom, #f4f2ec, #dedede);
 }
 
-/* navBar_blackBox_Area */
+/* navBar_blackBox_area */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -60,6 +58,7 @@ body {
   top: 1;
 }
 
+/* blackBox 위치 지정 CSS */
 .navBar .blackBox:nth-child(8) {
   left: 9.97%;
 }
@@ -80,7 +79,7 @@ body {
   left: 80.8%;
 }
 
-/* navBar_button_Area */
+/* navBar_button_area */
 .navBar .whiteBox > button {
   display: none;
   position: absolute;
@@ -95,12 +94,6 @@ body {
   transition: background-color 0.3s;
 }
 
-.navBar .whiteBox > button > i {
-  font-size: 2rem;
-  text-align: center;
-  color: #f4f2ec;
-}
-
 .navBar .whiteBox > button:hover {
   background-color: #dedede;
   border: 1px solid #dedede;
@@ -110,8 +103,6 @@ body {
   color: #9b7e4b;
   transition: color 0.3s;
 }
-
-
 
 .navBar .whiteBox .mobileBtn {
   display: block;
@@ -134,7 +125,7 @@ body {
   display: none;
 }
 
-/* mobileBtn_Area */
+/* mobileBtn_area */
 .mobileBtnText {
   color: #fff;
   font-size: 1.2em;
@@ -149,13 +140,14 @@ body {
   color: #453630;
 }
 
-/* mobile_screen_media */
+/* tablet_screen_media */
 @media all and (min-width: 768px) {
   .navBar > .boxGroup:nth-child(2) {
     display: flex;
   }
 }
 
+/* pc_screen_media */
 @media all and (min-width: 1024px) {
   .navBar:hover {
     height: 200px;
@@ -177,13 +169,9 @@ body {
     display: none;
   }
 
-  .navBar .whiteBox > button {
+  .navBar .whiteBox .pcBtn {
     display: block;
     border-radius: 50%;
-  }
-  
-  .navBar .whiteBox > button > i {
-    font-size: 1.3rem;
   }
 
   .navBar .buttonText {
@@ -199,10 +187,16 @@ body {
     transition: color 0.3s, visibility 0.5s, transform 0.5s;
   }
 
-  .navBar .whiteBox > button:hover .buttonText {
+  .navBar .whiteBox > .pcBtn:hover .buttonText {
     justify-content: center;
     visibility: visible;
     transform: translateY(-15px);
     color: #9b7e4b;
+  }
+
+  .navBar .whiteBox > .pcBtn > i {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #f4f2ec;
   }
 }
