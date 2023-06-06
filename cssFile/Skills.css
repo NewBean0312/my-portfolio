@@ -1,4 +1,4 @@
-/* Normalize_Area */
+/* Normalize_area */
 * {
   font-family: "Libre Baskerville", serif;
   user-select:none;
@@ -57,7 +57,7 @@ body {
   }
 }
 
-/* mouseCursor_Area */
+/* mouseCursor_area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -72,7 +72,7 @@ body {
   font-size: 30px;
 }
 
-/* .skillsSection_Area */
+/* .skillsSection_area */
 .skillsSection {
   z-index: -1;
   position: absolute;
@@ -81,7 +81,7 @@ body {
   top: 17%;
 }
 
-/* skillsHeader_Area */
+/* skillsHeader_area */
 .skillsSection > .skillsHeader {
   width: 35%;
   height: 50px;
@@ -99,7 +99,7 @@ body {
   transform: translateY(-25px);
 }
 
-/* skillsArticle_Area */
+/* skillsArticle_area */
 .skillsSection .skillsArticle {
   width: 95%;
   height: 100%;
@@ -150,7 +150,7 @@ body {
   height: 100%;
 }
 
-/* Icon_img Area */ 
+/* Icon_img area */ 
 .htmlIcon {
   left: 10%;
   top: -12px;
@@ -196,7 +196,7 @@ body {
   top: 75px;
 }
 
-/* noteLastLine_Area */
+/* noteLastLine_area */
 .noteBox > .noteLastLine {
   position: relative;
   border-right: 10px solid #9b7e4b;

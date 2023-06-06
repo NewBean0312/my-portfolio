@@ -58,7 +58,7 @@ body {
   }
 }
 
-/* mouseCursor_Area */
+/* mouseCursor_area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -73,7 +73,7 @@ body {
   font-size: 30px;
 }
 
-/* carrerMain_Area */
+/* carrerMain_area */
 .carrerMain {
   z-index: -1;
   position: absolute;
@@ -83,7 +83,7 @@ body {
   overflow-y: scroll;
 }
 
-/* scroll_Area */
+/* scroll_area */
 .main::-webkit-scrollbar {
   width: 16px;
 }
@@ -108,7 +108,7 @@ body {
   border-radius: 100px;
 }
 
-/* carrerHeader_Area */
+/* carrerHeader_area */
 .carrerMain .carrerHeader {
   text-align: center;
   width: 100%;
@@ -120,7 +120,7 @@ body {
   margin: 20px 20px;
 }
 
-/* carrerSection_Area */
+/* carrerSection_area */
 .carrerMain .carrerSection {
   position: relative;
   width: 100%;
@@ -141,7 +141,7 @@ body {
   border-top: 5px solid #453630;
 }
 
-/* blackBox_Area */
+/* blackBox_area */
 .carrerSection .blackBox {
   position: absolute;
   width: 55%;
@@ -167,7 +167,7 @@ body {
   top: 850px;
 }
 
-/* contentBox_Area */
+/* contentBox_area */
 .carrerSection .contentBox {
   position: relative;
   display: flex;

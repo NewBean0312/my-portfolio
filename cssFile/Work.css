@@ -1,4 +1,4 @@
-/* Normalize_Area */
+/* Normalize_area */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
@@ -57,7 +57,7 @@ body {
   }
 }
 
-/* mouseCursor_Area */
+/* mouseCursor_area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -72,7 +72,7 @@ body {
   font-size: 30px;
 }
 
-/* workSection_Area */
+/* workSection_area */
 .workSection {
   z-index: -1;
   display: flex;
@@ -82,7 +82,7 @@ body {
   top: 12%;
 }
 
-/* workBox_Area */
+/* workBox_area */
 .workSection > .workBox {
   width: 40%;
 }
@@ -101,7 +101,7 @@ body {
   text-align: center; /* lpRecord를 가운데 정렬하기 위한 설정 */
 }
 
-/* lpCase_Area */
+/* lpCase_area */
 .sliderBanner > .lpCase {
   z-index: 1;
   position: absolute;
@@ -114,7 +114,7 @@ body {
   border: 5px solid #9b7e4b;
 }
 
-/* lpBox_Area */
+/* lpBox_area */
 .workSection .lpBox {
   width: 230px;
   height: 230px;
@@ -131,7 +131,7 @@ body {
   transform: translateX(-50%);
 }
 
-/* lpRecord_Area */
+/* lpRecord_area */
 .lpRecord > img {
   width: 100%;
   border-radius: 50%;
@@ -142,7 +142,7 @@ body {
   transform: translateX(60px);
 }
 
-/* arrows_Area */
+/* arrows_area */
 .arrows > .btn-arrow {
   position: absolute;
   top: 50%;
@@ -166,7 +166,7 @@ body {
   right: auto;
 }
 
-/* showBox_Area */
+/* showBox_area */
 .workSection > .workShow {
   width: 60%;
   background-color: #f4f2ec;

@@ -1,4 +1,4 @@
-/* Normalize_Area */
+/* Normalize_area */
 * {
   margin: 0;
   padding: 0;
@@ -30,19 +30,10 @@ html {
 }
 
 /* 모바일 버전 메뉴바 축소를 위한 CSS */
-.navBar > .boxGroup:nth-child(1) {
-  display: none;
-}
-
+.navBar > .boxGroup:nth-child(1),
+.navBar > .boxGroup:nth-child(2),
+.navBar > .boxGroup:nth-child(3),
 .navBar > .boxGroup:nth-child(5) {
-  display: none;
-}
-
-.navBar > .boxGroup:nth-child(2) {
-  display: none;
-}
-
-.navBar > .boxGroup:nth-child(3) {
   display: none;
 }
 
@@ -90,7 +81,6 @@ html {
 .navBar .blackBox:nth-child(12) {
   left: 80.8%;
 }
-
 
 /* navBar_button_area */
 .navBar .whiteBox > button {
@@ -157,8 +147,9 @@ html {
   .navBar > .boxGroup:nth-child(1) {
     display: flex;
   }
-  
-  .navBar > .boxGroup:nth-child(3), .navBar > .boxGroup:nth-child(4) {
+
+  .navBar > .boxGroup:nth-child(3),
+  .navBar > .boxGroup:nth-child(4) {
     display: flex;
     width: 130%;
   }
@@ -166,7 +157,7 @@ html {
   .navBar > .boxGroup:nth-child(5) {
     display: flex;
   }
-  
+
   .navBar .whiteBox .mobileBtn {
     display: none;
   }

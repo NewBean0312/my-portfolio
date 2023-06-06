@@ -1,4 +1,4 @@
-/* Normalize_Area */
+/* Normalize_area */
 * {
   font-family: "Libre Baskerville", serif;
   cursor: none;
@@ -58,7 +58,7 @@ body {
   }
 }
 
-/* header_Area */
+/* header_area */
 header {
   width: 80%;
   margin: 0 auto;
@@ -103,7 +103,7 @@ header > .titleText > h1 {
   border-right: 0.05em solid black;
 }
 
-/* snowBox_Area */
+/* snowBox_area */
 #snowBox {
   width: 100%;
   height: 100%;
@@ -284,7 +284,7 @@ header > .titleText > h1 {
   animation-delay: 1.5s, 3.5s;
 }
 
-/* mouseCursor_Area */
+/* mouseCursor_area */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -299,7 +299,7 @@ header > .titleText > h1 {
   font-size: 30px;
 }
 
-/* navBar_Area */
+/* navBar_area */
 .navBar {
   border: 3px solid #453630;
   position: absolute;
@@ -327,7 +327,7 @@ header > .titleText > h1 {
   background-color: #f4f2ec;
 }
 
-/* blackBox_Area */
+/* blackBox_area */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -356,7 +356,7 @@ header > .titleText > h1 {
   left: 80.8%;
 }
 
-/* navBar_animation_Area */
+/* navBar_animation_area */
 .navBar .animation {
   position: absolute;
   top: -45px;
@@ -385,7 +385,7 @@ header > .titleText > h1 {
   font-size: 200%;
 }
 
-/* navBar_button_Area */
+/* navBar_button_area */
 .whiteBox > button {
   position: absolute;
   bottom: 5px;
