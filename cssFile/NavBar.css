@@ -49,7 +49,7 @@ html {
 }
 
 .navBar .whiteBox:hover {
-  background: linear-gradient(to bottom, #f4f2ec, #dedede);
+  background: linear-gradient(to bottom, #dedede, #ababab);
 }
 
 /* navBar_blackBox_area */
@@ -97,8 +97,8 @@ html {
 }
 
 .navBar .whiteBox > button:hover {
-  background-color: #dedede;
-  border: 1px solid #dedede;
+  background-color: #ababab;
+  border: 1px solid #ababab;
 }
 
 .navBar .whiteBox > button:hover > i {
@@ -114,11 +114,6 @@ html {
 .mobileBtn .mobileBtnText {
   color: #fff;
   font-size: 1.2em;
-}
-
-.mobileBtn:hover {
-  background-color: #dedede;
-  border: 1px solid #dedede;
 }
 
 .mobileBtn:hover .mobileBtnText {
