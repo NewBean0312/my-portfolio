@@ -139,7 +139,8 @@ html {
     height: 200px;
   }
 
-  .navBar > .boxGroup:nth-child(1) {
+  .navBar > .boxGroup:nth-child(1),
+  .navBar > .boxGroup:nth-child(5) {
     display: flex;
   }
 
@@ -147,10 +148,6 @@ html {
   .navBar > .boxGroup:nth-child(4) {
     display: flex;
     width: 130%;
-  }
-
-  .navBar > .boxGroup:nth-child(5) {
-    display: flex;
   }
 
   .navBar .whiteBox .mobileBtn {

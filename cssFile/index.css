@@ -1,12 +1,11 @@
-/* Normalize_area */
+/* normalize_area */
 * {
-  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
   cursor: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #453630;
   width: 100%;
   height: 100%;
@@ -60,6 +59,7 @@ body {
 
 /* header_area */
 header {
+  font-family: "Libre Baskerville", serif;
   width: 80%;
   margin: 0 auto;
   height: 150px;
@@ -94,7 +94,12 @@ header > .titleText > h1 {
   user-select: none;
 }
 
+header > .titleText h1 {
+  font-size: 2rem;
+}
+
 .mainText {
+  font-family: "Libre Baskerville", serif;
   color: #9b7e4b;
   font-size: 1.5rem;
   font-weight: bold;
@@ -318,6 +323,15 @@ header > .titleText > h1 {
   height: 100%;
 }
 
+/* 모바일 버전 메뉴바 축소를 위한 CSS */
+.navBar > .boxGroup:nth-child(1),
+.navBar > .boxGroup:nth-child(2),
+.navBar > .boxGroup:nth-child(3),
+.navBar > .boxGroup:nth-child(5) {
+  display: none;
+}
+
+/* navBar_whiteBox_area */
 .navBar .whiteBox {
   position: relative;
   flex: 1;
@@ -327,7 +341,11 @@ header > .titleText > h1 {
   background-color: #f4f2ec;
 }
 
-/* blackBox_area */
+.navBar .whiteBox:hover {
+  background: linear-gradient(to bottom, #dedede, #ababab);
+}
+
+/* navBar_blackBox_area */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -336,6 +354,7 @@ header > .titleText > h1 {
   top: 1;
 }
 
+/* blackBox 위치 지정 CSS */
 .blackBox:nth-child(8) {
   left: 9.97%;
 }
@@ -363,16 +382,9 @@ header > .titleText > h1 {
   width: 40px;
   height: 40px;
   color: #453630;
+  font-size: 200%;
   visibility: hidden;
   transition: color 0.2s, transform 2s;
-}
-
-.navBar .mobileAni {
-  display: none;
-}
-
-.whiteBox:hover {
-  background: linear-gradient(to bottom, #f4f2ec, #dedede);
 }
 
 .whiteBox:hover > .animation {
@@ -381,128 +393,126 @@ header > .titleText > h1 {
   color: #9b7e4b;
 }
 
-.navBar .animation {
-  font-size: 200%;
+.navBar .mobileAni {
+  display: block;
 }
 
 /* navBar_button_area */
-.whiteBox > button {
+.navBar .whiteBox > button {
+  display: none;
   position: absolute;
   bottom: 5px;
   left: 3%;
   width: 95%;
-  height: 47px;
-  margin: 0 auto;
-  border: 1px solid #f4f2ec;
-  border-radius: 50%;
+  height: 40px;
+  border: none;
   background-color: #453630;
+  border-radius: 20px;
   transition: background-color 0.3s;
 }
 
-.whiteBox > button > i {
-  font-size: 1.3rem;
-  text-align: center;
-  color: #f4f2ec;
+.navBar .whiteBox > button:hover {
+  background-color: #ababab;
+  border: 0.5px solid #ababab;
 }
 
-.whiteBox > button:hover {
-  background-color: #dedede;
-  border: 0.5px solid #dedede;
-}
-
-.whiteBox > button:hover > i {
+.navBar .whiteBox > button:hover > i {
   color: #9b7e4b;
   transition: color 0.3s;
 }
 
-.navBar .buttonText {
-  width: 90%;
+.navBar .btnText {
   position: absolute;
   left: -1px;
-  top: -220px;
+  top: -230px;
   color: #453630;
-  font-size: 150%;
+  font-size: 1.5rem;
+  text-align: center;
   font-weight: bold;
   visibility: hidden;
   user-select: none;
-  user-select: none;
-  transition: color 0.3s, visibility 0.5s, transform 0.5s;
+  transition: color 0.3s, visibility 1s, transform 1s;
 }
 
-.whiteBox > button:hover .buttonText {
+.navBar .whiteBox > button:hover .btnText {
   justify-content: center;
   visibility: visible;
   transform: translateY(-30px);
   color: #9b7e4b;
 }
 
-.navBar .mobileButton {
-  display: none;
+/* mobileBtn_area */
+.navBar .whiteBox .mobileBtn {
+  display: block;
 }
 
-.mobileButton a {
-  text-decoration: none;
+.mobileBtn .mobileBtnText {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.mobileBtn:hover .mobileBtnText {
   color: #9b7e4b;
 }
 
-.buttonText div {
-  font-size: 0.3rem;
+.navBar .whiteBox > .pcAniHidden {
+  display: block;
 }
 
-/* media */
-@media screen and (max-aspect-ratio: 11/6) {
-  .navBar > .boxGroup:nth-child(1) {
-    display: none;
-  }
-}
-
-@media screen and (max-aspect-ratio: 9/6) {
-  .navBar > .boxGroup:nth-child(5) {
-    display: none;
-  }
-}
-
-@media screen and (max-aspect-ratio: 7/6) {
+@media all and (min-width: 768px) {
   .navBar > .boxGroup:nth-child(2) {
-    display: none;
+    display: flex;
+  }
+
+  
+}
+
+/* pc_screen_media */
+@media all and (min-width: 1024px) {
+  .navBar .whiteBox > .mobileBtn {
+    height: 43px;
   }
 }
 
-@media screen and (max-aspect-ratio: 5/6) {
-  body {
-    -webkit-tap-highlight-color: transparent;
+/* lagePC_screen_media */
+@media all and (min-width: 1440px) {
+  header > .titleText > h1 {
+    font-size: 4rem;
   }
 
-  header > .titleText h1 {
-    font-size: 2rem;
+  .navBar > .boxGroup:nth-child(1),
+  .navBar > .boxGroup:nth-child(5) {
+    display: flex;
   }
 
-  .navBar > .boxGroup:nth-child(3) {
+  .navBar > .boxGroup:nth-child(3),
+  .navBar > .boxGroup:nth-child(4) {
+    display: flex;
+  }
+
+  .navBar .whiteBox .mobileBtn {
     display: none;
   }
 
-  .navBar .whiteBox > button {
-    border-radius: 25px;
+  .navBar .whiteBox .pcBtn {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .navBar .whiteBox > .pcAniHidden {
     display: none;
+  }
+
+  .navBar .whiteBox > .pcBtn > i {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f4f2ec;
   }
 
   .navBar .mobileAni {
-    display: block;
-  }
-
-  .navBar .buttonText {
-    top: -240px;
-  }
-
-  .navBar .whiteBox > .mobileAniHidden {
     display: none;
   }
 
-  .navBar .whiteBox .mobileButton {
-    display: block;
-  }
 
-  .navBar .whiteBox > button > i {
-    font-size: 2rem;
-  }
+  
 }

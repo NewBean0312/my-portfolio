@@ -75,119 +75,117 @@ body {
 }
 
 /* mobile_screen_media */
-@media all and (min-width: 500px) {
-  /* aboutBox_area */
-  .aboutBox {
-    z-index: -1;
-    position: absolute;
-    top: 12%;
-    width: 100%;
-    height: 88%;
-  }
+/* aboutBox_area */
+.aboutBox {
+  z-index: -1;
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height: 88%;
+}
 
-  /* aboutHeader_area */
-  .aboutHeader {
-    text-align: center;
-    color: #9b7e4b;
-    font-size: 1rem;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
+/* aboutHeader_area */
+.aboutHeader {
+  text-align: center;
+  color: #9b7e4b;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 
-  /* aboutContainer_area */
-  .aboutBox .aboutContainer {
-    width: 100%;
-    height: 700px;
-    margin: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  }
+/* aboutContainer_area */
+.aboutBox .aboutContainer {
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
 
-  /* aboutShow_area */
-  .aboutContainer .aboutShow {
-    width: 100%;
-    height: 50%;
-    background: url("../img/imgBoxBoard.jpg");
-    background-size: cover;
-    position: relative;
-  }
+/* aboutShow_area */
+.aboutContainer .aboutShow {
+  width: 100%;
+  height: 50%;
+  background: url("../img/imgBoxBoard.jpg");
+  background-size: cover;
+  position: relative;
+}
 
-  .aboutShow::before {
-    /* aboutSHow의 배경화면에 투명도를 주기 위한 CSS */
-    content: "";
-    opacity: 0.7;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: #000;
-  }
+.aboutShow::before {
+  /* aboutSHow의 배경화면에 투명도를 주기 위한 CSS */
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
+}
 
-  .aboutShow > div {
-    position: absolute;
-    width: 400px;
-    display: none;
-  }
+.aboutShow > div {
+  position: absolute;
+  width: 400px;
+  display: none;
+}
 
-  .aboutShow #imgBox1,
-  #imgBox2,
-  #imgBox3,
-  #imgBox4,
-  #imgBox5,
-  #imgBox6,
-  #imgBox7 {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+.aboutShow #imgBox1,
+#imgBox2,
+#imgBox3,
+#imgBox4,
+#imgBox5,
+#imgBox6,
+#imgBox7 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 
-  .aboutShow img {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-  }
+.aboutShow img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
 
-  /* aboutContent_area */
-  .aboutContainer .aboutContent {
-    width: 100%;
-    height: 50%;
-  }
+/* aboutContent_area */
+.aboutContainer .aboutContent {
+  width: 100%;
+  height: 50%;
+}
 
-  .aboutContent > h4 {
-    color: #9b7e4b;
-    font-weight: bold;
-    margin-top: 80px;
-    margin-left: 20px;
-    display: none;
-  }
+.aboutContent > h4 {
+  color: #9b7e4b;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-left: 20px;
+  display: none;
+}
 
-  .aboutContent > p {
-    margin-top: 0;
-    font-family: "Noto Serif KR", serif;
-    color: #bda486;
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-    line-height: 35px;
-  }
+.aboutContent > p {
+  margin-top: 0;
+  font-family: "Noto Serif KR", serif;
+  color: #bda486;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 35px;
+}
 
-  .aboutContent span {
-    font-family: "Noto Serif KR", serif;
-    color: #9b7e4b;
-    font-size: 0.9rem;
-    font-style: italic;
-    text-decoration: underline;
-  }
+.aboutContent span {
+  font-family: "Noto Serif KR", serif;
+  color: #9b7e4b;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-decoration: underline;
+}
 
-  .aboutContent span:hover {
-    color: #ffce78;
-  }
+.aboutContent span:hover {
+  color: #ffce78;
+}
 
-  .mobileSpace {
-    display: none;
-  }
+.mobileSpace {
+  display: none;
 }
 /* tablet_screen_media */
 @media all and (min-width: 768px) {
