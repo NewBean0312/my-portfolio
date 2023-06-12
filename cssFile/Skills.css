@@ -1,8 +1,10 @@
-/* Normalize_area */
+/* normalizeArea */
 * {
   font-family: "Libre Baskerville", serif;
-  user-select:none;
+  user-select: none;
   cursor: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -57,7 +59,7 @@ body {
   }
 }
 
-/* mouseCursor_area */
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -72,7 +74,7 @@ body {
   font-size: 30px;
 }
 
-/* .skillsSection_area */
+/* .skillsSectionArea */
 .skillsSection {
   z-index: -1;
   position: absolute;
@@ -81,10 +83,10 @@ body {
   top: 17%;
 }
 
-/* skillsHeader_area */
+/* skillsHeaderArea */
 .skillsSection > .skillsHeader {
   width: 35%;
-  height: 50px;
+  height: 60px;
   text-align: center;
   color: #9b7e4b;
   font-size: 1.7rem;
@@ -96,10 +98,9 @@ body {
   width: 100%;
   height: 4px;
   border-top: 3px solid #9b7e4b;
-  transform: translateY(-25px);
 }
 
-/* skillsArticle_area */
+/* skillsArticleArea */
 .skillsSection .skillsArticle {
   width: 95%;
   height: 100%;
@@ -108,7 +109,7 @@ body {
 
 .skillsArticle > .noteBox {
   display: flex;
-  width: 95%;
+  width: 85%;
   height: 160px;
   border-top: 2px solid #9b7e4b;
   margin-top: 3.5%;
@@ -124,6 +125,14 @@ body {
   border-right: 7px solid #9b7e4b;
 }
 
+.noteBoxRow:nth-child(4) {
+  display: none;
+}
+
+.noteBoxRow:nth-child(5) {
+  display: none;
+}
+
 .skillsArticle .noteBoxCol {
   position: relative;
   flex: 1;
@@ -133,16 +142,16 @@ body {
 
 .skillsArticle .noteBoxTitle {
   color: #9b7e4b;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  transform: translateY(-25px);
+  transform: translateY(-17px);
 }
 
 .skillsArticle .imgIcon {
   z-index: 1;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .imgIcon > img {
@@ -150,7 +159,7 @@ body {
   height: 100%;
 }
 
-/* Icon_img area */ 
+/* iconArea */
 .htmlIcon {
   left: 10%;
   top: -12px;
@@ -161,24 +170,9 @@ body {
   top: -12px;
 }
 
-.jsIcon {
-  left: 75%;
-  top: 8px;
-}
-
-.reactIcon {
-  left: 10%;
-  top: 17px;
-}
-
 .dbmsIcon {
   left: 10%;
   top: -6px;
-}
-
-.linuxIcon {
-  left: 75%;
-  top: 40px;
 }
 
 .gitIcon {
@@ -186,17 +180,27 @@ body {
   top: 12px;
 }
 
+.jsIcon {
+  left: 110%;
+}
+
+.reactIcon {
+  left: 60%;
+}
+
+.linuxIcon {
+  left: 110%;
+}
+
 .githubIcon {
-  left: 75%;
-  top: 12px;
+  left: 110%;
 }
 
 .rIcon {
-  left: 10%;
-  top: 75px;
+  left: 60%;
 }
 
-/* noteLastLine_area */
+/* noteLastLineArea */
 .noteBox > .noteLastLine {
   position: relative;
   border-right: 10px solid #9b7e4b;
@@ -205,56 +209,64 @@ body {
 .noteBox .noteLine {
   position: absolute;
   height: 160px;
-  right: 6%;
-  border-right: 6px solid #9b7e4b;
+  right: 12%;
+  border-right: 4px solid #9b7e4b;
 }
 
-/* media */
-@media screen and (max-aspect-ratio: 5/6) {
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 1440px) {
   .skillsArticle > .noteBox {
-    width: 85%;
+    width: 95%;
   }
 
   .noteBoxRow:nth-child(4) {
-    display: none;
+    display: flex;
   }
 
   .noteBoxRow:nth-child(5) {
-    display: none;
-  }
-
-  .noteBox .noteLine {
-    right: 12%;
-    border-right: 4px solid #9b7e4b;
+    display: flex;
   }
 
   .noteBox .noteBoxTitle {
-    font-size: 0.8rem;
-    transform: translateY(-17px);
+    font-size: 1.1rem;
+    transform: translateY(-25px);
   }
 
   .noteBox .imgIcon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
+  /* iconArea */
   .jsIcon {
-    left: 110%;
+    left: 75%;
+    top: 8px;
   }
 
   .reactIcon {
-    left: 60%;
+    left: 10%;
+    top: 17px;
   }
 
   .linuxIcon {
-    left: 110%;
+    left: 75%;
+    top: 40px;
   }
 
   .githubIcon {
-    left: 110%;
+    left: 75%;
+    top: 12px;
   }
 
   .rIcon {
-    left: 60%;
+    left: 10%;
+    top: 75px;
+  }
+
+  .noteBox .noteLine {
+    right: 6%;
+    border-right: 6px solid #9b7e4b;
   }
 }

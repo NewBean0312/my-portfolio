@@ -1,10 +1,11 @@
-/* Normalize_start */
+/* normalizeArea */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
   cursor: none;
+  margin: 0;
+  padding: 0;
 }
-/* Normalize_end */
 
 body {
   background-color: #453630;
@@ -58,7 +59,7 @@ body {
   }
 }
 
-/* mouseCursor_area */
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -73,7 +74,7 @@ body {
   font-size: 30px;
 }
 
-/* carrerMain_area */
+/* carrerMainArea */
 .carrerMain {
   z-index: -1;
   position: absolute;
@@ -83,7 +84,7 @@ body {
   overflow-y: scroll;
 }
 
-/* scroll_area */
+/* scrollArea */
 .main::-webkit-scrollbar {
   width: 16px;
 }
@@ -108,7 +109,7 @@ body {
   border-radius: 100px;
 }
 
-/* carrerHeader_area */
+/* carrerHeaderArea */
 .carrerMain .carrerHeader {
   text-align: center;
   width: 100%;
