@@ -32,8 +32,7 @@
     <div class="mouseCursor">
       <i class="fa-solid fa-arrow-pointer"></i>
     </div>
-
-    <!-- navBar area -->
+    <!-- navBarArea -->
     <nav class="navBar">
       <div class="boxGroup">
         <div class="whiteBox"></div>
@@ -68,15 +67,15 @@
         <div class="whiteBox"></div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button type="button" onClick="location.href='../index.html'">
-            <div class="buttonText">Main</div>
+          <button class="pcBtn" onClick="location.href='../index.html'">
+            <div class="btnText">main</div>
             <i class="fa-solid fa-m"></i>
           </button>
         </div>
         <div class="whiteBox"></div>
         <div class="whiteBox">
-          <button type="button" onClick="location.href='./About.html'">
-            <div class="buttonText">About</div>
+          <button class="pcBtn" onClick="location.href='./about.html'">
+            <div class="btnText">about</div>
             <i class="fa-solid fa-a"></i>
           </button>
         </div>
@@ -89,81 +88,51 @@
       </div>
       <div class="boxGroup">
         <div class="whiteBox">
-          <button type="button" onClick="location.href='./Carrer.html'">
-            <div class="buttonText carrerFont">Carrer</div>
+          <button class="pcBtn" onClick="location.href='./carrer.html'">
+            <div class="btnText">carrer</div>
             <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileButton 실행 -->
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='../index.html'"
-          >
-            <div class="buttonText">Main</div>
-            <i class="fa-solid fa-m"></i>
+          <!-- 브라우저 너비가 스마트폰 크기일 경우, mobileBtn 실행 -->
+          <button class="mobileBtn" onClick="location.href='../index.html'">
+            <div class="mobileBtnText">main</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./About.html'"
-          >
-            <div class="buttonText">About</div>
-            <i class="fa-solid fa-a"></i>
+          <button class="mobileBtn" onClick="location.href='./about.html'">
+            <div class="mobileBtnText">about</div>
           </button>
-          <button type="button" onClick="location.href='./Skills.html'">
-            <div class="buttonText">Skills</div>
+          <button class="pcBtn" onClick="location.href='./skills.html'">
+            <div class="btnText">skills</div>
             <i class="fa-solid fa-s"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Carrer.html'"
-          >
-            <div class="buttonText carrerFont">Carrer</div>
-            <i class="fa-solid fa-c"></i>
+          <button class="mobileBtn" onClick="location.href='./carrer.html'">
+            <div class="mobileBtnText">carrer</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Skills.html'"
-          >
-            <div class="buttonText">Skills</div>
-            <i class="fa-solid fa-s"></i>
+          <button class="mobileBtn" onClick="location.href='./skills.html'">
+            <div class="mobileBtnText">skills</div>
           </button>
-          <button type="button" onClick="location.href='./Work.html'">
-            <div class="buttonText">Work</div>
+          <button class="pcBtn" onClick="location.href='./work.html'">
+            <div class="btnText">work</div>
             <i class="fa-solid fa-w"></i>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Work.html'"
-          >
-            <div class="buttonText">Work</div>
-            <i class="fa-solid fa-w"></i>
+          <button class="mobileBtn" onClick="location.href='./work.html'">
+            <div class="mobileBtnText">work</div>
           </button>
         </div>
         <div class="whiteBox">
-          <button
-            class="mobileButton"
-            type="button"
-            onClick="location.href='./Link.html'"
-          >
-            <div class="buttonText">Link</div>
-            <i class="fa-solid fa-l"></i>
+          <button class="mobileBtn" onClick="location.href='./link.html'">
+            <div class="mobileBtnText">link</div>
           </button>
-          <button type="button" onClick="location.href='./Link.html'">
-            <div class="buttonText">Link</div>
+          <button class="pcBtn" onClick="location.href='./link.html'">
+            <div class="btnText">link</div>
             <i class="fa-solid fa-l"></i>
           </button>
         </div>
@@ -188,21 +157,20 @@
         <div class="blackBox"></div>
       </div>
     </nav>
-
-    <!-- contentArea -->
+    <!-- linkSectionArea -->
     <section class="linkSection">
-      <article class="linkBox">
-        <div class="LinkTitle">
+      <article class="linkListContainer">
+        <div class="linkTitle">
           <h1><i>Link</i></h1>
         </div>
-        <div class="linkList">
+        <div class="linkListBox">
           <div class="linkItem">
             <i class="fa-solid fa-envelope fa-lg"></i>
             <button
               type="button"
-              onClick="window.open('https://mail.naver.com/v2/new')"
+              onClick="window.open('https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new')"
             >
-              juv6262@naver.com
+              newbean0312@gmail.com
             </button>
           </div>
           <div class="linkItem">
@@ -234,7 +202,7 @@
           </div>
         </div>
       </article>
-      <article class="linkImgBox">
+      <article class="linkImgContainer">
         <img src="../img/LinkImage.jpg" alt="이미지 로드" />
       </article>
     </section>

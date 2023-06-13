@@ -1,10 +1,10 @@
 /* NormalizeArea */
 * {
-  margin: 0 auto;
-  padding: 0 auto;
   font-family: "Libre Baskerville", serif;
   user-select: none;
   cursor: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -13,10 +13,7 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
-}
-
-/* 화면 전환 CSS */
-body {
+  /* 화면 전환 CSS */
   animation: fadein 2000ms ease-out;
   -moz-animation: fadein 2000ms ease-out; /* Firefox */
   -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
@@ -87,45 +84,38 @@ body {
   top: 12%;
 }
 
-.linkSection > .linkBox {
+/* linkListContainerArea */
+.linkSection > .linkListContainer {
   flex: 1;
 }
 
-.linkSection > .linkImgBox {
-  flex: 1.2;
-}
-
-.linkSection .LinkTitle {
+.linkListContainer .linkTitle {
   color: #9b7e4b;
   text-align: center;
   font-size: 2.5rem;
   margin: 50px 0;
 }
 
-.linkSection .linkList {
-  width: 50%;
+.linkListContainer .linkListBox {
+  width: 100%;
   height: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.linkSection .linkList > .linkItem {
+/* linkItemArea */
+.linkListBox .linkItem {
   color: #9b7e4b;
   width: 100%;
   flex: 1;
   margin-left: 0;
   margin-top: 50px;
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
 }
 
-.linkSection .linkList > .linkItem:hover > button,
-.linkSection .linkList > .linkItem:hover > i {
-  color: #ffce78;
-}
-
-.linkSection .linkList > .linkItem > button {
+.linkItem > button {
   color: #9b7e4b;
   background-color: #453630;
   margin-left: 10px;
@@ -133,51 +123,53 @@ body {
   font-size: 1.5rem;
 }
 
-.linkSection .linkImgBox > img {
+.linkItem:hover > button,
+.linkItem:hover > i {
+  color: #ffce78;
+}
+
+.linkSection > .linkImgContainer {
+  display: none;
+  flex: 1.2;
+}
+
+.linkImgContainer > img {
   width: 100%;
   height: 100%;
 }
 
-/* media */
-@media screen and (max-aspect-ratio: 12/6) {
-  .linkSection > .linkImgBox {
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 1024px) {
+  .linkSection > .linkImgContainer {
+    display: block;
     flex: 0.9;
   }
+
+  .linkListContainer .linkListBox {
+    width: 70%;
+  }
+
+  .linkListBox .linkItem {
+    text-align: left;
+  }
+
+  .linkItem > button {
+    font-size: 1.4rem;
+  }
 }
 
-@media screen and (max-aspect-ratio: 11/6) {
-  .linkSection > .linkImgBox {
+@media all and (min-width: 1440px) {
+  .linkListContainer .linkListBox {
+    width: 60%;
+  }
+  
+  .linkSection > .linkImgContainer {
     flex: 0.8;
   }
-}
 
-@media screen and (max-aspect-ratio: 10/6) {
-  .linkSection > .linkImgBox {
-    flex: 0.7;
-  }
-}
-
-@media screen and (max-aspect-ratio: 9/6) {
-  .linkSection > .linkImgBox {
-    flex: 0.6;
-  }
-}
-
-@media screen and (max-aspect-ratio: 8/6) {
-  .linkSection > .linkImgBox {
-    flex: 0.5;
-  }
-}
-
-@media screen and (max-aspect-ratio: 7/6) {
-  .linkSection .linkImgBox {
-    display: none;
-  }
-  .linkSection .linkList {
-    width: 100%;
-    flex-direction: column;
-  }
-  .linkSection .linkList > .linkItem {
-    text-align: center;
+  .linkItem > button {
+    font-size: 1.6rem;
   }
 }
