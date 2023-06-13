@@ -1,4 +1,4 @@
-/* normalize_area */
+/* normalizeArea */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
@@ -59,7 +59,7 @@ body {
   }
 }
 
-/* mouseCursor_area */
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -74,8 +74,8 @@ body {
   font-size: 30px;
 }
 
-/* mobile_screen_media */
-/* aboutBox_area */
+/* mobileScreenMedia */
+/* aboutBoxArea */
 .aboutBox {
   z-index: -1;
   position: absolute;
@@ -84,7 +84,7 @@ body {
   height: 88%;
 }
 
-/* aboutHeader_area */
+/* aboutHeaderArea */
 .aboutHeader {
   text-align: center;
   color: #9b7e4b;
@@ -93,7 +93,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* aboutContainer_area */
+/* aboutContainerArea */
 .aboutBox .aboutContainer {
   width: 100%;
   height: 700px;
@@ -102,7 +102,7 @@ body {
   flex-direction: column-reverse;
 }
 
-/* aboutShow_area */
+/* aboutShowArea */
 .aboutContainer .aboutShow {
   width: 100%;
   height: 50%;
@@ -148,7 +148,7 @@ body {
   border-radius: 25px;
 }
 
-/* aboutContent_area */
+/* aboutContentArea */
 .aboutContainer .aboutContent {
   width: 100%;
   height: 50%;
@@ -187,7 +187,7 @@ body {
 .mobileSpace {
   display: none;
 }
-/* tablet_screen_media */
+/* tabletScreenMedia */
 @media all and (min-width: 768px) {
   .aboutShow #imgBox1,
   #imgBox2,
@@ -216,7 +216,7 @@ body {
   }
 }
 
-/* pc_screen_media */
+/* pcScreenMedia */
 @media all and (min-width: 1024px) {
   .aboutHeader {
     font-size: 1.5rem;
@@ -300,7 +300,7 @@ body {
     font-size: 1.1rem;
   }
 }
-/* lagePC_screen_media */
+/* lagePCScreenMedia */
 @media all and (min-width: 1440px) {
   .aboutContainer .aboutShow {
     width: 45%;

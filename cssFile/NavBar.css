@@ -1,4 +1,4 @@
-/* Normalize_area */
+/* NormalizeArea */
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +9,8 @@ html {
   user-select: none;
 }
 
-/* mobile_screen_media */
-/* navBar_area */
+/* mobileScreenMedia */
+/* navBarArea */
 .navBar {
   z-index: 99;
   position: fixed;
@@ -37,7 +37,7 @@ html {
   display: none;
 }
 
-/* navBar_whiteBox_area */
+/* whiteBoxArea */
 .navBar .whiteBox {
   position: relative;
   flex-grow: 1;
@@ -52,7 +52,7 @@ html {
   background: linear-gradient(to bottom, #dedede, #ababab);
 }
 
-/* navBar_blackBox_area */
+/* blackBoxArea */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -82,7 +82,7 @@ html {
   left: 80.8%;
 }
 
-/* navBar_button_area */
+/* buttonArea */
 .navBar .whiteBox > button {
   display: none;
   position: absolute;
@@ -106,7 +106,7 @@ html {
   transition: color 0.3s;
 }
 
-/* mobileBtn_area */
+/* mobileBtnArea */
 .navBar .whiteBox .mobileBtn {
   display: block;
 }
@@ -120,20 +120,20 @@ html {
   color: #9b7e4b;
 }
 
-/* tablet_screen_media */
+/* tabletScreenMedia */
 @media all and (min-width: 768px) {
   .navBar > .boxGroup:nth-child(2) {
     display: flex;
   }
 }
 
-/* pc_screen_media */
+/* PCScreenMedia */
 @media all and (min-width: 1024px) {
   .navBar .whiteBox > .mobileBtn {
     height: 43px;
   }
 }
-/* lagePC_screen_media */
+/* largePCScreenMedia */
 @media all and (min-width: 1440px) {
   .navBar:hover {
     height: 200px;

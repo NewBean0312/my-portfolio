@@ -121,7 +121,7 @@ body {
   margin: 20px 20px;
 }
 
-/* carrerSection_area */
+/* carrerSectionArea */
 .carrerMain .carrerSection {
   position: relative;
   width: 100%;
@@ -141,7 +141,7 @@ body {
   border-top: 5px solid #453630;
 }
 
-/* blackBox_area */
+/* blackBoxArea */
 .carrerSection .blackBox {
   position: relative;
   width: 100%;
@@ -155,7 +155,7 @@ body {
   top: 0;
 }
 
-/* contentBox_area */
+/* contentBoxArea */
 .carrerSection .contentBox {
   position: relative;
   display: flex;
@@ -175,7 +175,7 @@ body {
   height: 100%;
 }
 
-/* content_area */
+/* contentArea */
 .contentBox > .content {
   flex: 1.2;
 }

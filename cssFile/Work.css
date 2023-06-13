@@ -1,8 +1,10 @@
-/* Normalize_area */
+/* normalizeArea */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
   cursor: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -57,7 +59,7 @@ body {
   }
 }
 
-/* mouseCursor_area */
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -72,19 +74,21 @@ body {
   font-size: 30px;
 }
 
-/* workSection_area */
+/* mobileScreenMedia */
+/* workSectionArea */
 .workSection {
   z-index: -1;
-  display: flex;
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 12%;
 }
 
-/* workBox_area */
+/* workBoxArea */
 .workSection > .workBox {
-  width: 40%;
+  width: 100%;
+  height: 500px;
 }
 
 .workBox .workTitle {
@@ -101,11 +105,11 @@ body {
   text-align: center; /* lpRecord를 가운데 정렬하기 위한 설정 */
 }
 
-/* lpCase_area */
+/* lpCaseArea */
 .sliderBanner > .lpCase {
   z-index: 1;
   position: absolute;
-  right: 100px;
+  left: 50%;
 }
 
 .lpCase .slide-show img {
@@ -114,11 +118,11 @@ body {
   border: 5px solid #9b7e4b;
 }
 
-/* lpBox_area */
+/* lpBoxArea */
 .workSection .lpBox {
   width: 230px;
   height: 230px;
-  margin-top: 50px;
+  margin-top: 0;
   display: inline-block;
 }
 
@@ -131,7 +135,7 @@ body {
   transform: translateX(-50%);
 }
 
-/* lpRecord_area */
+/* lpRecordArea */
 .lpRecord > img {
   width: 100%;
   border-radius: 50%;
@@ -142,7 +146,7 @@ body {
   transform: translateX(60px);
 }
 
-/* arrows_area */
+/* arrowsArea */
 .arrows > .btn-arrow {
   position: absolute;
   top: 50%;
@@ -157,7 +161,7 @@ body {
 }
 
 .btn-arrow:active {
-  color: #ffce78; 
+  color: #ffce78;
 }
 
 .btn-arrow.btn-arrow-right {
@@ -166,16 +170,16 @@ body {
   right: auto;
 }
 
-/* showBox_area */
+/* showBoxArea */
 .workSection > .workShow {
-  width: 60%;
-  background-color: #f4f2ec;
-  border: 5px solid #9b7e4b;
-  border-radius: 25px;
+  width: 100%;
+  margin: 0 auto;
+  background: none;
 }
 
 .showBox {
-  width: 80%;
+  width: 90%;
+  height: 150px;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -183,25 +187,27 @@ body {
 
 .showBox .slide-show {
   width: 100%;
+  margin-top: 0;
 }
 
 .showBox .slide-show > div {
   height: 700px;
-  border-radius: 25px;
 }
 
 .showBox .slide-show img {
+  display: none;
   width: 100%;
   height: 450px;
+  border-radius: 25px;
 }
 
 .showBox .slide-show button {
-  width: 150px;
+  width: 90px;
   height: 40px;
-  margin-top: 20px;
-  margin-left: 50px;
+  margin-top: 0;
+  margin-left: 5px;
   color: #f4f2ec;
-  background-color: #453630;
+  background-color: #9b7e4b;
   border: 0;
   border-radius: 10px;
 }
@@ -212,47 +218,107 @@ body {
 
 .showBox .descriptionBox {
   display: inline-block;
-  width: 65%;
-  margin-left: 245px;
+  width: 100%;
   height: 60px;
+  margin-top: 10px;
 }
 
 .showBox h3,
 p {
   font-family: "Noto Serif KR", serif;
-  color: black;
-  display: inline;
   font-weight: bold;
+  color: #9b7e4b;
 }
 
 .showBox h3 {
-  margin-left: 40px;
-  font-size: 1.4rem;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1.3rem;
 }
 
 .showBox p {
   font-size: 1.1rem;
 }
 
-/* media */
-@media screen and (max-aspect-ratio: 11/6) {
+/* tabletScreenMedia */
+@media all and (min-width: 768px) {
+  .workSection > .workShow {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .showBox {
+    width: 90%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .showBox h3 {
+    font-size: 1.5rem;
+  }
+
+  .showBox p {
+    font-size: 1.3rem;
+  }
+}
+
+/* PCScreenMedia */
+@media all and (min-width: 1024px) {
+  .workSection {
+    display: flex;
+  }
+
+  .workSection > .workBox {
+    width: 50%;
+  }
+
+  .workSection .lpBox {
+    margin-top: 50px;
+  }
+
   .workBox .lpCase {
     left: 50%;
     right: 50%;
   }
-}
 
-@media screen and (max-aspect-ratio: 9/6) {
-  .workShow {
-    width: 50%;
+  .showBox {
+    width: 100%;
+    height: 500px;
   }
 
-  .showBox button {
+  .workSection > .workShow {
+    width: 50%;
+    background-color: #f4f2ec;
+    border: 5px solid #9b7e4b;
+    border-radius: 25px;
+  }
+
+  .showBox .slide-show img {
+    display: block;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .showBox .slide-show button {
+    margin-left: 0;
+    background-color: #453630;
+    width: 150px;
+    height: 40px;
+  }
+
+  .showBox .descriptionBox {
+    width: 100%;
+    margin-top: 10px;
     margin-left: 0;
   }
 
-  .descriptionBox {
-    margin-left: 175px;
+  .showBox h3,
+  p {
+    font-family: "Noto Serif KR", serif;
+    color: black;
+    display: inline;
   }
 
   .showBox h3 {
@@ -261,73 +327,37 @@ p {
   }
 
   .showBox p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 }
 
-
-@media screen and (max-aspect-ratio: 7/6) {
-  .workSection {
-    display: block;
-  }
-
-  .workBox {
-    height: 500px;
-  }
-
-  .workBox .lpBox {
-    margin-top: 0;
+/* largePCScreenMedia */
+@media all and (min-width: 1440px) {
+  .workSection > .workBox {
+    width: 40%;
   }
 
   .workSection > .workShow {
-    width: 70%;
-    margin: 0 auto;
-    background: none;
-  }
-
-  .showBox {
-    height: 150px;
-  }
-
-  .showBox .slide-show {
-    margin-top: 0;
-    border: 1px solid red;
+    width: 60%;
   }
 
   .showBox .slide-show img {
-    display: none;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
   }
 
   .showBox .slide-show button {
-    color: white;
-    background-color: #9b7e4b;
-    border: 0;
-    margin-top: 0;
-    margin-left: 5px;
-    width: 90px;
-    height: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
   }
 
-  .showBox .slide-show h3 {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 80px !important;
-    font-size: 1rem;
-    color: #9b7e4b;
+  .showBox h3 {
+    font-size: 1.4rem;
+    margin-left: 40px;
   }
 
-  .showBox .slide-show p {
-    font-size: 1rem;
-    color: #9b7e4b;
-  }
-
-  .descriptionBox {
+  .showBox .descriptionBox {
+    margin-left: 245px;
   }
 }
-
-@media screen and (max-aspect-ratio: 5/6) {
-  .workSection > .workShow {
-    width: 100%;
-  }
-}
-

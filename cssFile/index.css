@@ -1,4 +1,4 @@
-/* normalize_area */
+/* normalizeArea */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +57,7 @@ body {
   }
 }
 
-/* header_area */
+/* headerArea */
 header {
   font-family: "Libre Baskerville", serif;
   width: 80%;
@@ -108,7 +108,7 @@ header > .titleText h1 {
   border-right: 0.05em solid black;
 }
 
-/* snowBox_area */
+/* snowBoxArea */
 #snowBox {
   width: 100%;
   height: 100%;
@@ -289,7 +289,7 @@ header > .titleText h1 {
   animation-delay: 1.5s, 3.5s;
 }
 
-/* mouseCursor_area */
+/* mouseCursorArea */
 .mouseCursor {
   z-index: 999;
   position: absolute;
@@ -304,7 +304,7 @@ header > .titleText h1 {
   font-size: 30px;
 }
 
-/* navBar_area */
+/* navBarArea */
 .navBar {
   border: 3px solid #453630;
   position: absolute;
@@ -331,7 +331,7 @@ header > .titleText h1 {
   display: none;
 }
 
-/* navBar_whiteBox_area */
+/* navBar_whiteBoxArea */
 .navBar .whiteBox {
   position: relative;
   flex: 1;
@@ -345,7 +345,7 @@ header > .titleText h1 {
   background: linear-gradient(to bottom, #dedede, #ababab);
 }
 
-/* navBar_blackBox_area */
+/* navBar_blackBoxArea */
 .navBar .blackBox {
   position: absolute;
   width: 9%;
@@ -375,7 +375,7 @@ header > .titleText h1 {
   left: 80.8%;
 }
 
-/* navBar_animation_area */
+/* navBarAnimationArea */
 .navBar .animation {
   position: absolute;
   top: -45px;
@@ -397,7 +397,7 @@ header > .titleText h1 {
   display: block;
 }
 
-/* navBar_button_area */
+/* navBar_buttonArea */
 .navBar .whiteBox > button {
   display: none;
   position: absolute;
@@ -441,7 +441,7 @@ header > .titleText h1 {
   color: #9b7e4b;
 }
 
-/* mobileBtn_area */
+/* mobileBtnArea */
 .navBar .whiteBox .mobileBtn {
   display: block;
 }
@@ -467,14 +467,14 @@ header > .titleText h1 {
   
 }
 
-/* pc_screen_media */
+/* pcScreenMedia */
 @media all and (min-width: 1024px) {
   .navBar .whiteBox > .mobileBtn {
     height: 43px;
   }
 }
 
-/* lagePC_screen_media */
+/* lagePCScreenMedia */
 @media all and (min-width: 1440px) {
   header > .titleText > h1 {
     font-size: 4rem;
