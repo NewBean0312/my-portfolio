@@ -59,8 +59,8 @@ body {
   }
 }
 
-/* mouseCursorArea */
-.mouseCursor {
+/* mouse-cursorArea */
+.mouse-cursor {
   z-index: 999;
   position: absolute;
   top: 0;
@@ -70,7 +70,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.mouseCursor > i {
+.mouse-cursor > i {
   font-size: 30px;
 }
 

@@ -11,7 +11,7 @@ html {
 
 /* mobileScreenMedia */
 /* navBarArea */
-.navBar {
+.nav-bar {
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -21,7 +21,7 @@ html {
   background-color: white;
 }
 
-.navBar > .boxGroup {
+.nav-bar > .box-group {
   position: relative;
   display: flex;
   flex-grow: 1;
@@ -30,15 +30,15 @@ html {
 }
 
 /* 모바일 버전 메뉴바 축소를 위한 CSS */
-.navBar > .boxGroup:nth-child(1),
-.navBar > .boxGroup:nth-child(2),
-.navBar > .boxGroup:nth-child(3),
-.navBar > .boxGroup:nth-child(5) {
+.nav-bar > .box-group:nth-child(1),
+.nav-bar > .box-group:nth-child(2),
+.nav-bar > .box-group:nth-child(3),
+.nav-bar > .box-group:nth-child(5) {
   display: none;
 }
 
-/* whiteBoxArea */
-.navBar .whiteBox {
+/* white-boxArea */
+.nav-bar .white-box {
   position: relative;
   flex-grow: 1;
   border: 2px solid #453630;
@@ -48,12 +48,12 @@ html {
   background-color: #f4f2ec;
 }
 
-.navBar .whiteBox:hover {
+.nav-bar .white-box:hover {
   background: linear-gradient(to bottom, #dedede, #ababab);
 }
 
-/* blackBoxArea */
-.navBar .blackBox {
+/* black-boxArea */
+.nav-bar .black-box {
   position: absolute;
   width: 9%;
   height: 50%;
@@ -61,29 +61,29 @@ html {
   top: 1;
 }
 
-/* blackBox 위치 지정 CSS */
-.navBar .blackBox:nth-child(8) {
+/* black-box 위치 지정 CSS */
+.nav-bar .black-box:nth-child(8) {
   left: 9.97%;
 }
 
-.navBar .blackBox:nth-child(9) {
+.nav-bar .black-box:nth-child(9) {
   left: 23.9%;
 }
 
-.navBar .blackBox:nth-child(10) {
+.nav-bar .black-box:nth-child(10) {
   left: 52.5%;
 }
 
-.navBar .blackBox:nth-child(11) {
+.nav-bar .black-box:nth-child(11) {
   left: 66.8%;
 }
 
-.navBar .blackBox:nth-child(12) {
+.nav-bar .black-box:nth-child(12) {
   left: 80.8%;
 }
 
 /* buttonArea */
-.navBar .whiteBox > button {
+.nav-bar .white-box > button {
   display: none;
   position: absolute;
   bottom: 5px;
@@ -96,70 +96,70 @@ html {
   transition: background-color 0.3s;
 }
 
-.navBar .whiteBox > button:hover {
+.nav-bar .white-box > button:hover {
   background-color: #ababab;
   border: 1px solid #ababab;
 }
 
-.navBar .whiteBox > button:hover > i {
+.nav-bar .white-box > button:hover > i {
   color: #9b7e4b;
   transition: color 0.3s;
 }
 
-/* mobileBtnArea */
-.navBar .whiteBox .mobileBtn {
+/* mobile-btnArea */
+.nav-bar .white-box .mobile-btn {
   display: block;
 }
 
-.mobileBtn .mobileBtnText {
+.mobile-btn .mobile-btn-text {
   color: #fff;
   font-size: 1.2em;
 }
 
-.mobileBtn:hover .mobileBtnText {
+.mobile-btn:hover .mobile-btn-text {
   color: #9b7e4b;
 }
 
 /* tabletScreenMedia */
 @media all and (min-width: 768px) {
-  .navBar > .boxGroup:nth-child(2) {
+  .nav-bar > .box-group:nth-child(2) {
     display: flex;
   }
 }
 
 /* PCScreenMedia */
 @media all and (min-width: 1024px) {
-  .navBar .whiteBox > .mobileBtn {
+  .nav-bar .white-box > .mobile-btn {
     height: 43px;
   }
 }
-/* largePCScreenMedia */
+/* large-pc-screen-media */
 @media all and (min-width: 1440px) {
-  .navBar:hover {
+  .nav-bar:hover {
     height: 200px;
   }
 
-  .navBar > .boxGroup:nth-child(1),
-  .navBar > .boxGroup:nth-child(5) {
+  .nav-bar > .box-group:nth-child(1),
+  .nav-bar > .box-group:nth-child(5) {
     display: flex;
   }
 
-  .navBar > .boxGroup:nth-child(3),
-  .navBar > .boxGroup:nth-child(4) {
+  .nav-bar > .box-group:nth-child(3),
+  .nav-bar > .box-group:nth-child(4) {
     display: flex;
     width: 130%;
   }
 
-  .navBar .whiteBox .mobileBtn {
+  .nav-bar .white-box .mobile-btn {
     display: none;
   }
 
-  .navBar .whiteBox .pcBtn {
+  .nav-bar .white-box .pc-btn {
     display: block;
     border-radius: 50%;
   }
 
-  .navBar .btnText {
+  .nav-bar .btn-text {
     width: 100%;
     position: absolute;
     left: -1.5px;
@@ -172,14 +172,14 @@ html {
     transition: color 0.3s, visibility 0.5s, transform 0.5s;
   }
 
-  .navBar .whiteBox > .pcBtn:hover .btnText {
+  .nav-bar .white-box > .pc-btn:hover .btn-text {
     justify-content: center;
     visibility: visible;
     transform: translateY(-15px);
     color: #9b7e4b;
   }
 
-  .navBar .whiteBox > .pcBtn > i {
+  .nav-bar .white-box > .pc-btn > i {
     font-size: 1.3rem;
     text-align: center;
     color: #f4f2ec;

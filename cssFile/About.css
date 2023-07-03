@@ -59,8 +59,8 @@ body {
   }
 }
 
-/* mouseCursorArea */
-.mouseCursor {
+/* mouse-cursorArea */
+.mouse-cursor {
   z-index: 999;
   position: absolute;
   top: 0;
@@ -70,7 +70,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.mouseCursor > i {
+.mouse-cursor > i {
   font-size: 30px;
 }
 
@@ -216,7 +216,7 @@ body {
   }
 }
 
-/* pcScreenMedia */
+/* pc-screen-media */
 @media all and (min-width: 1024px) {
   .aboutHeader {
     font-size: 1.5rem;
@@ -300,7 +300,7 @@ body {
     font-size: 1.1rem;
   }
 }
-/* lagePCScreenMedia */
+/* large-pc-screen-media */
 @media all and (min-width: 1440px) {
   .aboutContainer .aboutShow {
     width: 45%;

@@ -1,8 +1,8 @@
-# 전유빈 위키
+# 전유빈 포트폴리오 위키
 - [위키 바로가기](https://to2.kr/ehI)
 - [git 바로가기](https://github.com/NewBean0312/my-portfolio)
 - [포트폴리오 예상 디자인 바로가기](https://newbean0312.wixsite.com/newbean-sportfolio)
-- [포트폴리오 바로가기(1차 완성)](https://newbean0312.github.io/portfolio/)
+- [포트폴리오 바로가기](https://newbean0312.github.io/portfolio/)
 ---
 ---
 ### 레이아웃
@@ -101,7 +101,7 @@
   - 글씨가 가려지는 현상 수정
 - [Navbar 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/a255649b189acd16c070fbafd948643b8f726823)
 
-- [각 건반을 hover 시, 그라데이션 생성](https://github.com/NewBean0312/my-portfolio/blob/0d8ecd13d350d31e96f571d2471ea26ccdd0fbc7/src/NavBar.css)
+- [각 건반을 hover 시, 그라데이션 생성](https://github.com/NewBean0312/my-portfolio/blob/0d8ecd13d350d31e96f571d2471ea26ccdd0fbc7/src/nav_bar.css)
 ---
 
 ## step 2. MainPage 생성
@@ -168,16 +168,19 @@
 
 ---
 ---
-# 포트폴리오 수정
+## 포트폴리오 수정
 - [포트폴리오 v1.1](https://github.com/NewBean0312/my-portfolio/commit/8bc8d6469ba251b0a14cece4185e6afffc756e63)
+  - 업데이트 날짜 : 23.04.04
   - 색감 변경
   - 마우스 포인터 사용
   - 건반 디자인 변경
   - 메뉴 아이콘 수정
   
-- [포트폴리오 v1.2]()
+- [포트폴리오 v1.2](https://github.com/NewBean0312/portfolio/commit/6b46b6e6cab0d48b418de34b3d773b7e1b955cff)
+  - 업데이트 날짜 : 2023.05.03
   - 건반 색상 변경
   - 스크롤 버그 수정
   - 마우스 포인터 변경
   - 레이아웃 간견 조절
   - 파일 분류 수정
+  - Work 프로젝트 추가
