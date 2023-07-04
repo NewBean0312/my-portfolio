@@ -1,4 +1,4 @@
-/* NormalizeArea */
+/* Normalize-area */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
@@ -59,7 +59,7 @@ body {
   }
 }
 
-/* mouse-cursorArea */
+/* mouse-cursor-area */
 .mouse-cursor {
   z-index: 999;
   position: absolute;
@@ -74,7 +74,7 @@ body {
   font-size: 30px;
 }
 
-/* linkSectionArea */
+/* linkSection-area */
 .linkSection {
   z-index: -1;
   display: flex;
@@ -84,7 +84,7 @@ body {
   top: 12%;
 }
 
-/* linkListContainerArea */
+/* linkListContainer-area */
 .linkSection > .linkListContainer {
   flex: 1;
 }
@@ -104,7 +104,7 @@ body {
   flex-direction: column;
 }
 
-/* linkItemArea */
+/* linkItem-area */
 .linkListBox .linkItem {
   color: #9b7e4b;
   width: 100%;

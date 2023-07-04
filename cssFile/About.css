@@ -1,4 +1,4 @@
-/* normalizeArea */
+/* normalize-area */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
@@ -59,7 +59,7 @@ body {
   }
 }
 
-/* mouse-cursorArea */
+/* mouse-cursor-area */
 .mouse-cursor {
   z-index: 999;
   position: absolute;
@@ -75,8 +75,8 @@ body {
 }
 
 /* mobileScreenMedia */
-/* aboutBoxArea */
-.aboutBox {
+/* about-box-area */
+.about-box {
   z-index: -1;
   position: absolute;
   top: 12%;
@@ -84,8 +84,8 @@ body {
   height: 88%;
 }
 
-/* aboutHeaderArea */
-.aboutHeader {
+/* about-header-area */
+.about-header {
   text-align: center;
   color: #9b7e4b;
   font-size: 1rem;
@@ -93,8 +93,8 @@ body {
   margin-bottom: 20px;
 }
 
-/* aboutContainerArea */
-.aboutBox .aboutContainer {
+/* about-container-area */
+.about-box .about-container {
   width: 100%;
   height: 700px;
   margin: 0;
@@ -102,16 +102,16 @@ body {
   flex-direction: column-reverse;
 }
 
-/* aboutShowArea */
-.aboutContainer .aboutShow {
+/* about-show-area */
+.about-container .about-show {
   width: 100%;
   height: 50%;
-  background: url("../img/imgBoxBoard.jpg");
+  background: url("../img/img-box-board.jpg");
   background-size: cover;
   position: relative;
 }
 
-.aboutShow::before {
+.about-show::before {
   /* aboutSHow의 배경화면에 투명도를 주기 위한 CSS */
   content: "";
   opacity: 0.7;
@@ -123,33 +123,33 @@ body {
   background-color: #000;
 }
 
-.aboutShow > div {
+.about-show > div {
   position: absolute;
   width: 400px;
   display: none;
 }
 
-.aboutShow #imgBox1,
-#imgBox2,
-#imgBox3,
-#imgBox4,
-#imgBox5,
-#imgBox6,
-#imgBox7 {
+.about-show #img-box1,
+#img-box2,
+#img-box3,
+#img-box4,
+#img-box5,
+#img-box6,
+#img-box7 {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
 
-.aboutShow img {
+.about-show img {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
 
-/* aboutContentArea */
-.aboutContainer .aboutContent {
+/* aboutContent-area */
+.about-container .aboutContent {
   width: 100%;
   height: 50%;
 }
@@ -189,13 +189,13 @@ body {
 }
 /* tabletScreenMedia */
 @media all and (min-width: 768px) {
-  .aboutShow #imgBox1,
-  #imgBox2,
-  #imgBox3,
-  #imgBox4,
-  #imgBox5,
-  #imgBox6,
-  #imgBox7 {
+  .about-show #img-box1,
+  #img-box2,
+  #img-box3,
+  #img-box4,
+  #img-box5,
+  #img-box6,
+  #img-box7 {
     position: relative;
     width: 80%;
     height: 100%;
@@ -218,66 +218,66 @@ body {
 
 /* pc-screen-media */
 @media all and (min-width: 1024px) {
-  .aboutHeader {
+  .about-header {
     font-size: 1.5rem;
     margin-top: 20px;
   }
 
-  .aboutBox .aboutContainer {
+  .about-box .about-container {
     flex-direction: row;
   }
 
-  .aboutContainer .aboutShow {
+  .about-container .about-show {
     width: 40%;
     height: 100%;
   }
 
-  .aboutShow #imgBox1,
-  #imgBox2,
-  #imgBox3,
-  #imgBox4,
-  #imgBox5,
-  #imgBox6,
-  #imgBox7 {
+  .about-show #img-box1,
+  #img-box2,
+  #img-box3,
+  #img-box4,
+  #img-box5,
+  #img-box6,
+  #img-box7 {
     width: 90%;
   }
 
-  /* imgBox 위치 CSS */
-  .aboutShow #imgBox1 {
+  /* img-box 위치 CSS */
+  .about-show #img-box1 {
     top: 40px;
   }
 
-  .aboutShow #imgBox2 {
+  .about-show #img-box2 {
     top: 80px;
   }
 
-  .aboutShow #imgBox3 {
+  .about-show #img-box3 {
     top: 160px;
   }
 
-  .aboutShow #imgBox4 {
+  .about-show #img-box4 {
     top: 200px;
   }
 
-  .aboutShow #imgBox5 {
+  .about-show #img-box5 {
     top: 240px;
   }
 
-  .aboutShow #imgBox6 {
+  .about-show #img-box6 {
     top: 300px;
   }
 
-  .aboutShow #imgBox7 {
+  .about-show #img-box7 {
     top: 350px;
   }
 
-  .aboutShow img {
+  .about-show img {
     width: 100%;
     height: auto;
     border-radius: 25px;
   }
 
-  .aboutContainer .aboutContent {
+  .about-container .aboutContent {
     width: 60%;
     height: 100%;
   }
@@ -302,64 +302,64 @@ body {
 }
 /* large-pc-screen-media */
 @media all and (min-width: 1440px) {
-  .aboutContainer .aboutShow {
+  .about-container .about-show {
     width: 45%;
   }
 
-  /* imgBox 위치 CSS */
-  .aboutShow #imgBox1,
-  #imgBox2,
-  #imgBox3,
-  #imgBox4,
-  #imgBox5,
-  #imgBox6,
-  #imgBox7 {
+  /* img-box 위치 CSS */
+  .about-show #img-box1,
+  #img-box2,
+  #img-box3,
+  #img-box4,
+  #img-box5,
+  #img-box6,
+  #img-box7 {
     position: absolute;
   }
 
-  .aboutShow #imgBox1 {
+  .about-show #img-box1 {
     top: 40px;
     left: 4%;
     width: 400px;
   }
 
-  .aboutShow #imgBox2 {
+  .about-show #img-box2 {
     top: 80px;
     left: 50%;
     width: 300px;
   }
 
-  .aboutShow #imgBox3 {
+  .about-show #img-box3 {
     top: 160px;
     left: 11%;
     width: 350px;
   }
 
-  .aboutShow #imgBox4 {
+  .about-show #img-box4 {
     top: 200px;
     left: 30%;
     width: 400px;
   }
 
-  .aboutShow #imgBox5 {
+  .about-show #img-box5 {
     top: 240px;
     left: 17%;
     width: 400px;
   }
 
-  .aboutShow #imgBox6 {
+  .about-show #img-box6 {
     top: 300px;
     left: 42%;
     width: 350px;
   }
 
-  .aboutShow #imgBox7 {
+  .about-show #img-box7 {
     top: 350px;
     left: 32%;
     width: 350px;
   }
 
-  .aboutContainer .aboutContent {
+  .about-container .aboutContent {
     width: 55%;
   }
 

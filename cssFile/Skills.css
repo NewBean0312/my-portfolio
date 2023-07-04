@@ -1,4 +1,4 @@
-/* normalizeArea */
+/* normalize-area */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
@@ -59,7 +59,7 @@ body {
   }
 }
 
-/* mouse-cursorArea */
+/* mouse-cursor-area */
 .mouse-cursor {
   z-index: 999;
   position: absolute;
@@ -74,7 +74,7 @@ body {
   font-size: 30px;
 }
 
-/* .skillsSectionArea */
+/* .skillsSection-area */
 .skillsSection {
   z-index: -1;
   position: absolute;
@@ -83,7 +83,7 @@ body {
   top: 17%;
 }
 
-/* skillsHeaderArea */
+/* skillsHeader-area */
 .skillsSection > .skillsHeader {
   width: 35%;
   height: 60px;
@@ -100,7 +100,7 @@ body {
   border-top: 3px solid #9b7e4b;
 }
 
-/* skillsArticleArea */
+/* skillsArticle-area */
 .skillsSection .skillsArticle {
   width: 95%;
   height: 100%;
@@ -159,7 +159,7 @@ body {
   height: 100%;
 }
 
-/* iconArea */
+/* icon-area */
 .htmlIcon {
   left: 10%;
   top: -12px;
@@ -200,7 +200,7 @@ body {
   left: 60%;
 }
 
-/* noteLastLineArea */
+/* noteLastLine-area */
 .noteBox > .noteLastLine {
   position: relative;
   border-right: 10px solid #9b7e4b;
@@ -239,7 +239,7 @@ body {
     height: 50px;
   }
 
-  /* iconArea */
+  /* icon-area */
   .jsIcon {
     left: 75%;
     top: 8px;

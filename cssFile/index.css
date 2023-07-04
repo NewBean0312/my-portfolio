@@ -1,4 +1,4 @@
-/* normalizeArea */
+/* normalize-area */
 * {
   margin: 0;
   padding: 0;
@@ -108,7 +108,7 @@ header > .title-text h1 {
   text-align: center;
 }
 
-/* snowBoxArea */
+/* snowBox-area */
 #snowBox {
   position: absolute;
   top: 0px;
@@ -289,7 +289,7 @@ header > .title-text h1 {
   animation-delay: 1.5s, 3.5s;
 }
 
-/* mouse-cursorArea */
+/* mouse-cursor-area */
 .mouse-cursor {
   z-index: 999;
   position: absolute;
@@ -304,7 +304,7 @@ header > .title-text h1 {
   font-size: 30px;
 }
 
-/* navBarArea */
+/* navBar-area */
 .nav-bar {
   border: 3px solid #453630;
   position: absolute;
@@ -331,7 +331,7 @@ header > .title-text h1 {
   display: none;
 }
 
-/* navBar_white-boxArea */
+/* navBar_white-box-area */
 .nav-bar .white-box {
   position: relative;
   flex: 1;
@@ -345,7 +345,7 @@ header > .title-text h1 {
   background: linear-gradient(to bottom, #dedede, #ababab);
 }
 
-/* navBar_black-boxArea */
+/* navBar_black-box-area */
 .nav-bar .black-box {
   position: absolute;
   width: 9%;

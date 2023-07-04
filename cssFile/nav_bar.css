@@ -1,4 +1,4 @@
-/* NormalizeArea */
+/* Normalize-area */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ html {
 }
 
 /* mobileScreenMedia */
-/* navBarArea */
+/* navBar-area */
 .nav-bar {
   z-index: 99;
   position: fixed;
@@ -37,7 +37,7 @@ html {
   display: none;
 }
 
-/* white-boxArea */
+/* white-box-area */
 .nav-bar .white-box {
   position: relative;
   flex-grow: 1;
@@ -52,7 +52,7 @@ html {
   background: linear-gradient(to bottom, #dedede, #ababab);
 }
 
-/* black-boxArea */
+/* black-box-area */
 .nav-bar .black-box {
   position: absolute;
   width: 9%;
@@ -82,7 +82,7 @@ html {
   left: 80.8%;
 }
 
-/* buttonArea */
+/* button-area */
 .nav-bar .white-box > button {
   display: none;
   position: absolute;
@@ -106,7 +106,7 @@ html {
   transition: color 0.3s;
 }
 
-/* mobile-btnArea */
+/* mobile-btn-area */
 .nav-bar .white-box .mobile-btn {
   display: block;
 }

@@ -1,4 +1,4 @@
-/* normalizeArea */
+/* normalize-area */
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
@@ -59,7 +59,7 @@ body {
   }
 }
 
-/* mouse-cursorArea */
+/* mouse-cursor-area */
 .mouse-cursor {
   z-index: 999;
   position: absolute;
@@ -74,7 +74,7 @@ body {
   font-size: 30px;
 }
 
-/* carrerMainArea */
+/* carrerMain-area */
 .carrerMain {
   z-index: -1;
   position: absolute;
@@ -84,7 +84,7 @@ body {
   overflow-y: scroll;
 }
 
-/* scrollArea */
+/* scroll-area */
 .main::-webkit-scrollbar {
   width: 16px;
 }
@@ -109,7 +109,7 @@ body {
   border-radius: 100px;
 }
 
-/* carrerHeaderArea */
+/* carrerHeader-area */
 .carrerMain .carrerHeader {
   text-align: center;
   width: 100%;
@@ -121,7 +121,7 @@ body {
   margin: 20px 20px;
 }
 
-/* carrerSectionArea */
+/* carrerSection-area */
 .carrerMain .carrerSection {
   position: relative;
   width: 100%;
@@ -141,7 +141,7 @@ body {
   border-top: 5px solid #453630;
 }
 
-/* black-boxArea */
+/* black-box-area */
 .carrerSection .black-box {
   position: relative;
   width: 100%;
@@ -155,7 +155,7 @@ body {
   top: 0;
 }
 
-/* contentBoxArea */
+/* contentBox-area */
 .carrerSection .contentBox {
   position: relative;
   display: flex;
@@ -175,7 +175,7 @@ body {
   height: 100%;
 }
 
-/* contentArea */
+/* content-area */
 .contentBox > .content {
   flex: 1.2;
 }

@@ -20,7 +20,7 @@ $(".slider-nav").slick({
 });
 
 // 마우스 따라오는 이벤트
-const mouse-cursor1 = document.querySelector(".mouse-cursor");
+const mouseCursor1 = document.querySelector(".mouse-cursor");
 
 document.addEventListener("mousemove", (e) => {
   const mouseX = e.clientX;
