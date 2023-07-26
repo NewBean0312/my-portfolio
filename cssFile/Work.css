@@ -75,8 +75,8 @@ body {
 }
 
 /* mobileScreenMedia */
-/* workSection-area */
-.workSection {
+/* work-section-area */
+.work-section {
   z-index: -1;
   display: block;
   position: absolute;
@@ -85,64 +85,64 @@ body {
   top: 12%;
 }
 
-/* workBox-area */
-.workSection > .workBox {
+/* work-box-area */
+.work-section > .work-box {
   width: 100%;
   height: 500px;
 }
 
-.workBox .workTitle {
+.work-box .work-title {
   color: #9b7e4b;
   text-align: center;
   font-size: 2.5rem;
   margin-top: 20px;
 }
 
-.workBox .sliderBanner {
+.work-box .slider-banner {
   position: relative;
   width: 100%;
   margin-top: 80px;
-  text-align: center; /* lpRecord를 가운데 정렬하기 위한 설정 */
+  text-align: center; /* lp-record를 가운데 정렬하기 위한 설정 */
 }
 
-/* lpCase-area */
-.sliderBanner > .lpCase {
+/* lp-case-area */
+.slider-banner > .lp-case {
   z-index: 1;
   position: absolute;
   left: 50%;
 }
 
-.lpCase .slide-show img {
+.lp-case .slide-show img {
   width: 95%;
   height: 220px;
   border: 5px solid #9b7e4b;
 }
 
-/* lpBox-area */
-.workSection .lpBox {
+/* lp-box-area */
+.work-section .lp-box {
   width: 230px;
   height: 230px;
   margin-top: 0;
   display: inline-block;
 }
 
-.lpBox .main {
+.lp-box .main {
   position: relative;
 }
 
-.lpBox .slide-show {
+.lp-box .slide-show {
   height: 250px;
   transform: translateX(-50%);
 }
 
-/* lpRecord-area */
-.lpRecord > img {
+/* lp-record-area */
+.lp-record > img {
   width: 100%;
   border-radius: 50%;
   transition: 0.5s transform;
 }
 
-.lpRecord:hover > img {
+.lp-record:hover > img {
   transform: translateX(60px);
 }
 
@@ -170,36 +170,36 @@ body {
   right: auto;
 }
 
-/* showBox-area */
-.workSection > .workShow {
+/* show-box-area */
+.work-section > .work-show {
   width: 100%;
   margin: 0 auto;
   background: none;
 }
 
-.showBox {
+.show-box {
   width: 450px;
   height: 150px;
   margin: 70px auto 0;
 }
 
-.showBox .slide-show {
+.show-box .slide-show {
   width: 100%;
   margin-top: 0;
 }
 
-.showBox .slide-show > div {
+.show-box .slide-show > div {
   height: 700px;
 }
 
-.showBox .slide-show img {
+.show-box .slide-show img {
   display: none;
   width: 100%;
   height: 450px;
   border-radius: 25px;
 }
 
-.showBox .slide-show button {
+.show-box .slide-show button {
   width: 90px;
   height: 40px;
   margin-top: 0;
@@ -210,150 +210,150 @@ body {
   border-radius: 10px;
 }
 
-.showBox .slide-show button:hover {
+.show-box .slide-show button:hover {
   transform: translateY(5px);
 }
 
-.showBox .descriptionBox {
+.show-box .des-box {
   display: inline-block;
   width: 100%;
   height: 60px;
   margin-top: 10px;
 }
 
-.showBox h3,
+.show-box h3,
 p {
   font-family: "Noto Serif KR", serif;
   font-weight: bold;
   color: #9b7e4b;
 }
 
-.showBox h3 {
+.show-box h3 {
   display: inline-block;
   margin-top: 10px;
   margin-left: 20px;
   font-size: 1.3rem;
 }
 
-.showBox p {
+.show-box p {
   font-size: 1.1rem;
 }
 
 /* tabletScreenMedia */
 @media all and (min-width: 768px) {
-  .workSection > .workShow {
+  .work-section > .work-show {
     width: 70%;
     margin: 0 auto;
   }
 
-  .showBox {
+  .show-box {
     width: 500px;
   }
 
-  .showBox h3 {
+  .show-box h3 {
     font-size: 1.5rem;
   }
 
-  .showBox p {
+  .show-box p {
     font-size: 1.3rem;
   }
 }
 
 /* PCScreenMedia */
 @media all and (min-width: 1024px) {
-  .workSection {
+  .work-section {
     display: flex;
   }
 
-  .workSection > .workBox {
+  .work-section > .work-box {
     width: 50%;
   }
 
-  .workSection .lpBox {
+  .work-section .lp-box {
     margin-top: 50px;
   }
 
-  .workBox .lpCase {
+  .work-box .lp-case {
     left: 50%;
     right: 50%;
   }
 
-  .showBox {
+  .show-box {
     width: 100%;
     height: 500px;
   }
 
-  .workSection > .workShow {
+  .work-section > .work-show {
     width: 50%;
     background-color: #f4f2ec;
     border: 5px solid #9b7e4b;
     border-radius: 25px;
   }
 
-  .showBox .slide-show img {
+  .show-box .slide-show img {
     display: block;
     height: 350px;
     margin-bottom: 20px;
   }
 
-  .showBox .slide-show button {
+  .show-box .slide-show button {
     margin-left: 0;
     background-color: #453630;
     width: 150px;
     height: 40px;
   }
 
-  .showBox .descriptionBox {
+  .show-box .des-box {
     width: 100%;
     margin-top: 10px;
     margin-left: 0;
   }
 
-  .showBox h3,
+  .show-box h3,
   p {
     font-family: "Noto Serif KR", serif;
     color: black;
     display: inline;
   }
 
-  .showBox h3 {
+  .show-box h3 {
     margin-left: 22px;
     font-size: 1.2rem;
   }
 
-  .showBox p {
+  .show-box p {
     font-size: 1.1rem;
   }
 }
 
 /* large-pc-screen-media */
 @media all and (min-width: 1440px) {
-  .workSection > .workBox {
+  .work-section > .work-box {
     width: 40%;
   }
 
-  .workSection > .workShow {
+  .work-section > .work-show {
     width: 60%;
   }
 
-  .showBox .slide-show img {
+  .show-box .slide-show img {
     width: 90%;
     height: 400px;
     margin: 0 auto 20px;
     border-radius: 25px;
   }
 
-  .showBox .slide-show button {
+  .show-box .slide-show button {
     margin-top: 20px;
     margin-left: 50px;
   }
 
-  .showBox h3 {
+  .show-box h3 {
     font-size: 1.4rem;
     margin-left: 40px;
   }
 
-  .showBox .descriptionBox {
+  .show-box .des-box {
     margin-left: 245px;
   }
 }
