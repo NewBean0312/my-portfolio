@@ -17,7 +17,7 @@ $(".slider-nav").slick({
   arrows: true,
   prevArrow: ".arrows > .btn-arrow-left",
   nextArrow: ".arrows > .btn-arrow-right",
-});
+});z
 
 // 마우스 따라오는 이벤트
 const mouseCursor1 = document.querySelector(".mouse-cursor");

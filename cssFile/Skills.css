@@ -74,8 +74,8 @@ body {
   font-size: 30px;
 }
 
-/* .skillsSection-area */
-.skillsSection {
+/* .skills-section-area */
+.skills-section {
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -83,8 +83,8 @@ body {
   top: 17%;
 }
 
-/* skillsHeader-area */
-.skillsSection > .skillsHeader {
+/* skills-header-area */
+.skills-section > .skills-header {
   width: 35%;
   height: 60px;
   text-align: center;
@@ -94,20 +94,20 @@ body {
   border-bottom: 1px solid #9b7e4b;
 }
 
-.skillsHeader > div {
+.skills-header > div {
   width: 100%;
   height: 4px;
   border-top: 3px solid #9b7e4b;
 }
 
-/* skillsArticle-area */
-.skillsSection .skillsArticle {
+/* skills-article-area */
+.skills-section .skills-article {
   width: 95%;
   height: 100%;
   margin: 0 auto;
 }
 
-.skillsArticle > .noteBox {
+.skills-article > .note-box {
   display: flex;
   width: 85%;
   height: 160px;
@@ -117,7 +117,7 @@ body {
   margin-right: auto;
 }
 
-.skillsArticle .noteBoxRow {
+.skills-article .note-box-row {
   flex: 1;
   position: relative;
   display: flex;
@@ -125,88 +125,88 @@ body {
   border-right: 7px solid #9b7e4b;
 }
 
-.noteBoxRow:nth-child(4) {
+.note-box-row:nth-child(4) {
   display: none;
 }
 
-.noteBoxRow:nth-child(5) {
+.note-box-row:nth-child(5) {
   display: none;
 }
 
-.skillsArticle .noteBoxCol {
+.skills-article .note-box-col {
   position: relative;
   flex: 1;
   width: 100%;
   border-bottom: 2px solid #9b7e4b;
 }
 
-.skillsArticle .noteBoxTitle {
+.skills-article .note-box-title {
   color: #9b7e4b;
   font-size: 0.8rem;
   font-weight: bold;
   transform: translateY(-17px);
 }
 
-.skillsArticle .imgIcon {
+.skills-article .img-icon {
   z-index: 1;
   position: absolute;
   width: 40px;
   height: 40px;
 }
 
-.imgIcon > img {
+.img-icon > img {
   width: 100%;
   height: 100%;
 }
 
 /* icon-area */
-.htmlIcon {
+.html-icon {
   left: 10%;
   top: -12px;
 }
 
-.cssIcon {
+.css-icon {
   left: 40%;
   top: -12px;
 }
 
-.dbmsIcon {
+.dbms-icon {
   left: 10%;
   top: -6px;
 }
 
-.gitIcon {
+.git-icon {
   left: 10%;
   top: 12px;
 }
 
-.jsIcon {
+.js-icon {
   left: 110%;
 }
 
-.reactIcon {
+.react-icon {
   left: 60%;
 }
 
-.linuxIcon {
+.linux-icon {
   left: 110%;
 }
 
-.githubIcon {
+.github-icon {
   left: 110%;
 }
 
-.rIcon {
+.r-icon {
   left: 60%;
 }
 
-/* noteLastLine-area */
-.noteBox > .noteLastLine {
+/* note-last-line-area */
+.note-box > .note-last-line {
   position: relative;
   border-right: 10px solid #9b7e4b;
 }
 
-.noteBox .noteLine {
+.note-box .note-line {
   position: absolute;
   height: 160px;
   right: 12%;
@@ -217,55 +217,55 @@ body {
 }
 
 @media all and (min-width: 1440px) {
-  .skillsArticle > .noteBox {
+  .skills-article > .note-box {
     width: 95%;
   }
 
-  .noteBoxRow:nth-child(4) {
+  .note-box-row:nth-child(4) {
     display: flex;
   }
 
-  .noteBoxRow:nth-child(5) {
+  .note-box-row:nth-child(5) {
     display: flex;
   }
 
-  .noteBox .noteBoxTitle {
+  .note-box .note-box-title {
     font-size: 1.1rem;
     transform: translateY(-25px);
   }
 
-  .noteBox .imgIcon {
+  .note-box .img-icon {
     width: 50px;
     height: 50px;
   }
 
   /* icon-area */
-  .jsIcon {
+  .js-icon {
     left: 75%;
     top: 8px;
   }
 
-  .reactIcon {
+  .react-icon {
     left: 10%;
     top: 17px;
   }
 
-  .linuxIcon {
+  .linux-icon {
     left: 75%;
     top: 40px;
   }
 
-  .githubIcon {
+  .github-icon {
     left: 75%;
     top: 12px;
   }
 
-  .rIcon {
+  .r-icon {
     left: 10%;
     top: 75px;
   }
 
-  .noteBox .noteLine {
+  .note-box .note-line {
     right: 6%;
     border-right: 6px solid #9b7e4b;
   }
