@@ -74,8 +74,8 @@ body {
   font-size: 30px;
 }
 
-/* linkSection-area */
-.linkSection {
+/* link-section-area */
+.link-section {
   z-index: -1;
   display: flex;
   position: absolute;
@@ -84,19 +84,19 @@ body {
   top: 12%;
 }
 
-/* linkListContainer-area */
-.linkSection > .linkListContainer {
+/* link-list-container-area */
+.link-section > .link-list-container {
   flex: 1;
 }
 
-.linkListContainer .linkTitle {
+.link-list-container .link-title {
   color: #9b7e4b;
   text-align: center;
   font-size: 2.5rem;
   margin: 50px 0;
 }
 
-.linkListContainer .linkListBox {
+.link-list-container .link-list-box {
   width: 100%;
   height: 400px;
   margin: 0 auto;
@@ -104,8 +104,8 @@ body {
   flex-direction: column;
 }
 
-/* linkItem-area */
-.linkListBox .linkItem {
+/* link-item-area */
+.link-list-box .link-item {
   color: #9b7e4b;
   width: 100%;
   flex: 1;
@@ -115,7 +115,7 @@ body {
   font-size: 1.5rem;
 }
 
-.linkItem > button {
+.link-item > button {
   color: #9b7e4b;
   background-color: #453630;
   margin-left: 10px;
@@ -123,17 +123,17 @@ body {
   font-size: 1.5rem;
 }
 
-.linkItem:hover > button,
-.linkItem:hover > i {
+.link-item:hover > button,
+.link-item:hover > i {
   color: #ffce78;
 }
 
-.linkSection > .linkImgContainer {
+.link-section > .link-img-container {
   display: none;
   flex: 1.2;
 }
 
-.linkImgContainer > img {
+.link-img-container > img {
   width: 100%;
   height: 100%;
 }
@@ -142,34 +142,34 @@ body {
 }
 
 @media all and (min-width: 1024px) {
-  .linkSection > .linkImgContainer {
+  .link-section > .link-img-container {
     display: block;
     flex: 0.9;
   }
 
-  .linkListContainer .linkListBox {
+  .link-list-container .link-list-box {
     width: 70%;
   }
 
-  .linkListBox .linkItem {
+  .link-list-box .link-item {
     text-align: left;
   }
 
-  .linkItem > button {
+  .link-item > button {
     font-size: 1.4rem;
   }
 }
 
 @media all and (min-width: 1440px) {
-  .linkListContainer .linkListBox {
+  .link-list-container .link-list-box {
     width: 60%;
   }
   
-  .linkSection > .linkImgContainer {
+  .link-section > .link-img-container {
     flex: 1;
   }
 
-  .linkItem > button {
+  .link-item > button {
     font-size: 1.6rem;
   }
 }
