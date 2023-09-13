@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #453630;
+  background-color: var(--color-main);
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -18,6 +18,7 @@ body {
   -o-animation: fadein 2000ms ease-out; /* Opera */
 }
 
+/* 화면 전환 CSS */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -57,6 +58,12 @@ body {
   }
 }
 
+/* color */
+:root {
+  --color-main: #f3f4e9;
+  --color-text: #416d83;
+}
+
 /* header-area */
 header {
   display: flex;
@@ -89,7 +96,7 @@ header > .title-text {
 header > .title-text > h1 {
   z-index: 10;
   text-align: center;
-  color: #9b7e4b;
+  color: var(--color-text);
   font-size: 4rem;
   user-select: none;
 }
@@ -99,194 +106,14 @@ header > .title-text h1 {
 }
 
 .main-text {
-  margin-top: 80px;
+  margin-top: 50px;
   border-right: 0.05em solid black;
-  color: #9b7e4b;
+  color: var(--color-text);
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Libre Baskerville", serif;
   text-align: center;
-}
-
-/* snowBox-area */
-#snowBox {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 0px solid #fff;
-  overflow: hidden;
-  transform: translateX(-50%);
-}
-
-.snowflake {
-  height: 100%;
-  color: #9b7e4b85;
-  font-size: 1em;
-  font-family: Arial;
-}
-
-@-webkit-keyframes snowflakes-fall {
-  0% {
-    top: -10%;
-  }
-  100% {
-    top: 700px;
-  }
-}
-
-@-webkit-keyframes snowflakes-shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(80px);
-  }
-}
-
-@keyframes snowflakes-fall {
-  0% {
-    top: -10%;
-  }
-  100% {
-    top: 700px;
-  }
-}
-
-@keyframes snowflakes-shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(80px);
-  }
-}
-
-.snowflake {
-  position: absolute;
-  top: -10%;
-  z-index: 1;
-  -webkit-user-select: none;
-  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-  -webkit-animation-duration: 15s, 5s, 5s;
-  -webkit-animation-timing-function: linear, ease-in-out;
-  -webkit-animation-iteration-count: infinite, infinite;
-  -webkit-animation-play-state: running, running;
   user-select: none;
-  animation-name: snowflakes-fall, snowflakes-shake;
-  animation-duration: 15s, 5s, 5s;
-  animation-timing-function: linear, ease-in-out;
-  animation-iteration-count: infinite, infinite;
-  animation-play-state: running, running;
-}
-
-.snowflake:nth-of-type(0) {
-  left: 1%;
-  -webkit-animation-delay: 4s, 0s;
-  animation-delay: 4s, 0s;
-}
-.snowflake:nth-of-type(1) {
-  left: 5%;
-  -webkit-animation-delay: 8s, 2s;
-  animation-delay: 8s, 2s;
-}
-.snowflake:nth-of-type(2) {
-  left: 10%;
-  -webkit-animation-delay: 9.5s, 0.5s;
-  animation-delay: 9.5s, 0.5s;
-}
-.snowflake:nth-of-type(3) {
-  left: 15%;
-  -webkit-animation-delay: 7s, 2s;
-  animation-delay: 7s, 2s;
-}
-.snowflake:nth-of-type(4) {
-  left: 20%;
-  -webkit-animation-delay: 0s, 3s;
-  animation-delay: 0s, 3s;
-}
-.snowflake:nth-of-type(5) {
-  left: 25%;
-  -webkit-animation-delay: 4.5s, 3s;
-  animation-delay: 4.5s, 3s;
-}
-.snowflake:nth-of-type(6) {
-  left: 30%;
-  -webkit-animation-delay: 9s, 2s;
-  animation-delay: 9s, 2s;
-}
-.snowflake:nth-of-type(7) {
-  left: 35%;
-  -webkit-animation-delay: 6s, 1s;
-  animation-delay: 6s, 1s;
-}
-.snowflake:nth-of-type(8) {
-  left: 40%;
-  -webkit-animation-delay: 12s, 1s;
-  animation-delay: 12s, 1s;
-}
-.snowflake:nth-of-type(9) {
-  left: 45%;
-  -webkit-animation-delay: 1s, 1.5s;
-  animation-delay: 1s, 1.5s;
-}
-.snowflake:nth-of-type(10) {
-  left: 50%;
-  -webkit-animation-delay: 4.5s, 0s;
-  animation-delay: 4.5s, 0s;
-}
-.snowflake:nth-of-type(11) {
-  left: 55%;
-  -webkit-animation-delay: 5s, 1s;
-  animation-delay: 5s, 1s;
-}
-.snowflake:nth-of-type(12) {
-  left: 60%;
-  -webkit-animation-delay: 2s, 0.5s;
-  animation-delay: 2s, 0.5s;
-}
-.snowflake:nth-of-type(13) {
-  left: 65%;
-  -webkit-animation-delay: 6.5s, 3s;
-  animation-delay: 6.5s, 3s;
-}
-.snowflake:nth-of-type(14) {
-  left: 70%;
-  -webkit-animation-delay: 10s, 2s;
-  animation-delay: 10s, 2s;
-}
-.snowflake:nth-of-type(15) {
-  left: 75%;
-  -webkit-animation-delay: 5.5s, 5s;
-  animation-delay: 5.5s, 5s;
-}
-.snowflake:nth-of-type(16) {
-  left: 80%;
-  -webkit-animation-delay: 2.5s, 2s;
-  animation-delay: 2.5s, 2s;
-}
-.snowflake:nth-of-type(17) {
-  left: 85%;
-  -webkit-animation-delay: 3s, 2.5s;
-  animation-delay: 3s, 2.5s;
-}
-.snowflake:nth-of-type(18) {
-  left: 90%;
-  -webkit-animation-delay: 11s, 4.5s;
-  animation-delay: 11s, 4.5s;
-}
-.snowflake:nth-of-type(19) {
-  left: 90%;
-  -webkit-animation-delay: 4s, 1.5s;
-  animation-delay: 4s, 1.5s;
-}
-.snowflake:nth-of-type(20) {
-  left: 90%;
-  -webkit-animation-delay: 1.5s, 3.5s;
-  animation-delay: 1.5s, 3.5s;
 }
 
 /* mouse-cursor-area */
@@ -296,7 +123,7 @@ header > .title-text h1 {
   top: 0;
   left: 0;
   border-radius: 50%;
-  color: #9b7e4b;
+  color: var(--color-text);
   transform: translate(-50%, -50%);
 }
 
@@ -306,7 +133,7 @@ header > .title-text h1 {
 
 /* navBar-area */
 .nav-bar {
-  border: 3px solid #453630;
+  border: 3px solid var(--color-main);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -326,8 +153,7 @@ header > .title-text h1 {
 /* 모바일 버전 메뉴바 축소를 위한 CSS */
 .nav-bar > .box-group:nth-child(1),
 .nav-bar > .box-group:nth-child(2),
-.nav-bar > .box-group:nth-child(3),
-.nav-bar > .box-group:nth-child(5) {
+.nav-bar > .box-group:nth-child(4) {
   display: none;
 }
 
@@ -335,14 +161,14 @@ header > .title-text h1 {
 .nav-bar .white-box {
   position: relative;
   flex: 1;
-  border: 4px solid #453630;
+  border: 4px solid var(--color-main);
   width: 100%;
   height: 100%;
-  background-color: #f4f2ec;
+  background-color: var(--color-text);
 }
 
 .nav-bar .white-box:hover {
-  background: linear-gradient(to bottom, #dedede, #ababab);
+  background: linear-gradient(to bottom, var(--color-main), var(--color-text));
 }
 
 /* navBar_black-box-area */
@@ -350,7 +176,7 @@ header > .title-text h1 {
   position: absolute;
   width: 9%;
   height: 50%;
-  background-color: #453630;
+  background-color: var(--color-main);
   top: 1;
 }
 
@@ -381,7 +207,7 @@ header > .title-text h1 {
   top: -45px;
   width: 40px;
   height: 40px;
-  color: #453630;
+  color: var(--color-text);
   font-size: 200%;
   visibility: hidden;
   transition: color 0.2s, transform 2s;
@@ -390,7 +216,7 @@ header > .title-text h1 {
 .white-box:hover > .animation {
   visibility: visible;
   transform: translateY(-50px);
-  color: #9b7e4b;
+  color: var(--color-text);
 }
 
 .nav-bar .mobile-ani {
@@ -402,22 +228,22 @@ header > .title-text h1 {
   display: none;
   position: absolute;
   bottom: 5px;
-  left: 3%;
-  width: 95%;
+  left: 5%;
+  width: 90%;
   height: 40px;
-  border: none;
-  background-color: #453630;
-  border-radius: 20px;
+  border: 2px solid var(--color-main);
+  background: none;
+  border-radius: 50%;
   transition: background-color 0.3s;
 }
 
 .nav-bar .white-box > button:hover {
-  background-color: #ababab;
-  border: 0.5px solid #ababab;
+  background-color: var(--color-main);;
+  border: 0.5px solid var(--color-text);;
 }
 
 .nav-bar .white-box > button:hover > i {
-  color: #9b7e4b;
+  color: var(--color-text);
   transition: color 0.3s;
 }
 
@@ -425,8 +251,8 @@ header > .title-text h1 {
   position: absolute;
   left: -1px;
   top: -240px;
-  background-color: #453630;
-  color: #453630;
+  background-color: var(--color-main);
+  color: var(--color-main);
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
@@ -441,7 +267,7 @@ header > .title-text h1 {
   justify-content: center;
   visibility: visible;
   transform: translateY(-30px);
-  color: #9b7e4b;
+  color: var(--color-text);
 }
 
 /* mobile-btn-area */
@@ -450,12 +276,12 @@ header > .title-text h1 {
 }
 
 .mobile-btn .mobile-btn-text {
-  color: #fff;
+  color: var(--color-main);
   font-size: 1.2em;
 }
 
 .mobile-btn:hover .mobile-btn-text {
-  color: #9b7e4b;
+  color: var(--color-main);
 }
 
 .nav-bar .white-box > .pc-ani-hidden {
@@ -481,8 +307,7 @@ header > .title-text h1 {
     font-size: 4rem;
   }
 
-  .nav-bar > .box-group:nth-child(1),
-  .nav-bar > .box-group:nth-child(5) {
+  .nav-bar > .box-group:nth-child(1) {
     display: flex;
   }
 
@@ -507,7 +332,7 @@ header > .title-text h1 {
   .nav-bar .white-box > .pc-btn > i {
     font-size: 1.2rem;
     text-align: center;
-    color: #f4f2ec;
+    color: var(--color-main);
   }
 
   .nav-bar .mobile-ani {
