@@ -1,0 +1,24 @@
+@keyframes keyboard-wave {
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.keyboard-wave {
+  -webkit-animation-name: keyboard-wave;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: running;
+  animation-name: keyboard-wave;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: running;
+}
+
+.keyboard-wave:nth-of-type(0) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
