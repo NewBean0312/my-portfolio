@@ -1,24 +1,166 @@
 @keyframes keyboard-wave {
   0% {
-    bottom: -50px;
-  }
-  100% {
     bottom: 0;
+  }
+
+  100% {
+    bottom: -50px;
   }
 }
 
 .keyboard-wave {
   -webkit-animation-name: keyboard-wave;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: running;
   animation-name: keyboard-wave;
-  animation-duration: 5s;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: running;
 }
 
-.keyboard-wave:nth-of-type(0) {
+/* box-group-1 */
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(1) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(2) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(3) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(4) {
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
+}
+
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(5) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(6) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.box-group:nth-of-type(1) > .keyboard-wave:nth-of-type(7) {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+/* box-group-2 */
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(1) {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(2) {
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(4) {
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(5) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(6) {
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+.box-group:nth-of-type(2) > .keyboard-wave:nth-of-type(7) {
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+}
+
+/* box-group-3 */
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(1) {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(2) {
+  -webkit-animation-delay: 16s;
+  animation-delay: 16s;
+}
+
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(3) {
+  -webkit-animation-delay: 17s;
+  animation-delay: 17s;
+}
+
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(4) {
+  -webkit-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(5) {
+  -webkit-animation-delay: 19s;
+  animation-delay: 19s;
+}
+
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(6) {
+  -webkit-animation-delay: 20s;
+  animation-delay: 20s;
+}
+
+.box-group:nth-of-type(3) > .keyboard-wave:nth-of-type(7) {
+  -webkit-animation-delay: 21s;
+  animation-delay: 21s;
+}
+
+/* box-group-4 */
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(1) {
+  -webkit-animation-delay: 22s;
+  animation-delay: 22s;
+}
+
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(2) {
+  -webkit-animation-delay: 23s;
+  animation-delay: 23s;
+}
+
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(3) {
+  -webkit-animation-delay: 24s;
+  animation-delay: 24s;
+}
+
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(4) {
+  -webkit-animation-delay: 25s;
+  animation-delay: 25s;
+}
+
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(5) {
+  -webkit-animation-delay: 26s;
+  animation-delay: 26s;
+}
+
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(6) {
+  -webkit-animation-delay: 27s;
+  animation-delay: 27s;
+}
+
+.box-group:nth-of-type(4) > .keyboard-wave:nth-of-type(7) {
+  -webkit-animation-delay: 28s;
+  animation-delay: 28s;
 }

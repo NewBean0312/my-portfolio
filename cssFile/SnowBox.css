@@ -1,5 +1,5 @@
 /* snowBox-area */
-#snowBox {
+#snow-box {
     position: absolute;
     top: 0px;
     left: 50%;
@@ -73,12 +73,6 @@
     animation-play-state: running, running;
   }
   
-  .snowflake:nth-of-type(0) {
-    left: 1%;
-    -webkit-animation-delay: 4s, 0s;
-    animation-delay: 4s, 0s;
-  }
-
   .snowflake:nth-of-type(1) {
     left: 5%;
     -webkit-animation-delay: 8s, 2s;
