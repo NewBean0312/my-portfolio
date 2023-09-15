@@ -1,0 +1,39 @@
+/* mobile-screen-media */
+@media all and (max-width: 500px) {
+  header > .title-text h1 {
+    font-size: 2rem;
+  }
+
+  .nav-bar > .box-group:nth-child(1) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  }
+
+@media all and (max-width: 1024px) {
+  .nav-bar .btn-text {
+    display: none;
+  }
+
+  .nav-bar > .box-group:nth-child(2),
+  .nav-bar > .box-group:nth-child(4) {
+    display: none;
+  }
+
+  .nav-bar .white-box .mobile-btn {
+    display: flex;
+    height: 43px;
+  }
+
+  .nav-bar .white-box > .pc-btn > .btn-nav {
+    display: none;
+  }
+  .nav-bar .white-box > .pc-ani-hidden {
+    display: block;
+  }
+  .nav-bar .mobile-ani {
+    display: block;
+  }
+}
