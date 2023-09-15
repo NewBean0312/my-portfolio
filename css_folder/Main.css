@@ -74,19 +74,6 @@ header {
   font-family: "Libre Baskerville", serif;
 }
 
-header > .logo {
-  display: flex;
-  flex-grow: 1;
-  justify-content: start;
-  align-items: center;
-  user-select: none;
-}
-
-header > .logo > img {
-  width: 45px;
-  height: 45px;
-}
-
 header > .title-text {
   display: flex;
   flex-grow: 1;
@@ -96,6 +83,7 @@ header > .title-text {
 
 header > .title-text > h1 {
   z-index: 10;
+  width: 100%;
   text-align: center;
   color: var(--color-text);
   font-size: 4rem;
@@ -175,6 +163,7 @@ header > .title-text h1 {
 /* navBar_black-box-area */
 .nav-bar .black-box {
   position: absolute;
+  z-index: 1;
   width: 9%;
   height: 50%;
   background-color: var(--color-main);
@@ -215,6 +204,7 @@ header > .title-text h1 {
 }
 
 .white-box:hover > .animation {
+  z-index: 2;
   visibility: visible;
   transform: translateY(-50px);
   color: var(--color-text);
@@ -252,6 +242,7 @@ header > .title-text h1 {
 }
 
 .nav-bar .white-box > button:hover .btn-text {
+  z-index: 2;
   justify-content: center;
   visibility: visible;
   transform: translateY(-30px);
