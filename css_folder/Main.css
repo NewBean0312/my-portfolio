@@ -62,6 +62,7 @@ body {
 :root {
   --color-main: #f3f4e9;
   --color-text: #416d83;
+  --color-mouse: #416df3;
 }
 
 /* header-area */
@@ -108,7 +109,7 @@ header > .title-text > h1 {
   top: 0;
   left: 0;
   border-radius: 50%;
-  color: #416df3;
+  color: var(--color-mouse);
   transform: translate(-50%, -50%);
 }
 
