@@ -157,6 +157,7 @@ header > .title-text > h1 {
   width: 9%;
   height: 45%;
   background-color: var(--color-main);
+  border: none;
   bottom: 150px;
 }
 
@@ -241,7 +242,7 @@ header > .title-text > h1 {
   height: 125px;
   position: fixed;
   bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-main);
 }
 

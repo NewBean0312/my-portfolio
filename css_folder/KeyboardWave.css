@@ -10,11 +10,11 @@
 
 .keyboard-wave {
   -webkit-animation-name: keyboard-wave;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: running;
   animation-name: keyboard-wave;
-  animation-duration: 4s;
+  animation-duration: 3.5s;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-iteration-count: infinite;
