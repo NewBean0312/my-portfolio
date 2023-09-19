@@ -34,6 +34,11 @@ html {
   height: 200px;
 }
 
+.nav-bar:hover {
+  height: 200px;
+}
+
+
 .nav-bar > .box-group {
   position: relative;
   display: flex;
@@ -117,7 +122,7 @@ html {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-text);
 }

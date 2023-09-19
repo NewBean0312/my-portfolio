@@ -102,21 +102,6 @@ header > .title-text > h1 {
   user-select: none;
 }
 
-/* mouse-cursor-area */
-.mouse-cursor {
-  z-index: 999;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  color: var(--color-mouse);
-  transform: translate(-50%, -50%);
-}
-
-.mouse-cursor > i {
-  font-size: 30px;
-}
-
 /* navBar-area */
 .nav-bar {
   border: 3px solid var(--color-main);

@@ -2,7 +2,6 @@
 * {
   font-family: "Libre Baskerville", serif;
   user-select: none;
-  cursor: none;
   margin: 0;
   padding: 0;
 }
@@ -68,16 +67,6 @@ body {
   --color-hover: #023df7;
 }
 
-/* mouse-cursor-area */
-.mouse-cursor {
-  z-index: 999;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  color: var(--color-mouse);
-  transform: translate(-50%, -50%);
-}
 
 .mouse-cursor > i {
   font-size: 30px;
