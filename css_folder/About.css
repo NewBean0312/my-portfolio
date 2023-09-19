@@ -73,9 +73,10 @@ body {
 /* about-header-area */
 .about-header > h1 {
   text-align: center;
-  color: var(--color-text);
   margin-top: 15px;
   margin-bottom: 20px;
+  background-color: var(--color-main);
+  color: var(--color-text);
   font-size: 3rem;
   font-style: italic;
 }
@@ -131,17 +132,20 @@ body {
   display: none;
   margin-top: 80px;
   margin-left: 20px;
+  background-color: var(--color-main);
   color: var(--color-text);
   font-weight: 600;
   font-style: italic;
 }
 
 .about-content > p {
+  z-index: 1;
   margin-top: 0;
-  font-family: "Noto Serif KR", serif;
+  background-color: var(--color-main);
   color: var(--color-des);
-  text-align: center;
+  font-family: "Noto Serif KR", serif;
   font-size: 0.7rem;
+  text-align: center;
   line-height: 35px;
 }
 
