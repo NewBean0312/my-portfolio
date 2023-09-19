@@ -9,16 +9,29 @@ html {
   user-select: none;
 }
 
+/* color */
+:root {
+  --color-main: #f3f4e9;
+  --color-text: #416d83;
+}
+
 /* mobileScreenMedia */
 /* navBar-area */
 .nav-bar {
+  display: flex;
   z-index: 99;
   position: fixed;
+  top: 0;
   width: 100%;
-  height: 110px;
-  display: flex;
+  height: 80px;
+  background-color: var(--color-main);
+  border: 3px solid var(--color-text);
   transition: height 0.5s;
-  background-color: white;
+  overflow: hidden;
+}
+
+.nav-bar:hover {
+  height: 200px;
 }
 
 .nav-bar > .box-group {
@@ -39,25 +52,28 @@ html {
 
 /* white-box-area */
 .nav-bar .white-box {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   position: relative;
   flex-grow: 1;
-  border: 2px solid #453630;
-  border-top: 0 solid #453630;
+  border-left: 3px solid var(--color-text);
+  border-top: 0;
   width: 100%;
   height: 100%;
-  background-color: #f4f2ec;
+  background-color: var(--color-main);
 }
 
 .nav-bar .white-box:hover {
-  background: linear-gradient(to bottom, #dedede, #ababab);
+  background: linear-gradient(to bottom, var(--color-text), var(--color-main));
 }
 
 /* black-box-area */
 .nav-bar .black-box {
   position: absolute;
   width: 9%;
-  height: 50%;
-  background-color: #453630;
+  height: 40%;
+  background-color: var(--color-text);
   top: 1;
 }
 
@@ -84,26 +100,41 @@ html {
 
 /* button-area */
 .nav-bar .white-box > button {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border: none;
+  background: none;
+  transition: height 0.5s;
+}
+
+.nav-bar:hover .white-box > button {
+  height: 59%;
+}
+
+.nav-bar .white-box .btn-nav {
   display: none;
   position: absolute;
-  bottom: 5px;
-  left: 3%;
-  width: 95%;
-  height: 40px;
-  border: none;
-  background-color: #453630;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
-.nav-bar .white-box > button:hover {
-  background-color: #ababab;
-  border: 1px solid #ababab;
+.nav-bar:hover .white-box .btn-nav {
+  display: flex;
+  top: 5%;
 }
 
-.nav-bar .white-box > button:hover > i {
-  color: #9b7e4b;
-  transition: color 0.3s;
+.nav-bar .white-box i {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.nav-bar:hover .white-box i {
+  display: none;
 }
 
 /* mobile-btn-area */
@@ -135,10 +166,6 @@ html {
 }
 /* large-pc-screen-media */
 @media all and (min-width: 1440px) {
-  .nav-bar:hover {
-    height: 200px;
-  }
-
   .nav-bar > .box-group:nth-child(1),
   .nav-bar > .box-group:nth-child(5) {
     display: flex;
@@ -156,32 +183,5 @@ html {
 
   .nav-bar .white-box .pc-btn {
     display: block;
-    border-radius: 50%;
-  }
-
-  .nav-bar .btn-text {
-    width: 100%;
-    position: absolute;
-    left: -1.5px;
-    top: -18px;
-    color: white;
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: bold;
-    visibility: hidden;
-    transition: color 0.3s, visibility 0.5s, transform 0.5s;
-  }
-
-  .nav-bar .white-box > .pc-btn:hover .btn-text {
-    justify-content: center;
-    visibility: visible;
-    transform: translateY(-15px);
-    color: #9b7e4b;
-  }
-
-  .nav-bar .white-box > .pc-btn > i {
-    font-size: 1.3rem;
-    text-align: center;
-    color: #f4f2ec;
   }
 }

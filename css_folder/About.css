@@ -150,11 +150,12 @@ body {
 }
 
 .about-content > h4 {
-  color: var(--color-text);
-  font-weight: bold;
+  display: none;
   margin-top: 80px;
   margin-left: 20px;
-  display: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-style: italic;
 }
 
 .about-content > p {
@@ -163,7 +164,6 @@ body {
   color: var(--color-des);
   text-align: center;
   font-size: 0.7rem;
-  font-weight: 500;
   line-height: 35px;
 }
 
@@ -171,6 +171,7 @@ body {
   font-family: "Noto Serif KR", serif;
   color: var(--color-text);
   font-size: 0.9rem;
+  font-weight: 600;
   font-style: italic;
   text-decoration: underline;
 }
@@ -349,7 +350,7 @@ body {
   }
 
   .about-show #img-box7 {
-    top: 350px;
+    top: 320px;
     left: 32%;
     width: 350px;
   }
