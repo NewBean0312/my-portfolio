@@ -75,7 +75,6 @@ body {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 20px;
-  background-color: var(--color-main);
   color: var(--color-text);
   font-size: 3rem;
   font-style: italic;
