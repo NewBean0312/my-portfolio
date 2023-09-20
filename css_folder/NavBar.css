@@ -36,12 +36,9 @@ html {
   height: 100%;
 }
 
-/* 모바일 버전 메뉴바 축소를 위한 CSS */
-.nav-bar > .box-group:nth-child(1),
 .nav-bar > .box-group:nth-child(2),
-.nav-bar > .box-group:nth-child(3),
-.nav-bar > .box-group:nth-child(5) {
-  display: none;
+.nav-bar > .box-group:nth-child(3) {
+  width: 130%;
 }
 
 /* white-box-area */
@@ -141,7 +138,7 @@ html {
 
 /* mobile-btn-area */
 .nav-bar .white-box .mobile-btn {
-  display: block;
+  display: none;
 }
 
 .mobile-btn .mobile-btn-text {
@@ -151,39 +148,4 @@ html {
 
 .mobile-btn:hover .mobile-btn-text {
   color: #9b7e4b;
-}
-
-/* tabletScreenMedia */
-@media all and (min-width: 768px) {
-  .nav-bar > .box-group:nth-child(2) {
-    display: flex;
-  }
-}
-
-/* PCScreenMedia */
-@media all and (min-width: 1024px) {
-  .nav-bar .white-box > .mobile-btn {
-    height: 43px;
-  }
-}
-/* large-pc-screen-media */
-@media all and (min-width: 1440px) {
-  .nav-bar > .box-group:nth-child(1),
-  .nav-bar > .box-group:nth-child(5) {
-    display: flex;
-  }
-
-  .nav-bar > .box-group:nth-child(3),
-  .nav-bar > .box-group:nth-child(4) {
-    display: flex;
-    width: 130%;
-  }
-
-  .nav-bar .white-box .mobile-btn {
-    display: none;
-  }
-
-  .nav-bar .white-box .pc-btn {
-    display: block;
-  }
 }
