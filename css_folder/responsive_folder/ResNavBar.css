@@ -1,3 +1,6 @@
+/* mobile-screen-media */
+
+/* tablet-screen-media */
 @media all and (max-width: 768px) {
   .nav-bar > .box-group:nth-child(2) {
     display: none;
@@ -12,7 +15,7 @@
   }
 }
 
-/* large-pc-screen-media */
+/* PC-screen-media */
 @media all and (max-width: 1024px) {
   .nav-bar > .box-group:nth-child(1),
   .nav-bar > .box-group:nth-child(4) {

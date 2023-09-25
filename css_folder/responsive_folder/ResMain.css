@@ -5,12 +5,14 @@
   }
 }
 
+/* tablet-screen-media */
 @media all and (max-width: 768px) {
   .nav-bar > .box-group:nth-child(1) {
     display: none;
   }
 }
 
+/* pc-screen-media */
 @media all and (max-width: 1024px) {
   .nav-bar .btn-text {
     display: none;
