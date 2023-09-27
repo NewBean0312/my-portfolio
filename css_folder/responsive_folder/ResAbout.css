@@ -26,6 +26,10 @@
   .about-content span {
     line-height: 30px;
   }
+
+  .about-content p > br.mobile-hidden {
+    display: none;
+  }
 }
 
 /* tablet-screen-media */
@@ -57,27 +61,27 @@
   .about-show #img-box1 {
     top: 0;
   }
-  
+
   .about-show #img-box2 {
     top: 0;
   }
-  
+
   .about-show #img-box3 {
     top: 0;
   }
-  
+
   .about-show #img-box4 {
     top: 0;
   }
-  
+
   .about-show #img-box5 {
     top: 0;
   }
-  
+
   .about-show #img-box6 {
     top: 0;
   }
-  
+
   .about-show #img-box7 {
     top: 0;
   }
@@ -96,14 +100,9 @@
     margin-left: 12%;
   }
 
-  .about-content p > br.mobile-hidden {
-    display: none;
-  }
-
   .about-content span.enter-place {
     display: none;
   }
-
 }
 
 /* pc-screen-media */

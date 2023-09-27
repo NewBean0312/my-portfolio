@@ -5,23 +5,48 @@
   .nav-bar > .box-group:nth-child(2) {
     display: none;
   }
-
-  .nav-bar .white-box .mobile-btn {
-    display: block;
-  }
-
-  .nav-bar .white-box .pc-btn {
-    display: none;
-  }
 }
 
 /* PC-screen-media */
 @media all and (max-width: 1024px) {
+  .nav-bar {
+    height: 132px;
+  }
+
+  .nav-bar:hover {
+    height: 132px;
+  }
+
   .nav-bar > .box-group:nth-child(1),
   .nav-bar > .box-group:nth-child(4) {
     display: none;
   }
   .nav-bar > .box-group:nth-child(2) {
     width: 100%;
+  }
+
+  .nav-bar .black-box {
+    display: none;
+  }
+
+  .nav-bar .white-box .mobile-btn {
+    display: block;
+    height: 100%;
+  }
+
+  .nav-bar .white-box .pc-btn {
+    display: none;
+  }
+
+  .nav-bar .white-box .btn-nav {
+    top: 5px;
+    visibility: visible;
+    opacity: 1;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .nav-bar:hover .white-box > button {
+    height: 100%;
   }
 }
