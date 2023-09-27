@@ -2,13 +2,6 @@
 
 /* tablet-screen-media */
 @media all and (max-width: 768px) {
-  .nav-bar > .box-group:nth-child(2) {
-    display: none;
-  }
-}
-
-/* PC-screen-media */
-@media all and (max-width: 1024px) {
   .nav-bar {
     height: 132px;
   }
@@ -17,12 +10,8 @@
     height: 132px;
   }
 
-  .nav-bar > .box-group:nth-child(1),
-  .nav-bar > .box-group:nth-child(4) {
-    display: none;
-  }
   .nav-bar > .box-group:nth-child(2) {
-    width: 100%;
+    display: none;
   }
 
   .nav-bar .black-box {
@@ -48,5 +37,17 @@
 
   .nav-bar:hover .white-box > button {
     height: 100%;
+  }
+}
+
+/* PC-screen-media */
+@media all and (max-width: 1024px) {
+  .nav-bar > .box-group:nth-child(1),
+  .nav-bar > .box-group:nth-child(4) {
+    display: none;
+  }
+  .nav-bar > .box-group:nth-child(2),
+  .nav-bar > .box-group:nth-child(3) {
+    width: 100%;
   }
 }
