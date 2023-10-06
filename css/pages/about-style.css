@@ -3,8 +3,9 @@
 @import "../base/color.css";
 
 @import "../components/screen-tran.css";
+@import "../components/nav-bar.css";
 @import "../components/snow-box.css";
-@import "../components/keyboard-wave.css";
-@import "../components/main.css";
+@import "../components/about.css";
 
-@import "../responsive/res-main.css";
+@import "../responsive/res-nav-bar.css";
+@import "../responsive/res-about.css";
