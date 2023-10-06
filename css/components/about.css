@@ -5,6 +5,7 @@
   top: 12%;
   width: 100%;
   height: 88%;
+  min-width: 500px;
 }
 
 /* about-header-area */

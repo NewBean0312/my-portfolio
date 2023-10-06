@@ -1,7 +1,12 @@
 /* mobile-screen-media */
+@media screen and (max-width: 500px) {
+  .nav-bar .white-box .btn-nav {
+    font-size: 13px;
+  }
+}
 
 /* tablet-screen-media */
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-bar {
     height: 132px;
   }
@@ -11,10 +16,6 @@
   }
 
   .nav-bar > .box-group:nth-child(2) {
-    display: none;
-  }
-
-  .nav-bar .black-box {
     display: none;
   }
 
@@ -28,11 +29,14 @@
   }
 
   .nav-bar .white-box .btn-nav {
-    top: 5px;
+    top: 100px;
     visibility: visible;
     opacity: 1;
-    font-size: 17px;
     line-height: 18px;
+  }
+
+  .nav-bar .mobile-btn br {
+    display: none;
   }
 
   .nav-bar:hover .white-box > button {
@@ -41,7 +45,7 @@
 }
 
 /* PC-screen-media */
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .nav-bar > .box-group:nth-child(1),
   .nav-bar > .box-group:nth-child(4) {
     display: none;

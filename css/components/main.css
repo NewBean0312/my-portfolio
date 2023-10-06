@@ -3,6 +3,7 @@ header {
   display: flex;
   justify-content: center;
   width: 80%;
+  min-width: 500px;
   height: 150px;
   margin: 0 auto;
   font-family: "Libre Baskerville", serif;
@@ -37,19 +38,19 @@ header > .title-text > h1 {
 
 /* navBar-area */
 .nav-bar {
-  border: 3px solid var(--color-main);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 280px;
   display: flex;
+  bottom: -15px;
+  position: absolute;
+  width: 100%;
+  min-width: 500px;
+  height: 280px;
+  border: 3px solid var(--color-main);
   transition: height 0.5s;
 }
 
 .nav-bar > .box-group {
   position: relative;
   display: flex;
-  bottom: -10px;
   flex: 1;
   width: 100%;
   height: 100%;

@@ -27,7 +27,7 @@ body {
   height: 100%;
   overflow: hidden;
   outline: none;
-  
+  min-width: 500px;
 }
 
 /**
