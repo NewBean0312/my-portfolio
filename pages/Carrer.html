@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 외부 파일 -->
+    <!-- icon & css link -->
     <link rel="shortcut icon" href="../img/favicon.ico" />
-    <link rel="stylesheet" href="../cssFile/nav_bar.css" />
-    <link rel="stylesheet" href="../cssFile/Carrer.css" />
+    <link rel="stylesheet" href="../css/pages/carrer-style.css">
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -32,26 +31,8 @@
     <title>YuBeen's Portfolio</title>
   </head>
   <body>
-    <!-- cursor-area -->
-    <div class="mouse-cursor">
-      <i class="fa-solid fa-arrow-pointer"></i>
-    </div>
-    <!-- navBar area -->
-    <nav class="nav-bar">
-      <div class="box-group">
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-      </div>
+    <!-- menu-bar area -->
+    <nav class="menu-bar">
       <div class="box-group">
         <div class="white-box"></div>
         <div class="white-box"></div>
@@ -72,14 +53,14 @@
         <div class="white-box"></div>
         <div class="white-box">
           <button class="pc-btn" onClick="location.href='../index.html'">
-            <div class="btn-text">main</div>
+            <div class="btn-nav">M<br />a<br />i<br />n<br /></div>
             <i class="fa-solid fa-m"></i>
           </button>
         </div>
         <div class="white-box"></div>
         <div class="white-box">
-          <button class="pc-btn" onClick="location.href='./about.html'">
-            <div class="btn-text">about</div>
+          <button class="pc-btn" onClick="location.href='../pages/About.html'">
+            <div class="btn-nav">A<br />b<br />o<br />u<br />t</div>
             <i class="fa-solid fa-a"></i>
           </button>
         </div>
@@ -92,52 +73,81 @@
       </div>
       <div class="box-group">
         <div class="white-box">
-          <button class="pc-btn" onClick="location.href='./carrer.html'">
-            <div class="btn-text">carrer</div>
+          <button class="pc-btn" onClick="location.href='../pages/Carrer.html'">
+            <div class="btn-nav">C<br />a<br />r<br />r<br />e<br />r</div>
             <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="white-box">
           <!-- 브라우저 너비가 스마트폰 크기일 경우, mobile-btn 실행 -->
           <button class="mobile-btn" onClick="location.href='../index.html'">
-            <div class="mobile-btn-text">main</div>
+            <div class="btn-nav">M<br />a<br />i<br />n<br /></div>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./about.html'">
-            <div class="mobile-btn-text">about</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/About.html'"
+          >
+            <div class="btn-nav">A<br />b<br />o<br />u<br />t</div>
           </button>
-          <button class="pc-btn" onClick="location.href='./skills.html'">
-            <div class="btn-text">skills</div>
+          <button class="pc-btn" onClick="location.href='../pages/Skills.html'">
+            <div class="btn-nav">S<br />k<br />i<br />l<br />l<br />s</div>
             <i class="fa-solid fa-s"></i>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./carrer.html'">
-            <div class="mobile-btn-text">carrer</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Carrer.html'"
+          >
+            <div class="btn-nav">C<br />a<br />r<br />r<br />e<br />r</div>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./skills.html'">
-            <div class="mobile-btn-text">skills</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Skills.html'"
+          >
+            <div class="btn-nav">S<br />k<br />i<br />l<br />l<br />s</div>
           </button>
-          <button class="pc-btn" onClick="location.href='./work.html'">
-            <div class="btn-text">work</div>
+          <button
+            class="pc-btn"
+            onClick="location.href='../pages/Project.html'"
+          >
+            <div class="btn-nav">
+              P<br />r<br />o<br />j<br />e<br />c<br />t
+            </div>
             <i class="fa-solid fa-w"></i>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./work.html'">
-            <div class="mobile-btn-text">work</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Project.html'"
+          >
+            <div class="btn-nav">
+              P<br />r<br />o<br />j<br />e<br />c<br />t
+            </div>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./link.html'">
-            <div class="mobile-btn-text">link</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Contact.html'"
+          >
+            <div class="btn-nav">
+              C<br />o<br />n<br />t<br />a<br />c<br />t
+            </div>
           </button>
-          <button class="pc-btn" onClick="location.href='./link.html'">
-            <div class="btn-text">link</div>
-            <i class="fa-solid fa-l"></i>
+          <button
+            class="pc-btn"
+            onClick="location.href='../pages/Contact.html'"
+          >
+            <div class="btn-nav">
+              C<br />o<br />n<br />t<br />a<br />c<br />t
+            </div>
+            <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="black-box"></div>
@@ -161,7 +171,9 @@
         <div class="black-box"></div>
       </div>
     </nav>
-    <!-- carrer-area -->
+    <!-- menu-bar area -->
+
+    <!-- carrer area -->
     <main class="carrer-main main">
       <header class="carrer-header">
         <h1><i>Carrer</i></h1>
@@ -283,6 +295,8 @@
         </article>
       </section>
     </main>
+    <!-- // carrer area -->
   </body>
-  <script src="../jsFile/Carrer.js" defer></script>
+  <!-- js script -->
+  <script src="../js/screen-tran.js" defer></script>
 </html>
