@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .carrer-section .white-box {
+    height: 200px;
+    border: none;
+  }
+  
+  .carrer-section .black-box {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 200px;
+  }
+}
