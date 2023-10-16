@@ -109,10 +109,10 @@
 }
 
 .contentBox > .img {
-  flex: 0.3;
-  margin: 30px 30.5px;
-  transition: margin 1s;
+  flex: 0.8;
+  margin: 30px 84.5px;
 }
+
 
 .contentBox > .img > img {
   width: 100%;
@@ -128,15 +128,16 @@
   color: var(--color-text);
   margin-left: 0;
   margin-top: 40px;
+  font-size: 1.3rem;
 }
 
 .content p {
-  width: 32%;
-  font-family: "Noto Serif KR", serif;
-  font-size: 0.9rem;
-  font-weight: bold;
+  width: 80%;
+  margin-top: 50px;
   line-height: 35px;
-  margin-top: 15px;
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .carrer-section .black-box .content > h2 {
@@ -145,41 +146,4 @@
 
 .carrer-section .black-box .content > p {
   color: #fff;
-}
-
-@media all and (min-width: 768px) {
-  .contentBox > .img {
-    flex: 0.8;
-    margin: 20px 87.5px;
-  }
-
-  .content > p {
-    width: 80%;
-    margin-top: 10px;
-    font-size: 1.3rem;
-  }
-}
-@media all and (min-width: 1024px) {
-  .content > p {
-    width: 150%;
-    font-size: 1.6rem;
-  }
-
-  .content br {
-    display: none;
-  }
-}
-@media all and (min-width: 1440px) {
-
-  
-
-  .content > p {
-    width: 80%;
-    margin-top: 50px;
-    font-size: 1.3rem;
-  }
-
-  .content br {
-    display: block;
-  }
 }
