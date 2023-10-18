@@ -9,9 +9,9 @@
 }
 
 /* scroll area */
-.scroll-y::-webkit-scrollbar {
+/* .scroll-y::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 /* carrer-header area */
 .carrer-main .carrer-header {
@@ -30,10 +30,14 @@
 .carrer-main .carrer-section {
   flex: 1.3;
   position: relative;
-  overflow-y: scroll;
-  width: 1300px;
-  height: 900px;
+  /* 높이는 js 로 변환 */
   background: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.carrer-section .carrer-list {
+  height: 1250px;
 }
 
 .carrer-section .carrer-item {
@@ -123,6 +127,7 @@
 
 /* content-area */
 .content-box > .desc-area {
+  margin-left: 20px;
   width: 500px;
 }
 
