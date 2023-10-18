@@ -4,7 +4,7 @@
     height: 200px;
   }
 
-  .contentBox > .img {
+  .content-box > .img {
     flex: 0.3;
     margin: 20px 87.5px;
     transition: margin 1s;  
