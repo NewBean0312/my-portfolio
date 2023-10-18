@@ -1,11 +1,11 @@
 /* carrer-main area */
 .carrer-main {
-  position: absolute;
+  display: flex;
+  position: relative;
   right: 0;
-  z-index: -1;
+  margin-top: 85px;
   width: 100%;
   min-width: 500px;
-  top: 15%;
 }
 
 /* scroll area */
@@ -35,8 +35,9 @@
 
 /* carrer-header area */
 .carrer-main .carrer-header {
-  width: 100%;
+  flex: 0.5;
   text-align: center;
+  margin-top: 100px;
 }
 
 .carrer-header > h1 {
@@ -47,22 +48,21 @@
 
 /* carrer-section area */
 .carrer-main .carrer-section {
+  flex: 1.5;
   position: relative;
-  float: right;
-  width: 90%;
-  height: 700px;
-  border-top: 5px solid var(--color-border);
-  border-left: 5px solid var(--color-border);
   overflow-y: scroll;
+  width: 1300px;
+  height: 900px;
+  background: none;
 }
 
 .carrer-section .white-box {
   display: flex;
   position: relative;
+  box-sizing: border-box;
   width: 100%;
   height: 300px;
   background-color: #f4f2ec;
-  border-top: 6px solid #453630;
 }
 
 .carrer-section .white-box:first-child {
@@ -116,48 +116,55 @@
 }
 
 /* content-box area */
-.carrer-section .content-box {
+.carrer-item .content-box {
   position: relative;
   display: flex;
+  width: 100%;
   height: 100%;
 }
 
-.content-box > .img {
-  flex: 0.8;
-  margin: 30px 84.5px;
+.white-box > .content-box {
+  border-top: 6px solid #453630;
+}
+
+.content-box > .img-area {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
 }
 
 
-.content-box > .img > img {
+.content-box > .img-area > img {
   width: 100%;
   height: 100%;
 }
 
 /* content-area */
-.content-box > .content {
-  flex: 1.2;
+.content-box > .desc-area {
+  margin-top: 30px;
+  width: 500px;
 }
 
-.content > h2 {
+.desc-area > h2 {
   color: var(--color-text);
   margin-left: 0;
   margin-top: 40px;
   font-size: 1.3rem;
 }
 
-.content p {
+.desc-area p {
   width: 80%;
-  margin-top: 50px;
+  margin-top: 30px;
   line-height: 35px;
   font-family: "Noto Serif KR", serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.carrer-section .black-box .content > h2 {
+.carrer-section .black-box .desc-area > h2 {
   color: #f8efce;
 }
 
-.carrer-section .black-box .content > p {
+.carrer-section .black-box .desc-area > p {
   color: #fff;
 }
