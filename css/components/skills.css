@@ -1,196 +1,177 @@
-/* .skills-section-area */
-.skills-section {
-  z-index: -1;
-  position: absolute;
+/* .skills-main area */
+.skills-main {
+  position: relative;
   width: 100%;
+  min-width: 500px;
   height: 100%;
-  top: 17%;
+  margin-top: 120px;
 }
 
-/* skills-header-area */
-.skills-section > .skills-header {
+/* skills-header area */
+.skills-main > .skills-header {
   width: 35%;
   height: 60px;
-  text-align: center;
-  color: var(--color-text);
-  font-size: 1.7rem;
   margin: 0 auto;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border1);
+  text-align: center;
+}
+
+.skills-header > h1 {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-text);
 }
 
 .skills-header > div {
   width: 100%;
   height: 4px;
-  border-top: 3px solid var(--color-border);
+  border-top: 3px solid var(--color-border1);
 }
 
-/* skills-article-area */
-.skills-section .skills-article {
+/* skills-section-area */
+.skills-main .skills-section {
   width: 95%;
   height: 100%;
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
-.skills-article > .note-box {
+.skills-section > .note-box {
   display: flex;
-  width: 85%;
+  width: 95%;
   height: 160px;
-  border-top: 2px solid var(--color-border);
+  border-top: 2px solid var(--color-border1);
   margin-top: 3.5%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.skills-article .note-box-row {
+.skills-section .note-box-row {
   flex: 1;
   position: relative;
   display: flex;
   flex-direction: column;
-  border-right: 7px solid var(--color-border);
+  border-right: 7px solid var(--color-border1);
 }
 
 .note-box-row:nth-child(4) {
-  display: none;
+  display: flex;
 }
 
 .note-box-row:nth-child(5) {
-  display: none;
+  display: flex;
 }
 
-.skills-article .note-box-col {
+.skills-section .note-box-col {
   position: relative;
   flex: 1;
   width: 100%;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border1);
 }
 
-.skills-article .note-box-title {
-  color: var(--color-border);
-  font-size: 0.8rem;
+.skills-section .note-box-title {
+  color: var(--color-border1);
   font-weight: bold;
-  transform: translateY(-17px);
+  font-size: 1.1rem;
+  transform: translateY(-25px);
 }
 
-.skills-article .img-icon {
-  z-index: 1;
+/* logo-img area */
+.skills-section .logo-img {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
 }
 
-.img-icon > img {
+.logo-img > img {
   width: 100%;
   height: 100%;
 }
 
-/* icon-area */
-.html-icon {
+/* logo 위치 조정 */
+.html-logo {
   left: 10%;
   top: -12px;
 }
 
-.css-icon {
+.css-logo {
   left: 40%;
   top: -12px;
 }
 
-.dbms-icon {
+.dbms-logo {
   left: 10%;
   top: -6px;
 }
 
-.git-icon {
+.git-logo {
   left: 10%;
   top: 12px;
 }
 
-.js-icon {
+.js-logo {
   left: 110%;
 }
 
-.react-icon {
+.react-logo {
   left: 60%;
 }
 
-.linux-icon {
+.linux-logo {
   left: 110%;
 }
 
-.github-icon {
+.github-logo {
   left: 110%;
 }
 
-.r-icon {
+.r-logo {
   left: 60%;
 }
 
 /* note-last-line-area */
 .note-box > .note-last-line {
   position: relative;
-  border-right: 10px solid var(--color-border);
+  border-right: 10px solid var(--color-border1);
 }
 
 .note-box .note-line {
   position: absolute;
   height: 160px;
   right: 12%;
-  border-right: 4px solid var(--color-border);
-}
-
-@media all and (min-width: 768px) {
+  border-right: 4px solid var(--color-border1);
 }
 
 @media all and (min-width: 1440px) {
-  .skills-article > .note-box {
-    width: 95%;
-  }
-
-  .note-box-row:nth-child(4) {
-    display: flex;
-  }
-
-  .note-box-row:nth-child(5) {
-    display: flex;
-  }
-
-  .note-box .note-box-title {
-    font-size: 1.1rem;
-    transform: translateY(-25px);
-  }
-
-  .note-box .img-icon {
-    width: 50px;
-    height: 50px;
-  }
 
   /* icon-area */
-  .js-icon {
+  .js-logo {
     left: 75%;
     top: 8px;
   }
 
-  .react-icon {
+  .react-logo {
     left: 10%;
     top: 17px;
   }
 
-  .linux-icon {
+  .linux-logo {
     left: 75%;
     top: 40px;
   }
 
-  .github-icon {
+  .github-logo {
     left: 75%;
     top: 12px;
   }
 
-  .r-icon {
+  .r-logo {
     left: 10%;
     top: 75px;
   }
 
   .note-box .note-line {
     right: 6%;
-    border-right: 6px solid var(--color-border);
+    border-right: 6px solid var(--color-border1);
   }
 }

@@ -2,10 +2,9 @@
 .carrer-main {
   display: flex;
   position: relative;
-  right: 0;
-  margin-top: 85px;
   width: 100%;
   min-width: 500px;
+  margin-top: 85px;
 }
 
 /* scroll area */
@@ -22,7 +21,8 @@
 
 .carrer-header > h1 {
   margin: 20px 20px;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-style: italic;
   color: var(--color-text);
 }
 

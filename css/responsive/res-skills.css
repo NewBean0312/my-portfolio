@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+  .skills-section > .note-box {
+    width: 65%;
+  }
+
+  .note-box-row:nth-child(4) {
+    display: none;
+  }
+
+  .note-box-row:nth-child(5) {
+    display: none;
+  }
+
+  .note-box .note-box-title {
+    font-size: 0.8rem;
+    transform: translateY(-17px);
+  }
+
+  .skills-section .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+}
