@@ -9,9 +9,9 @@
 }
 
 /* scroll area */
-/* .scroll-y::-webkit-scrollbar {
+.scroll-y::-webkit-scrollbar {
   width: 0;
-} */
+}
 
 /* carrer-header area */
 .carrer-main .carrer-header {
@@ -31,6 +31,7 @@
   flex: 1.3;
   position: relative;
   /* 높이는 js 로 변환 */
+  height: 100vh;
   background: none;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -68,7 +69,6 @@
   width: 45%;
   border: 2px solid black;
   background-color: black;
-  transition: width 1s;
 }
 
 /* 검은 건반 위치조정 */
