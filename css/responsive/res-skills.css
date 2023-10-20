@@ -1,13 +1,11 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .skills-section > .note-box {
     width: 65%;
   }
+}
 
+@media screen and (max-width: 1024px) {
   .note-box-row:nth-child(4) {
-    display: none;
-  }
-
-  .note-box-row:nth-child(5) {
     display: none;
   }
 
@@ -19,5 +17,31 @@
   .skills-section .logo-img {
     width: 40px;
     height: 40px;
+  }
+
+  .js-logo {
+    left: 110%;
+  }
+
+  .react-logo {
+    left: 60%;
+  }
+
+  .linux-logo {
+    left: 110%;
+  }
+
+  .github-logo {
+    left: 110%;
+  }
+
+  .r-logo {
+    left: 60%;
+  }
+
+  /* note-last-line-area */
+  .note-box > .note-last-line {
+    position: relative;
+    border-right: 10px solid var(--color-border1);
   }
 }

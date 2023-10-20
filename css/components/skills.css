@@ -109,69 +109,48 @@
   top: 12px;
 }
 
+/* icon-area */
 .js-logo {
-  left: 110%;
+  left: 75%;
+  top: 8px;
 }
 
 .react-logo {
-  left: 60%;
+  left: 10%;
+  top: 17px;
 }
 
 .linux-logo {
-  left: 110%;
+  left: 75%;
+  top: 40px;
 }
 
 .github-logo {
-  left: 110%;
+  left: 75%;
+  top: 12px;
 }
 
 .r-logo {
-  left: 60%;
-}
-
-/* note-last-line-area */
-.note-box > .note-last-line {
-  position: relative;
-  border-right: 10px solid var(--color-border1);
+  left: 10%;
+  top: 75px;
 }
 
 .note-box .note-line {
+  border-right: 6px solid var(--color-border1);
+}
+
+.last-note-line .note-box-row:nth-child(4) {
+  border-right: 12px solid var(--color-border1);
+}
+
+.last-note-line .note-box-row:nth-child(4)::after {
   position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
   height: 160px;
-  right: 12%;
-  border-right: 4px solid var(--color-border1);
+  background-color: var(--color-border1);
+  transform: translateX(-10px);
+  content: '';
 }
 
-@media all and (min-width: 1440px) {
-
-  /* icon-area */
-  .js-logo {
-    left: 75%;
-    top: 8px;
-  }
-
-  .react-logo {
-    left: 10%;
-    top: 17px;
-  }
-
-  .linux-logo {
-    left: 75%;
-    top: 40px;
-  }
-
-  .github-logo {
-    left: 75%;
-    top: 12px;
-  }
-
-  .r-logo {
-    left: 10%;
-    top: 75px;
-  }
-
-  .note-box .note-line {
-    right: 6%;
-    border-right: 6px solid var(--color-border1);
-  }
-}
