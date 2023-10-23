@@ -32,7 +32,7 @@
 .skills-main .skills-section {
   width: 95%;
   height: 100%;
-  margin: 80px auto;
+  margin: 50px auto;
 }
 
 .skills-section > .note-box {
@@ -53,14 +53,6 @@
   border-right: 7px solid var(--color-border1);
 }
 
-.note-box-row:nth-child(4) {
-  display: flex;
-}
-
-.note-box-row:nth-child(5) {
-  display: flex;
-}
-
 .skills-section .note-box-col {
   position: relative;
   flex: 1;
@@ -76,8 +68,16 @@
 }
 
 /* logo-img area */
-.skills-section .logo-img {
+.note-box-row > .logo-box {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.skills-section .logo-img {
+  display: flex;
   z-index: 1;
   width: 50px;
   height: 50px;
@@ -90,20 +90,16 @@
 
 /* logo 위치 조정 */
 .html-logo {
-  left: 10%;
 }
 
 .css-logo {
-  left: 55%;
 }
 
 .js-logo {
-  right: 10%;
 }
 
 .react-logo {
-  left: 10%;
-  top: 17px;
+  left: 5%;
 }
 
 .dbms-logo {
