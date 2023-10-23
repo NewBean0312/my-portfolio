@@ -11,7 +11,7 @@ header {
 
 header > .title-text {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   justify-items: center;
   align-items: center;
 }

@@ -91,12 +91,19 @@
 /* logo 위치 조정 */
 .html-logo {
   left: 10%;
-  top: -12px;
 }
 
 .css-logo {
-  left: 40%;
-  top: -12px;
+  left: 55%;
+}
+
+.js-logo {
+  right: 10%;
+}
+
+.react-logo {
+  left: 10%;
+  top: 17px;
 }
 
 .dbms-logo {
@@ -109,16 +116,6 @@
   top: 12px;
 }
 
-/* icon-area */
-.js-logo {
-  left: 75%;
-  top: 8px;
-}
-
-.react-logo {
-  left: 10%;
-  top: 17px;
-}
 
 .linux-logo {
   left: 75%;
