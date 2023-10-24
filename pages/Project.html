@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon & css link -->
     <link rel="shortcut icon" href="../img/favicon.ico" />
-    <link rel="stylesheet" href="../cssFile/nav_bar.css" />
-    <link rel="stylesheet" href="../cssFile/Work.css" />
+    <link rel="stylesheet" href="../css/pages/project-style.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- XEIcon -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,16 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- jquery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    ></script>
-    <!-- Slick -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
+    <!-- slick -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -46,10 +42,6 @@
     <title>YuBeen's Portfolio</title>
   </head>
   <body>
-    <!-- cursor-area -->
-    <div class="mouse-cursor">
-      <i class="fa-solid fa-arrow-pointer"></i>
-    </div>
     <!-- menu-bar-area -->
     <nav class="menu-bar">
       <div class="box-group">
@@ -70,30 +62,16 @@
         <div class="white-box"></div>
         <div class="white-box"></div>
         <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-        <div class="black-box"></div>
-      </div>
-      <div class="box-group">
-        <div class="white-box"></div>
-        <div class="white-box"></div>
-        <div class="white-box"></div>
         <div class="white-box">
           <button class="pc-btn" onClick="location.href='../index.html'">
-            <div class="btn-text">main</div>
+            <div class="btn-nav">M<br />a<br />i<br />n<br /></div>
             <i class="fa-solid fa-m"></i>
           </button>
         </div>
         <div class="white-box"></div>
         <div class="white-box">
-          <button class="pc-btn" onClick="location.href='./about.html'">
-            <div class="btn-text">about</div>
+          <button class="pc-btn" onClick="location.href='../pages/About.html'">
+            <div class="btn-nav">A<br />b<br />o<br />u<br />t</div>
             <i class="fa-solid fa-a"></i>
           </button>
         </div>
@@ -106,52 +84,81 @@
       </div>
       <div class="box-group">
         <div class="white-box">
-          <button class="pc-btn" onClick="location.href='./carrer.html'">
-            <div class="btn-text">carrer</div>
+          <button class="pc-btn" onClick="location.href='../pages/Carrer.html'">
+            <div class="btn-nav">C<br />a<br />r<br />r<br />e<br />r</div>
             <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="white-box">
           <!-- 브라우저 너비가 스마트폰 크기일 경우, mobile-btn 실행 -->
           <button class="mobile-btn" onClick="location.href='../index.html'">
-            <div class="mobile-btn-text">main</div>
+            <div class="btn-nav">M<br />a<br />i<br />n<br /></div>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./about.html'">
-            <div class="mobile-btn-text">about</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/About.html'"
+          >
+            <div class="btn-nav">A<br />b<br />o<br />u<br />t</div>
           </button>
-          <button class="pc-btn" onClick="location.href='./skills.html'">
-            <div class="btn-text">skills</div>
+          <button class="pc-btn" onClick="location.href='../pages/Skills.html'">
+            <div class="btn-nav">S<br />k<br />i<br />l<br />l<br />s</div>
             <i class="fa-solid fa-s"></i>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./carrer.html'">
-            <div class="mobile-btn-text">carrer</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Carrer.html'"
+          >
+            <div class="btn-nav">C<br />a<br />r<br />r<br />e<br />r</div>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./skills.html'">
-            <div class="mobile-btn-text">skills</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Skills.html'"
+          >
+            <div class="btn-nav">S<br />k<br />i<br />l<br />l<br />s</div>
           </button>
-          <button class="pc-btn" onClick="location.href='./work.html'">
-            <div class="btn-text">work</div>
-            <i class="fa-solid fa-w"></i>
+          <button
+            class="pc-btn"
+            onClick="location.href='../pages/Project.html'"
+          >
+            <div class="btn-nav">
+              P<br />r<br />o<br />j<br />e<br />c<br />t
+            </div>
+            <i class="fa-solid fa-p"></i>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./work.html'">
-            <div class="mobile-btn-text">work</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Project.html'"
+          >
+            <div class="btn-nav">
+              P<br />r<br />o<br />j<br />e<br />c<br />t
+            </div>
           </button>
         </div>
         <div class="white-box">
-          <button class="mobile-btn" onClick="location.href='./link.html'">
-            <div class="mobile-btn-text">link</div>
+          <button
+            class="mobile-btn"
+            onClick="location.href='../pages/Contact.html'"
+          >
+            <div class="btn-nav">
+              C<br />o<br />n<br />t<br />a<br />c<br />t
+            </div>
           </button>
-          <button class="pc-btn" onClick="location.href='./link.html'">
-            <div class="btn-text">link</div>
-            <i class="fa-solid fa-l"></i>
+          <button
+            class="pc-btn"
+            onClick="location.href='../pages/Contact.html'"
+          >
+            <div class="btn-nav">
+              C<br />o<br />n<br />t<br />a<br />c<br />t
+            </div>
+            <i class="fa-solid fa-c"></i>
           </button>
         </div>
         <div class="black-box"></div>
@@ -175,11 +182,13 @@
         <div class="black-box"></div>
       </div>
     </nav>
-    <!-- work-area -->
-    <section class="work-section">
-      <article class="work-box">
-        <div class="work-title">
-          <h1><i>Work</i></h1>
+    <!-- // menu-bar-area -->
+
+    <!-- main-area -->
+    <section class="project-section">
+      <article class="project-box">
+        <div class="project-title">
+          <h1><i>project</i></h1>
         </div>
         <div class="slider-banner">
           <div class="lp-box lp-case">
@@ -187,26 +196,26 @@
               <div class="slide-show">
                 <div>
                   <img
-                    src="../img/webSiteFolder/kakaobankWebSite.png"
-                    alt="kakaobankWebSite_img"
+                    src="../images/project-img/website-img/kakaobank-img.png"
+                    alt="kakaobank-img"
                   />
                 </div>
                 <div>
                   <img
-                    src="../img/webSiteFolder/todoList.png"
-                    alt="todoList_img"
+                    src="../images/project-img/website-img/todoList-img.png"
+                    alt="todoList-img"
                   />
                 </div>
                 <div>
                   <img
-                    src="../img/webSiteFolder/PyeongChang2018WebSite_Img.png"
-                    alt="PyeongChang2018WebSite_img"
+                    src="../images/project-img/website-img/PyeongChang2018-img.png"
+                    alt="PyeongChang2018-img"
                   />
                 </div>
                 <div>
                   <img
-                    src="../img/webSiteFolder/DokdoWebSite.png"
-                    alt="DokdoWebSite_img"
+                    src="../images/project-img/website-img/Dokdo-img.png"
+                    alt="Dokdo-img"
                   />
                 </div>
               </div>
@@ -217,26 +226,26 @@
               <div class="slide-show">
                 <div class="lp-record">
                   <img
-                    src="../img/lp_record_folder/lp_record_1.png"
-                    alt="lp-record1_img"
+                    src="../images/project-img/lp-record/lp-record-1.png"
+                    alt="lp-record1-img"
                   />
                 </div>
                 <div class="lp-record">
                   <img
-                    src="../img/lp_record_folder/lp_record_2.png"
-                    alt="lp-record2_img"
+                    src="../images/project-img/lp-record/lp-record-2.png"
+                    alt="lp-record2-img"
                   />
                 </div>
                 <div class="lp-record">
                   <img
-                    src="../img/lp_record_folder/lp_record_3.png"
-                    alt="lp-record3_img"
+                    src="../images/project-img/lp-record/lp-record-3.png"
+                    alt="lp-record3-img"
                   />
                 </div>
                 <div class="lp-record">
                   <img
-                    src="../img/lp_record_folder/lp_record_4.png"
-                    alt="lp-record4_img"
+                    src="../images/project-img/lp-record/lp-record-4.png"
+                    alt="lp-record4-img"
                   />
                 </div>
               </div>
@@ -258,13 +267,13 @@
           </div>
         </div>
       </article>
-      <article class="work-show">
+      <article class="project-show">
         <div class="show-box">
           <div class="slide-show">
             <div>
               <img
-                src="../img/webSiteFolder/kakaobankWebSite.png"
-                alt="kakaobankWebSite_img"
+                src="../images/project-img/website-img/kakaobank-img.png"
+                alt="kakaobank-img"
               />
               <button
                 type="button"
@@ -284,7 +293,7 @@
               </div>
             </div>
             <div>
-              <img src="../img/webSiteFolder/todoList.png" alt="todoList_img" />
+              <img src="../images/project-img/website-img/todoList-img.png" alt="todoList-img" />
               <button
                 type="button"
                 onClick="window.open('https://newbean0312.github.io/my_todoList/#/main')"
@@ -301,8 +310,8 @@
             </div>
             <div>
               <img
-                src="../img/webSiteFolder/PyeongChang2018WebSite_Img.png"
-                alt="PyeongChang2018WebSite_img"
+                src="../images/project-img/website-img/PyeongChang2018-img.png"
+                alt="PyeongChang2018-img"
               />
               <button
                 type="button"
@@ -322,8 +331,8 @@
             </div>
             <div>
               <img
-                src="../img/webSiteFolder/DokdoWebSite.png"
-                alt="DokdoWebSite_img"
+                src="../images/project-img/website-img/Dokdo-img.png"
+                alt="Dokdo-img"
               />
               <button
                 type="button"
@@ -335,7 +344,8 @@
               <div class="des-box">
                 <p>
                   개인이 작업한 독도 홍보 웹사이트 입니다. <br />
-                  메인 화면, 독도에 대한 설명, 갤러리, 문의사항 페이지를 제작하였습니다. <br />
+                  메인 화면, 독도에 대한 설명, 갤러리, 문의사항 페이지를
+                  제작하였습니다. <br />
                   사용된 언어 : HTML, CSS, Javascript
                 </p>
               </div>
@@ -344,6 +354,19 @@
         </div>
       </article>
     </section>
+    <!-- main-area -->
+
+    <!-- js script -->
+    <script src="../js/project.js" defer></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <!-- Slick -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
   </body>
-  <script src="../jsFile/Work.js" defer></script>
 </html>
