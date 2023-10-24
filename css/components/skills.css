@@ -67,6 +67,10 @@
   transform: translateY(-25px);
 }
 
+.skills-section .mobile-note-box-title {
+  display: none;
+}
+
 /* logo-img area */
 .note-box-row > .logo-box {
   display: flex;
@@ -86,46 +90,6 @@
 .logo-img > img {
   width: 100%;
   height: 100%;
-}
-
-/* logo 위치 조정 */
-.html-logo {
-}
-
-.css-logo {
-}
-
-.js-logo {
-}
-
-.react-logo {
-  left: 5%;
-}
-
-.dbms-logo {
-  left: 10%;
-  top: -6px;
-}
-
-.git-logo {
-  left: 10%;
-  top: 12px;
-}
-
-
-.linux-logo {
-  left: 75%;
-  top: 40px;
-}
-
-.github-logo {
-  left: 75%;
-  top: 12px;
-}
-
-.r-logo {
-  left: 10%;
-  top: 75px;
 }
 
 .note-box .note-line {

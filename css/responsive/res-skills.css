@@ -1,10 +1,47 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .skills-section > .note-box {
-    width: 65%;
+    margin-top: 8%;
+  }
+
+  .note-box-row:nth-child(1) {
+    display: none;
+  }
+
+  .skills-section .note-box-title {
+    display: none;
+  }
+
+  .skills-section .mobile-note-box-title {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-main {
+    margin-top: 150px;
+  }
+
+  .skills-header > h1 {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .last-note-line .note-box-row:nth-child(3) {
+    border-right: 12px solid var(--color-border1);
+  }
+
+  .last-note-line .note-box-row:nth-child(3)::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 160px;
+    background-color: var(--color-border1);
+    transform: translateX(-10px);
+    content: "";
+  }
+
   .note-box-row:nth-child(4) {
     display: none;
   }
@@ -17,31 +54,5 @@
   .skills-section .logo-img {
     width: 40px;
     height: 40px;
-  }
-
-  .js-logo {
-    left: 110%;
-  }
-
-  .react-logo {
-    left: 60%;
-  }
-
-  .linux-logo {
-    left: 110%;
-  }
-
-  .github-logo {
-    left: 110%;
-  }
-
-  .r-logo {
-    left: 60%;
-  }
-
-  /* note-last-line-area */
-  .note-box > .note-last-line {
-    position: relative;
-    border-right: 10px solid var(--color-border1);
   }
 }
