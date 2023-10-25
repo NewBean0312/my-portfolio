@@ -23,6 +23,7 @@
 }
 
 .project-header > p {
+  line-height: 50px;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-text);
@@ -84,6 +85,7 @@ swiper-slide {
   height: 250px;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 swiper-slide img {
