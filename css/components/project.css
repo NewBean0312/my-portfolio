@@ -173,7 +173,7 @@
   height: 30px;
   border-radius: 10px;
   background-color: #000;
-  content: '';
+  content: "";
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -185,7 +185,7 @@
   height: 30px;
   border-radius: 10px;
   background-color: #000;
-  content: '';
+  content: "";
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -264,14 +264,18 @@
 }
 
 .popup-content-desc > p {
+  width: 100%;
+  height: 300px;
   padding-top: 20px;
-  font-size: 20px;
+  line-height: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
   color: var(--color-des);
   letter-spacing: 2px;
 }
 
 .popup-content-desc > p > span {
-  font-size: 20.5px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: var(--color-focus);
 }
