@@ -6,7 +6,6 @@ header {
   min-width: 500px;
   height: 150px;
   margin: 0 auto;
-  font-family: "Libre Baskerville", serif;
 }
 
 header > .title-text {
@@ -21,7 +20,10 @@ header > .title-text > h1 {
   width: 100%;
   text-align: center;
   color: var(--color-text);
+  font-family: "Libre Baskerville", serif;
   font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
   user-select: none;
 }
 
