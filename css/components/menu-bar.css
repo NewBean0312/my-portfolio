@@ -1,16 +1,5 @@
-html {
-  font-family: "Libre Baskerville", serif;
-  user-select: none;
-}
 
-/* color */
-:root {
-  --color-bg: #f3f4e9;
-  --color-text: #416d83;
-  --color-hover: #023df7;
-}
-
-/* navBar-area */
+/* menu-bar area */
 .menu-bar {
   display: flex;
   z-index: 99;

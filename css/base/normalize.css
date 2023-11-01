@@ -7,8 +7,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
 html {
+  font-family: "Libre Baskerville", serif;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -170,7 +170,7 @@ optgroup,
 select,
 textarea {
   border: 0;
-	background: none;
+  background: none;
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */

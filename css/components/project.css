@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "DNFForgedBladeLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeNormal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf")
+    format("opentype");
+}
+
 /* project-main area */
 .project-main {
   display: flex;
@@ -17,15 +41,15 @@
   width: 100%;
   font-size: 3.5rem;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--color-text);
   text-align: center;
 }
 
 .project-header > p {
   line-height: 50px;
+  font-family: "DNFForgedBlade";
   font-size: 1.5rem;
-  font-weight: bold;
   color: var(--color-text);
   text-align: center;
 }
@@ -224,7 +248,6 @@
   display: block;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'SBAggroB';
   font-style: italic;
   color: var(--color-text);
 }
@@ -244,14 +267,13 @@
 /* popup-content area */
 /* popup-content-title area */
 .popup-content > .popup-content-title {
-  font-family: 'SOYOMapleBoldTTF';
   padding: 10px;
 }
 
 .popup-content-title > h2 {
   padding-top: 20px;
+  font-family: "DNFForgedBladeBold";
   font-size: 25px;
-  font-weight: bold;
   color: var(--color-text);
 }
 /* // popup-content-title area */
@@ -269,13 +291,13 @@
   padding-top: 20px;
   line-height: 25px;
   font-size: 1.1rem;
-  font-family: 'SOYOMapleLightTTF';
+  font-family: "DNFForgedBladeNormal";
   color: var(--color-des);
   letter-spacing: 2px;
 }
 
 .popup-content-desc > p > span {
-  font-family: 'SOYOMapleBoldTTF';
+  font-family: "DNFForgedBladeBold";
   color: var(--color-focus);
 }
 
@@ -315,15 +337,22 @@
 .function-list > .function-item > div:first-child {
   flex: 0.5;
   padding: 20px 30px;
+  font-weight: 700;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .function-list > .function-item > div:last-child {
   flex: 1.5;
   padding: 20px 30px;
   line-height: 25px;
+  font-family: "DNFForgedBladeNormal";
   font-size: 1rem;
 }
+
+.function-list > .function-item a {
+  text-decoration: none;
+  color: var(--color-focus);
+}
+
 /* // popup-content-function area */
 /* // popup-content area */
