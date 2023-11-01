@@ -30,10 +30,11 @@ header > .title-text > h1 {
 .main-text {
   margin-top: 50px;
   border-right: 0.05em solid black;
-  color: var(--color-text);
-  font-size: 1.5rem;
-  font-weight: bold;
   font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text);
   text-align: center;
   user-select: none;
 }
@@ -139,17 +140,15 @@ header > .title-text > h1 {
 }
 
 .menu-bar .btn-text {
+  visibility: hidden;
   position: absolute;
   left: -1px;
   top: -50px;
   background-color: var(--color-bg);
-  color: var(--color-bg);
   font-size: 1.5rem;
-  text-align: center;
-  font-weight: bold;
   font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  visibility: hidden;
+  color: var(--color-bg);
+  text-align: center;
   user-select: none;
   transition: color 0.3s, visibility 1s, transform 1s;
 }
@@ -165,8 +164,9 @@ header > .title-text > h1 {
   width: 50px;
   height: 125px;
   position: fixed;
-  bottom: 10px;
+  bottom: 8px;
   font-size: 1rem;
+  font-family: "Libre Baskerville", serif;
   color: var(--color-bg);
 }
 
@@ -175,6 +175,7 @@ header > .title-text > h1 {
   justify-content: center;
   visibility: visible;
   transform: translateY(-30px);
+  font-family: "Libre Baskerville", serif;
   color: var(--color-text);
 }
 
