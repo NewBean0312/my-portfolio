@@ -208,6 +208,7 @@
                   />
                   <img
                     src="../images/project-img/website-img/PyeongChang2018-img.png"
+                    onclick="pyeongChangPopupOpen()"
                   />
                 </swiper-slide>
                 <swiper-slide>
@@ -296,12 +297,12 @@
     <!-- // main area -->
 
     <!-- project-popup-section area-->
-    <section class="project-popup-section">
+    <section class="project-popup-section hidden">
       <div class="dimmed-layer"></div>
       <div class="project-popup-wrapper">
         <div class="popup-container">
           <div class="popup-header">
-            <button class="close-btn"></button>
+            <button class="close-btn" onclick="pyeongChangPopupClose()"></button>
           </div>
           <div class="popup-box">
             <div class="popup-show">
@@ -424,5 +425,6 @@
     <!-- js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="../js/screen-tran.js" defer></script>
+    <script src="../js/popup.js" defer></script>
   </body>
 </html>
