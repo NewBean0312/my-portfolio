@@ -1,8 +1,16 @@
 // 팝업창
-const pyeongChangPopupOpen = () => {
-  document.querySelector(".project-popup-section").classList.remove("hidden");
+const pyeongChang2018PopupOpen = () => {
+  document.querySelector("#PyeongChang2018").classList.remove("hidden");
 };
 
-const pyeongChangPopupClose = () => {
-  document.querySelector(".project-popup-section").classList.add("hidden");
+const pyeongChang2018PopupClose = () => {
+  document.querySelector("#PyeongChang2018").classList.add("hidden");
+};
+
+const dokDoPopupOpen = () => {
+  document.querySelector("#Dokdo").classList.remove("hidden");
+};
+
+const dokDoPopupClose = () => {
+  document.querySelector("#Dokdo").classList.add("hidden");
 };

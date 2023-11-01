@@ -174,8 +174,8 @@
       <header class="project-header">
         <h1>Project</h1>
         <p>
-          레코드 판 클릭!<br />
-          클릭 후, 드래그로 넘기기
+          레코드 판 클릭으로 자세히 보기!<br />
+          클릭 후, 드래그로 넘기기~
         </p>
       </header>
 
@@ -208,7 +208,7 @@
                   />
                   <img
                     src="../images/project-img/website-img/PyeongChang2018-img.png"
-                    onclick="pyeongChangPopupOpen()"
+                    onclick="pyeongChang2018PopupOpen()"
                   />
                 </swiper-slide>
                 <swiper-slide>
@@ -220,6 +220,7 @@
                   <img
                     src="../images/project-img/website-img/Dokdo-img.png"
                     alt="Dokdo-img"
+                    onclick="dokDoPopupOpen()"
                   />
                 </swiper-slide>
                 <swiper-slide>
@@ -297,12 +298,16 @@
     <!-- // main area -->
 
     <!-- project-popup-section area-->
-    <section class="project-popup-section hidden">
+    <!-- PyeongChang2018 section area -->
+    <section class="project-popup-section hidden" id="PyeongChang2018">
       <div class="dimmed-layer"></div>
       <div class="project-popup-wrapper">
         <div class="popup-container">
           <div class="popup-header">
-            <button class="close-btn" onclick="pyeongChangPopupClose()"></button>
+            <button
+              class="close-btn"
+              onclick="pyeongChang2018PopupClose()"
+            ></button>
           </div>
           <div class="popup-box">
             <div class="popup-show">
@@ -420,6 +425,143 @@
         </div>
       </div>
     </section>
+    <!-- // PyeongChang2018 section area -->
+
+    <!-- Dokdo section area -->
+    <section class="project-popup-section hidden" id="Dokdo">
+      <div class="dimmed-layer"></div>
+      <div class="project-popup-wrapper">
+        <div class="popup-container">
+          <div class="popup-header">
+            <button class="close-btn" onclick="dokDoPopupClose()"></button>
+          </div>
+          <div class="popup-box">
+            <div class="popup-show">
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="4000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/Dokdo-img.png"
+                      alt="Dokdo-img"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/Dokdo-img-2.png"
+                      alt="Dokdo-img-2"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/Dokdo-img-3.png"
+                      alt="Dokdo-img-3"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/Dokdo-img-4.png"
+                      alt="Dokdo-img-4"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>Mobile Version</h3>
+                    <img
+                      class="popup-mobile-img"
+                      src="../images/project-img/website-img/Dokdo-img-5.png"
+                      alt="Dokdo-img-5  "
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="popup-content">
+              <div class="popup-content-title">
+                <h2>독도 홍보 웹사이트</h2>
+              </div>
+              <div class="popup-content-desc">
+                <p>
+                  <span>평창2018 동계올림픽 사이트를 리뉴얼한 웹사이트</span
+                  >입니다. <br />
+                  이 웹사이트는 모바일에서도 동작 가능한
+                  <span>반응형 디자인</span>으로 제작되었으며, <br />
+                  예전에 평창 동계 올림픽을 재미있게 보았던 추억이 있어, <br />
+                  다른 사람들에게 다시 보여주고자 하는 마음으로 개발했습니다.
+                  <br /><br />
+                  이 웹사이트에는 <span>반응형 디자인</span>을 공부하기 위해
+                  제작하였습니다.
+                </p>
+                <button
+                  class="view-btn"
+                  onclick="window.open('https://newbean0312.github.io/PyeongChang2018-website/')"
+                >
+                  More View
+                </button>
+              </div>
+              <div class="popup-content-function">
+                <ul class="function-list">
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Function
+                    </div>
+                    <div>
+                      올림픽 소개 및 종목 소개, 뉴스와 contact 섹션, 구글 지도
+                      api 사용, 모바일 버전 반응형 디자인
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      GitHub
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/NewBean0312/PyeongChang2018-website-code"
+                        target="_blank"
+                        >github.com/NewBean0312/PyeongChang2018-website-code</a
+                      >
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Skills
+                    </div>
+                    <div>HTML, CSS, 구글맵 API</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Dokdo section area -->
     <!-- // project-popup-section area-->
 
     <!-- js script -->
