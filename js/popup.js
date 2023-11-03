@@ -1,4 +1,12 @@
 // 팝업창
+const naeiltourPopupOpen = () => {
+  document.querySelector("#naeiltour").classList.remove("hidden");
+};
+
+const naeiltourPopupClose = () => {
+  document.querySelector("#naeiltour").classList.add("hidden");
+};
+
 const pyeongChang2018PopupOpen = () => {
   document.querySelector("#PyeongChang2018").classList.remove("hidden");
 };
@@ -23,11 +31,3 @@ const kakaoBankPopupClose = () => {
   document.querySelector("#kakaoBank").classList.add("hidden");
 };
 
-
-const naeiltourPopupOpen = () => {
-  document.querySelector("#naeiltour").classList.remove("hidden");
-};
-
-const naeiltourPopupClose = () => {
-  document.querySelector("#naeiltour").classList.add("hidden");
-};
