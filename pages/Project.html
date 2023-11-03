@@ -232,6 +232,7 @@
                   <img
                     src="../images/project-img/website-img/kakaobank-img.png"
                     alt="kakaobank-img"
+                    onclick="kakaoBankPopupOpen()"
                   />
                 </swiper-slide>
                 <swiper-slide>
@@ -242,7 +243,8 @@
                   />
                   <img
                     src="../images/project-img/website-img/naeiltour-renewal-img.png"
-                    alt=""
+                    alt="naeiltour-renewal-img"
+                    onclick="naeiltourPopupOpen()"
                   />
                 </swiper-slide>
               </swiper-container>
@@ -377,7 +379,8 @@
                   다른 사람들에게 다시 보여주고자 하는 마음으로 개발했습니다.
                   <br /><br />
                   이 웹사이트는 <span>반응형 디자인</span>을 공부하기 위해
-                  제작하였습니다.
+                  제작하였습니다.<br />
+                  개인 프로젝트로 제작하였습니다.
                 </p>
                 <button
                   class="view-btn"
@@ -512,11 +515,12 @@
                   공유하고자 하는 열망으로 제작하였습니다. <br /><br />
                   이 웹사이트는 <span>반응형 디자인</span>과
                   <span>기초적인 사이트 구조</span>를 공부하기 위해
-                  제작하였습니다.
+                  제작하였습니다.<br />
+                  개인 프로젝트로 제작하였습니다.
                 </p>
                 <button
                   class="view-btn"
-                  onclick="window.open('https://newbean0312.github.io/dokdoWebSite/)"
+                  onclick="window.open('https://newbean0312.github.io/dokdoWebSite/')"
                 >
                   More View
                 </button>
@@ -561,6 +565,273 @@
       </div>
     </section>
     <!-- // Dokdo section area -->
+
+    <!-- kakaoBank section area-->
+    <section class="project-popup-section hidden" id="kakaoBank">
+      <div class="dimmed-layer"></div>
+      <div class="project-popup-wrapper">
+        <div class="popup-container">
+          <div class="popup-header">
+            <button class="close-btn" onclick="kakaoBankPopupClose()"></button>
+          </div>
+          <div class="popup-box">
+            <div class="popup-show">
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="4000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/kakaobank-img.png"
+                      alt="kakaoBank-img"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/kakaobank-img-2.png"
+                      alt="kakaoBank-img-2"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/kakaobank-img-3.png"
+                      alt="kakaoBank-img-3"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/kakaobank-img-4.png"
+                      alt="kakaoBank-img-4"
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="popup-content">
+              <div class="popup-content-title">
+                <h2>카카오뱅크 웹사이트 클론코딩</h2>
+              </div>
+              <div class="popup-content-desc">
+                <p>
+                  <span>카카오뱅크 웹사이트 클론코딩</span>
+                  프로젝트입니다.<br />
+                  <span>웹사이트 제작 능력을 향상</span>시키기 위해
+                  <span>클론코딩</span>을 해보았습니다.<br />
+                  메인 메뉴와 각 섹션을 구분하면서, 기본적인 구조 작업을 배울 수
+                  있었습니다.
+                  <br /><br />
+                  이 프로젝트는 <span>개인 프로젝트</span>로 제작하였습니다.<br />
+                  이 프로젝트에서 <span>slick 배너</span>를 처음 사용해보았고,
+                  직접 커스텀해 본 경험이 있습니다.
+                </p>
+                <button
+                  class="view-btn"
+                  onclick="window.open('https://newbean0312.github.io/dokdoWebSite/')"
+                >
+                  More View
+                </button>
+              </div>
+              <div class="popup-content-function">
+                <ul class="function-list">
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Function
+                    </div>
+                    <div>
+                      메뉴 기능, 스크롤에 따른 섹션 애니메이션, 각 섹션에 따른
+                      카카오뱅크 컨텐츠, slick 배너를 사용한 슬라이드 배너
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      GitHub
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/NewBean0312/kakaobank-website-code"
+                        target="_blank"
+                        >github.com/NewBean0312/kakaobank-website-code</a
+                      >
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Skills
+                    </div>
+                    <div>HTML, CSS, JavaScript, Slick 배너</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // kakaoBank section area-->
+
+    <!-- naeiltour section area -->
+    <section class="project-popup-section hidden" id="naeiltour">
+      <div class="dimmed-layer"></div>
+      <div class="project-popup-wrapper">
+        <div class="popup-container">
+          <div class="popup-header">
+            <button class="close-btn" onclick="naeiltourPopupClose()"></button>
+          </div>
+          <div class="popup-box">
+            <div class="popup-show">
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="4000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/naeiltour-renewal-img.png"
+                      alt="naeiltour-renewal-img"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/naeiltour-renewal-img-2.png"
+                      alt="naeiltour-renewal-img-2"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/naeiltour-renewal-img-3.png"
+                      alt="naeiltour-renewal-img-3"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/naeiltour-renewal-img-4.png"
+                      alt="naeiltour-renewal-img-4"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>Mobile Version</h3>
+                    <img
+                      class="popup-mobile-img"
+                      src="../images/project-img/website-img/naeiltour-renewal-img-5.png"
+                      alt="naeiltour-renewal-img-5"
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="popup-content">
+              <div class="popup-content-title">
+                <h2>내일투어 리뉴얼 웹사이트</h2>
+              </div>
+              <div class="popup-content-desc">
+                <p>
+                  <span>내일투어 사이트를 리뉴얼한 웹사이트</span>입니다. <br />
+                  처음 시작한 <span>2인 팀 프로젝트</span> 였으며, 이번 팀플을
+                  통해<br />
+                  처음에 <span>css 컨벤션이나 클래스명</span> 등을 정해놓고 해야
+                  수월함을 깨달았습니다.<br />
+                  <span>메인페이지, 항공 페이지, 고객센터 페이지</span>를
+                  제작하였으며,<br />
+                  <span>모바일 반응형 디자인</span>도 제작하였습니다.
+                  <br />
+                  <br />
+                  이 프로젝트에서 <span>swiper 배너</span>를 처음
+                  사용해보았으며,<br />
+                  원하는 디자인으로 커스텀해 볼수 있었습니다.
+                </p>
+                <button
+                  class="view-btn"
+                  onclick="window.open('https://newbean0312.github.io/naeiltour-renewal-website/')"
+                >
+                  More View
+                </button>
+              </div>
+              <div class="popup-content-function">
+                <ul class="function-list">
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Function
+                    </div>
+                    <div>
+                      원하는 취향 여행 찾기, 월간 여행지 슬라이드, 각 여행
+                      종류에 따른 나라 메뉴, 항공권 예매, 고객센터
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      GitHub
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/NewBean0312/naeiltour-renewal-website-code"
+                        target="_blank"
+                        >github.com/NewBean0312/naeiltour-renewal-website-code</a
+                      >
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Skills
+                    </div>
+                    <div>HTML, CSS, JavaScript, Swiper 배너</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // naeiltour section area -->
     <!-- // project-popup-section area-->
 
     <!-- js script -->

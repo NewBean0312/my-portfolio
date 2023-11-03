@@ -277,6 +277,7 @@
   font-family: "DNFForgedBladeBold";
   font-size: 25px;
   color: var(--color-text);
+  user-select: none;
 }
 /* // popup-content-title area */
 
@@ -296,6 +297,7 @@
   font-family: "DNFForgedBladeNormal";
   color: var(--color-des);
   letter-spacing: 2px;
+  user-select: none;
 }
 
 .popup-content-desc > p > span {
@@ -341,6 +343,7 @@
   padding: 20px 30px;
   font-weight: 700;
   font-size: 1.2rem;
+  user-select: none;
 }
 
 .function-list > .function-item > div:last-child {
@@ -349,6 +352,7 @@
   line-height: 25px;
   font-family: "DNFForgedBladeNormal";
   font-size: 1rem;
+  user-select: none;
 }
 
 .function-list > .function-item a {

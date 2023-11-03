@@ -14,3 +14,20 @@ const dokDoPopupOpen = () => {
 const dokDoPopupClose = () => {
   document.querySelector("#Dokdo").classList.add("hidden");
 };
+
+const kakaoBankPopupOpen = () => {
+  document.querySelector("#kakaoBank").classList.remove("hidden");
+};
+
+const kakaoBankPopupClose = () => {
+  document.querySelector("#kakaoBank").classList.add("hidden");
+};
+
+
+const naeiltourPopupOpen = () => {
+  document.querySelector("#naeiltour").classList.remove("hidden");
+};
+
+const naeiltourPopupClose = () => {
+  document.querySelector("#naeiltour").classList.add("hidden");
+};
