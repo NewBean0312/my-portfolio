@@ -283,7 +283,16 @@
                   />
                 </swiper-slide>
                 <swiper-slide>
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img
+                    class="lp-record"
+                    src="../images/project-img/lp-record/lp-record-6.png"
+                    alt="lp-record-6"
+                  />
+                  <img
+                    src="../images/project-img/website-img/order-page-img.png"
+                    alt="order-page-img"
+                    onclick="orderPagePopupOpen()"
+                  />
                 </swiper-slide>
                 <swiper-slide>
                   <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
@@ -963,6 +972,132 @@
       </div>
     </section>
     <!-- // project-popup-section area-->
+
+    <!-- orderPage section area -->
+    <section class="project-popup-section hidden" id="orderPage">
+      <div class="dimmed-layer"></div>
+      <div class="project-popup-wrapper">
+        <div class="popup-container">
+          <div class="popup-header">
+            <button class="close-btn" onclick="todoListPopupClose()"></button>
+          </div>
+          <div class="popup-box">
+            <div class="popup-show">
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                pagination-clickable="true"
+                navigation="true"
+                space-between="30"
+                centered-slides="true"
+                autoplay-delay="4000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/todoList-img.png"
+                      alt="todoList-img"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/todoList-img-2.png"
+                      alt="todoList-img-2"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>PC Version</h3>
+                    <img
+                      class="popup-pc-img"
+                      src="../images/project-img/website-img/todoList-img-3.png"
+                      alt="todoList-img-3"
+                    />
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="popup-project-img">
+                    <h3>Mobile Version</h3>
+                    <img
+                      class="popup-mobile-img"
+                      src="../images/project-img/website-img/todoList-img-4.png"
+                      alt="todoList-img-4"
+                    />
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <div class="popup-content">
+              <div class="popup-content-title">
+                <h2>Todo List</h2>
+              </div>
+              <div class="popup-content-desc">
+                <p>
+                  <span>Todo List</span> 일정 관리 프로젝트입니다.<br />
+                  처음 만든 <span>React 프로젝트</span>이며,
+                  <span>일정 추가 및 관리</span>할 수 있는 사이트입니다.<br />
+                  <span>mui</span>로 디자인을 작업했으며,
+                  <span>atom, recoil</span>로 상태를 저장하고,<br />
+                  <span>immer</span>로 상태 관리 및 업데이트 하였습니다.<br />
+                  <br />
+                  <br />
+                  이 프로젝트는 <span>개인 프로젝트</span> 입니다.
+                </p>
+                <button
+                  class="view-btn"
+                  onclick="window.open('https://newbean0312.github.io/react-todo-list-v2-website/#/main')"
+                >
+                  More View
+                </button>
+              </div>
+              <div class="popup-content-function">
+                <ul class="function-list">
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Function
+                    </div>
+                    <div>
+                      일정 추가 기능, 일정 리스트 기능, 일정 체크 기능, 일정
+                      미완료 및 완료 기능, 시간순 및 작성순 기능
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      GitHub
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/NewBean0312/react-todo-list-v2"
+                        target="_blank"
+                        >github.com/NewBean0312/react-todo-list-v2</a
+                      >
+                    </div>
+                  </li>
+                  <li class="function-item">
+                    <div>
+                      <i class="fa-solid fa-check"></i>
+                      Skills
+                    </div>
+                    <div>React, JavaScript</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // orderPage section area -->
 
     <!-- js script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
