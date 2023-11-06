@@ -40,9 +40,9 @@ const todoListPopupClose = () => {
 };
 
 const orderPagePopupOpen = () => {
-  document.querySelector("#todoList").classList.remove("hidden");
+  document.querySelector("#orderPage").classList.remove("hidden");
 };
 
 const orderPagePopupClose = () => {
-  document.querySelector("#todoList").classList.add("hidden");
+  document.querySelector("#orderPage").classList.add("hidden");
 };
