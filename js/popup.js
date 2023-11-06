@@ -31,3 +31,11 @@ const kakaoBankPopupClose = () => {
   document.querySelector("#kakaoBank").classList.add("hidden");
 };
 
+const todoListPopupOpen = () => {
+  document.querySelector("#todoList").classList.remove("hidden");
+};
+
+const todoListPopupClose = () => {
+  document.querySelector("#todoList").classList.add("hidden");
+};
+
