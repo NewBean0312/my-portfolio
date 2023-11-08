@@ -56,7 +56,7 @@
 }
 
 /* project-section area */
-.project-section {
+.project-main > .project-section {
   display: flex;
   flex-direction: column;
   flex: 1.3;
