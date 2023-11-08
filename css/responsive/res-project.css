@@ -1,6 +1,3 @@
-@media screen and (max-width: 500px) {
-}
-
 @media screen and (max-width: 768px) {
   .project-main {
     display: flex;
@@ -24,10 +21,13 @@
     line-height: 30px;
     font-size: 1.3rem;
   }
-
   
   .project-main > .project-section {
     width: 90vw;
+  }
+
+  .project-title > h3 {
+    font-size: 1.3rem;
   }
 }
 
