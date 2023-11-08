@@ -52,4 +52,32 @@
   .swiper-box swiper-container {
     padding-top: 20px;
   }
+
+  .project-popup-section > .project-popup-wrapper {
+    width: 98vw;
+    height: 800px;
+  }
+
+  .project-popup-wrapper > .popup-container {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .popup-container > .popup-box {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    overflow: scroll;   
+  }
+
+  .popup-show swiper-container {
+    width: 100%;
+    padding-top: 58px;
+    padding-right: 0;
+    height: 90%;
+  }
+
+  .popup-show swiper-slide > .popup-project-img > img.popup-mobile-img {
+    height: 400px;
+  }
 }
