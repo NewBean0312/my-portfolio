@@ -1,41 +1,32 @@
+@media screen and (max-width: 500px) {
+  .popup-content-desc br {
+    display: none;
+  }
+
+  .function-list > .function-item > div:first-child {
+    flex: 0.5;
+    padding-left: 0;
+    font-size: 1rem;
+  }
+
+  .function-list > .function-item > div:last-child {
+    max-width: 345px;
+    box-sizing: border-box;
+  }
+
+  .function-list > .function-item a {
+    display: block;
+    box-sizing: border-box;
+    max-width: 285px;
+    word-wrap: break-word;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .project-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-
-  /* scrollArea */
-  .project-main::-webkit-scrollbar,
-  .popup-box::-webkit-scrollbar {
-    width: 5px;
-    background-color: var(--color-bg);
-  }
-
-  .project-main::-webkit-scrollbar-track,
-  .popup-box::-webkit-scrollbar {
-    background-color: var(--color-bg);
-    border-radius: 100px;
-  }
-
-  .project-main::-webkit-scrollbar-thumb,
-  .popup-box::-webkit-scrollbar {
-    background-color: var(--color-bg);;
-    border-radius: 100px;
-  }
-
-  .project-main,
-  .popup-box {
-    scrollbar-color: var(--color-bg);
-  }
-
-  .project-main::-webkit-scrollbar-thumb,
-  .popup-box::-webkit-scrollbar {
-    background-image: linear-gradient(180deg,  var(--color-border1) 0%, var(--color-border3) 99%);
-    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-    border-radius: 100px;
   }
 
   .project-main > .project-header {
@@ -62,23 +53,61 @@
     font-size: 1.3rem;
   }
 
-  .popup-container { 
-    overflow: hidden;
-  }
-
-  .popup-box {
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
   .popup-content-desc {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  .popup-content-desc > p {
+    font-size: 1rem;
+  }
+
+  .function-list > .function-item > div:first-child {
+    flex: 0.5;
+    min-width: 100px;
+    padding-right: 0;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .project-main {
     height: 750px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  /* scrollArea */
+  .project-main::-webkit-scrollbar,
+  .popup-box::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--color-bg);
+  }
+
+  .project-main::-webkit-scrollbar-track,
+  .popup-box::-webkit-scrollbar {
+    background-color: var(--color-bg);
+    border-radius: 100px;
+  }
+
+  .project-main::-webkit-scrollbar-thumb,
+  .popup-box::-webkit-scrollbar {
+    background-color: var(--color-bg);
+    border-radius: 100px;
+  }
+
+  .project-main,
+  .popup-box {
+    scrollbar-color: var(--color-bg);
+  }
+
+  .project-main::-webkit-scrollbar-thumb,
+  .popup-box::-webkit-scrollbar {
+    background-image: linear-gradient(
+      180deg,
+      var(--color-bg) 0%,
+      var(--color-border3) 99%
+    );
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
   }
 
   .project-main > .project-header {
@@ -105,10 +134,18 @@
   .project-popup-wrapper > .popup-container {
     width: calc(100% - 20px);
     margin: 10px;
+    overflow: hidden;
+  }
+
+  .popup-box {
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   .popup-container > .popup-box {
     display: flex;
+    width: 90vw;
+    margin: 0 auto;
     height: 85vh;
     flex-direction: column;
     overflow: scroll;
