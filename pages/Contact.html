@@ -174,9 +174,47 @@
       <header class="contact-title">
         <h1>Contact</h1>
       </header>
+      <section class="contact-section">
+        <form
+          class="gform"
+          action="https://script.google.com/macros/s/AKfycbzPiI3DndlAstzOAtjRdHASF4Qyr5PITRXuQdI-YK8CyPYWVDgS_0P0HityZBpqpsmdiw/exec"
+          method="POST"
+          data-email="juv6262@naver.com"
+        >
+          <fieldset>
+            <div class="box-input">
+              <label for="userName">Name plz:</label>
+              <input
+                type="text"
+                id="userName"
+                name="name"
+                placeholder="이!름!"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="userEmail">Email Address</label>
+              <input
+                type="email"
+                id="userEmail"
+                name="email"
+                placeholder="이!메!일!"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="userMessage">Message</label>
+              <textarea name="message" id="userMessage" required></textarea>
+            </div>
+            <div class="box-input">
+              <button type="submit" class="btn-send">Send Message</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <!-- // contact-main area -->
-    
+
     <!-- js script -->
     <script src="../js/screen-tran.js" defer></script>
   </body>
