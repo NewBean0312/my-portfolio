@@ -357,11 +357,9 @@
 }
 
 .function-list > .function-item a {
-
   word-wrap: break-word;
   text-decoration: none;
   color: var(--color-focus);
 }
-
 /* // popup-content-function area */
 /* // popup-content area */
