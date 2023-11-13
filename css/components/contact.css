@@ -1,16 +1,40 @@
+@font-face {
+  font-family: "DNFForgedBladeLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeNormal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf")
+    format("opentype");
+}
+
 /* contact-main area */
 .contact-main {
+  display: flex;
   width: 100vw;
   height: 800px;
   margin-top: 100px;
-  background-color: lightblue;
   user-select: none;
 }
 
 /* contact-title area */
 .contact-main > .contact-title {
-  width: 100vw;
-  height: 100px;
+  flex: 1;
+  height: 100%;
   text-align: center;
 }
 
@@ -20,11 +44,18 @@
   font-weight: 700;
   color: var(--color-text);
 }
+
+.contact-main > .contact-title > p {
+  font-family: "DNFForgedBladeNormal";
+  font-size: 20px;
+  color: var(--color-text);
+}
 /* // contact-title area */
 
 /* contact-section area */
 .contact-main > .contact-section {
   display: flex;
+  flex: 2;
   justify-content: center;
   align-items: center;
   width: 100vw;
