@@ -61,6 +61,7 @@
   height: 700px;
 }
 
+/* form area */
 .contact-section > form {
   width: 60vw;
   height: 500px;
@@ -80,27 +81,37 @@
   border: none;
 }
 
-.contact-section fieldset > div > label,
-.contact-section fieldset .btn-send {
+.contact-section fieldset > div > label {
   font-style: italic;
   font-size: 25px;
   font-weight: 700;
   color: var(--color-des);
 }
 
-.contact-section fieldset > .content-box  {
+.contact-section fieldset > .content-box {
   display: flex;
   height: 200px;
 }
 
-.contact-section fieldset > .content-box > textarea{
+.contact-section fieldset > .content-box > textarea {
   margin-left: 10px;
 }
 
-.contact-section fieldset .btn-send {
-  
+.contact-section fieldset .btn-box {
+  display: flex;
+  justify-content: end;
 }
 
-/* 임시 */
+.btn-box > .btn-send {
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--color-border1);
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--color-bg);
+  cursor: pointer;
+}
 /* //contact-section area */
 /* // contact-main area */
