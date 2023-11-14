@@ -171,7 +171,7 @@
 
     <!-- contact-main area -->
     <main class="contact-main">
-      <header class="contact-title">
+      <header class="contact-header">
         <h1>Contact</h1>
         <p>더 자세한 것을 알고 싶으시면, 이메일을 보내주세요!</p>
       </header>
@@ -183,31 +183,36 @@
           data-email="juv6262@naver.com"
         >
           <fieldset>
-            <div class="box-input">
-              <label for="userName">Name plz:</label>
+            <div class="name-box">
+              <label for="userName">Name plz : </label>
               <input
                 type="text"
                 id="userName"
                 name="name"
-                placeholder="이!름!"
+                placeholder=" 이름을 입력해주세요."
                 required
               />
             </div>
-            <div class="box-input">
-              <label for="userEmail">Email Address</label>
+            <div class="address-box">
+              <label for="userEmail">Email Address : </label>
               <input
                 type="email"
                 id="userEmail"
                 name="email"
-                placeholder="이!메!일!"
+                placeholder="이메일을 작성해주세요."
                 required
               />
             </div>
-            <div class="box-input">
-              <label for="userMessage">Message</label>
-              <textarea name="message" id="userMessage" required></textarea>
+            <div class="content-box">
+              <label for="userMessage">Message : </label>
+              <textarea
+                name="message"
+                id="userMessage"
+                placeholder="내용을 입력해주세요."
+                required
+              ></textarea>
             </div>
-            <div class="box-input">
+            <div class="btn-box">
               <button type="submit" class="btn-send">Send Message</button>
             </div>
           </fieldset>
