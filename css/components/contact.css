@@ -46,6 +46,7 @@
 }
 
 .contact-main > .contact-header > p {
+  line-height: 30px;
   font-family: "DNFForgedBladeNormal";
   font-size: 20px;
   color: var(--color-text);
@@ -95,6 +96,9 @@
 
 .contact-section fieldset > .content-box > textarea {
   margin-left: 10px;
+  width: 40vw;
+  height: 180px;
+  resize: none;
 }
 
 .contact-section fieldset .btn-box {
