@@ -39,17 +39,18 @@
 }
 
 .contact-main > .contact-header > h1 {
+  padding-top: 40px;
   font-size: 70px;
   font-style: italic;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-text1);
 }
 
 .contact-main > .contact-header > p {
   line-height: 30px;
   font-family: "DNFForgedBladeNormal";
   font-size: 20px;
-  color: var(--color-text);
+  color: var(--color-text1);
 }
 /* // contact-header area */
 
@@ -71,10 +72,10 @@
 }
 
 .contact-section fieldset > div {
-  width: 50vw;
+  width: 55vw;
   height: 50px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
   border-bottom: 3px solid var(--color-border1);
 }
 
@@ -86,7 +87,7 @@
   font-style: italic;
   font-size: 25px;
   font-weight: 700;
-  color: var(--color-des);
+  color: var(--color-text2);
 }
 
 .contact-section fieldset > .content-box {
@@ -110,12 +111,44 @@
   width: 180px;
   height: 50px;
   border-radius: 15px;
-  background-color: var(--color-border1);
+  background-color: var(--color-bg2);
   font-style: italic;
   font-size: 25px;
   font-weight: 400;
-  color: var(--color-bg);
+  color: var(--color-text5);
   cursor: pointer;
 }
 /* //contact-section area */
 /* // contact-main area */
+
+/* complete-modal area */
+.complete-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 30px;
+  bottom: 0;
+  width: 300px;
+  height: 80px;
+  border-radius: 25px;
+  background-color: var(--color-bg2);
+  transition: tranform 0.3s;
+  transform: translateY(-40px);
+}
+
+.complete-modal.complete {
+  transform: translateY(-40px);
+}
+
+.complete-modal > i,
+.complete-modal > p {
+  font-size: 23px;
+  color: var(--color-text5);
+}
+
+.complete-modal > p {
+  font-family: "DNFForgedBladeBold";
+  padding-left: 10px;
+}
+/* // complete-modal area */
