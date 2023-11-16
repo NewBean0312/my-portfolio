@@ -127,23 +127,23 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  left: 30px;
-  bottom: 0;
+  right: 30px;
+  bottom: -150px;
   width: 300px;
-  height: 80px;
+  height: 60px;
   border-radius: 25px;
   background-color: var(--color-bg2);
-  transition: tranform 0.3s;
-  transform: translateY(-40px);
+  transition: transform 1s;
+  user-select: none;
 }
 
 .complete-modal.complete {
-  transform: translateY(-40px);
+  transform: translateY(-180px);
 }
 
 .complete-modal > i,
 .complete-modal > p {
-  font-size: 23px;
+  font-size: 20px;
   color: var(--color-text5);
 }
 
