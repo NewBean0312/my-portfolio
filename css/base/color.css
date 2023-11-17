@@ -1,17 +1,8 @@
 /* color */
 :root {
-    --color-bg: #f3f4e9;
-    --color-text: #416d83;
-    --color-border1: #416d83;
-    --color-border2: #453630;
-    --color-border3: #416df3;
-    --color-des: #122a70;
-    --color-focus: #416df3;
-    --color-hover: #023df7;
-
-    
     --color-bg1: #f3f4e9;
     --color-bg2: #416d83;
+    --color-bg3: #f4f2ec;
     --color-border1: #416d83;
     --color-border2: #453630;
     --color-border3: #416df3;
@@ -20,4 +11,5 @@
     --color-text3: #416df3;
     --color-text4: #023df7;
     --color-text5: #f3f4e9;
+    --color-text6: #f8efce;
   }

@@ -5,6 +5,7 @@
   min-width: 500px;
   height: 100%;
   margin-top: 120px;
+  user-select: none;
 }
 
 /* skills-header area */
@@ -19,7 +20,7 @@
 .skills-header > h1 {
   font-size: 3rem;
   font-style: italic;
-  color: var(--color-text);
+  color: var(--color-text1);
 }
 
 .skills-header > div {
@@ -61,7 +62,7 @@
 }
 
 .skills-section .note-box-title {
-  color: var(--color-border1);
+  color: var(--color-text1);
   font-weight: bold;
   font-size: 1.1rem;
   transform: translateY(-25px);

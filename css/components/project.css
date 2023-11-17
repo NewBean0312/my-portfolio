@@ -44,7 +44,7 @@
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-text1);
   text-align: center;
 }
 
@@ -52,7 +52,7 @@
   line-height: 50px;
   font-family: "DNFForgedBladeNormal";
   font-size: 1.5rem;
-  color: var(--color-text);
+  color: var(--color-text1);
   text-align: center;
 }
 
@@ -81,7 +81,7 @@
 .project-title > h3 {
   font-family: "DNFForgedBladeBold";
   font-size: 1.5rem;
-  color: var(--color-text);
+  color: var(--color-text1);
   user-select: none;
 }
 
@@ -166,7 +166,7 @@
   width: 1500px;
   height: 800px;
   border-radius: 30px;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg1);
   transform: translate(-50%, -50%);
 }
 
@@ -277,7 +277,7 @@
   padding-top: 20px;
   font-family: "DNFForgedBladeBold";
   font-size: 25px;
-  color: var(--color-text);
+  color: var(--color-text1);
   user-select: none;
 }
 /* // popup-content-title area */
@@ -296,14 +296,14 @@
   line-height: 25px;
   font-size: 1.1rem;
   font-family: "DNFForgedBladeNormal";
-  color: var(--color-des);
+  color: var(--color-text2);
   letter-spacing: 2px;
   user-select: none;
 }
 
 .popup-content-desc > p > span {
   font-family: "DNFForgedBladeBold";
-  color: var(--color-focus);
+  color: var(--color-text3);
 }
 
 .popup-content-desc > .view-btn {
@@ -336,7 +336,7 @@
 
 .function-list > .function-item {
   display: flex;
-  color: var(--color-des);
+  color: var(--color-text2);
 }
 
 .function-list > .function-item > div:first-child {
@@ -359,7 +359,7 @@
 .function-list > .function-item a {
   word-wrap: break-word;
   text-decoration: none;
-  color: var(--color-focus);
+  color: var(--color-text3);
 }
 /* // popup-content-function area */
 /* // popup-content area */
