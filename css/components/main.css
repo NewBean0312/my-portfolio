@@ -1,53 +1,52 @@
-/* header-area */
-header {
+/* header area */
+.main-header {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100vw;
   min-width: 500px;
   height: 150px;
   margin: 0 auto;
+  user-select: none;
 }
 
-header > .title-text {
+.main-header > .title-text {
   display: flex;
-  flex: 1;
+  width: 100vw;
   justify-items: center;
   align-items: center;
 }
 
-header > .title-text > h1 {
+.main-header > .title-text > h1 {
   z-index: 10;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: var(--color-text1);
-  font-family: "Libre Baskerville", serif;
-  font-size: 4rem;
+  font-size: 70px;
   font-style: italic;
   font-weight: 700;
-  user-select: none;
 }
 
 .main-text {
   margin-top: 50px;
-  border-right: 0.05em solid black;
-  font-family: "Libre Baskerville", serif;
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 400;
   font-style: italic;
   color: var(--color-text1);
   text-align: center;
   user-select: none;
 }
+/* // header area */
 
-/* navBar-area */
+/* menu-bar area */
 .menu-bar {
   display: flex;
   bottom: -15px;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   min-width: 500px;
   height: 280px;
   border: 3px solid var(--color-bg1);
+  user-select: none;
   transition: height 0.5s;
 }
 
@@ -55,30 +54,27 @@ header > .title-text > h1 {
   position: relative;
   display: flex;
   flex: 1;
-  width: 100%;
-  height: 100%;
 }
 
-/* navBar_white-box-area */
+/* white-box area */
 .menu-bar .white-box {
   position: relative;
   flex: 1;
   border: 4px solid var(--color-bg1);
-  width: 100%;
-  height: 100%;
   background-color: var(--color-text1);
 }
 
 .menu-bar .white-box:hover {
   background: linear-gradient(to bottom, var(--color-bg1), var(--color-text1));
 }
+/* // white-box area */
 
-/* navBar_black-box-area */
+/* black-box area */
 .menu-bar .black-box {
   position: absolute;
   z-index: 1;
   width: 9%;
-  height: 45%;
+  height: 200px;
   background-color: var(--color-bg1);
   border: none;
   bottom: 150px;
@@ -104,15 +100,17 @@ header > .title-text > h1 {
 .black-box:nth-child(12) {
   left: 80.8%;
 }
+/* // black-box 위치 지정 CSS */
+/* // black-box area */
 
-/* menu-bar-animation-area */
+/* menu-bar-animation area */
 .menu-bar .animation {
   position: absolute;
   top: -45px;
   width: 40px;
   height: 40px;
   color: var(--color-text1);
-  font-size: 200%;
+  font-size: 30px;
   visibility: hidden;
   transition: color 0.2s, transform 2s;
 }
@@ -127,30 +125,37 @@ header > .title-text > h1 {
 .menu-bar .mobile-ani {
   display: none;
 }
+/* // menu-bar-animation area */
 
-/* menu-bar-button-area */
+/* menu-bar-button area */
 .menu-bar .white-box > button {
   display: none;
   width: 100%;
-  height: 100%;
+  height: 280px;
   border: none;
   background: none;
   cursor: pointer;
-  
 }
 
-.menu-bar .btn-text {
+.menu-bar .white-box .btn-text {
+  display: flex;
+  justify-content: center;
   visibility: hidden;
   position: absolute;
-  left: -1px;
   top: -50px;
+  z-index: 2;
   background-color: var(--color-bg1);
-  font-size: 1.5rem;
-  font-family: "Libre Baskerville", serif;
-  color: var(--color-bg1);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text1);
   text-align: center;
-  user-select: none;
   transition: color 0.3s, visibility 1s, transform 1s;
+}
+
+.menu-bar .white-box > button:hover .btn-text {
+  visibility: visible;
+  transform: translateY(-30px);
+  color: var(--color-text1);
 }
 
 .menu-bar .white-box .pc-btn {
@@ -165,18 +170,8 @@ header > .title-text > h1 {
   height: 125px;
   position: fixed;
   bottom: 8px;
-  font-size: 1rem;
-  font-family: "Libre Baskerville", serif;
-  color: var(--color-bg1);
-}
-
-.menu-bar .white-box > button:hover .btn-text {
-  z-index: 2;
-  justify-content: center;
-  visibility: visible;
-  transform: translateY(-30px);
-  font-family: "Libre Baskerville", serif;
-  color: var(--color-text1);
+  font-size: 15px;
+  color: var(--color-text6);
 }
 
 /* mobile-btn-area */
@@ -188,4 +183,6 @@ header > .title-text > h1 {
 .menu-bar .white-box > .pc-ani-hidden {
   display: none;
 }
-
+/* // mobile-btn-area */
+/* // menu-bar-button area */
+/* // menu-bar area */

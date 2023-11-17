@@ -1,7 +1,11 @@
 /* mobile-screen-media */
 @media all and (max-width: 500px) {
-  header > .title-text h1 {
-    font-size: 2rem;
+  .main-header > .title-text h1 {
+    font-size: 50px;
+  }
+
+  .main-text {
+    font-size: 20px;
   }
 }
 
@@ -14,7 +18,7 @@
 
 /* pc-screen-media */
 @media all and (max-width: 1024px) {
-  .menu-bar .btn-text {
+  .menu-bar .white-box .btn-text {
     display: none;
   }
 
@@ -31,9 +35,11 @@
   .menu-bar .white-box > .pc-btn > .btn-nav {
     display: none;
   }
+
   .menu-bar .white-box > .pc-ani-hidden {
     display: block;
   }
+
   .menu-bar .mobile-ani {
     display: block;
   }
