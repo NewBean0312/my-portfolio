@@ -101,7 +101,7 @@
   - 글씨가 가려지는 현상 수정
 - [Navbar 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/a255649b189acd16c070fbafd948643b8f726823)
 
-- [각 건반을 hover 시, 그라데이션 생성](https://github.com/NewBean0312/my-portfolio/blob/0d8ecd13d350d31e96f571d2471ea26ccdd0fbc7/src/nav_bar.css)
+- [각 건반을 hover 시, 그라데이션 생성](https://github.com/NewBean0312/my-portfolio/blob/0d8ecd13d350d31e96f571d2471ea26ccdd0fbc7/src/NavBar.css)
 ---
 
 ## step 2. MainPage 생성
@@ -169,7 +169,7 @@
 ---
 ---
 ## 포트폴리오 수정
-- [포트폴리오 v1.1](https://github.com/NewBean0312/my-portfolio/commit/8bc8d6469ba251b0a14cece4185e6afffc756e63)
+- [포트폴리오 v1.1](https://github.com/NewBean0312/portfolio/commit/f56eb05b5de30188cd69c40b3b682351df9b476f)
   - 업데이트 날짜 : 23.04.04
   - 색감 변경
   - 마우스 포인터 사용
@@ -183,4 +183,23 @@
   - 마우스 포인터 변경
   - 레이아웃 간견 조절
   - 파일 분류 수정
-  - project 프로젝트 추가
+  - Work 프로젝트 추가
+  
+- [포트폴리오 v1.3](https://github.com/NewBean0312/portfolio/commit/0b2e8600f18377828daa1e63d26d166c6d6b8be6)
+  - 업데이트 날짜 : 2023.06.14
+  - 페이지 UI 변경
+  - 메뉴바 UI 변경
+  - 미디어 쿼리 수정
+  - Work 프로젝트 추가
+  - About 페이지 이미지 콘텐츠 추가
+  
+- [포트폴리오 v2.0]()
+  - 업데이트 날짜 : 2023.11.17
+  - 전체 색상 변경
+  - 메인 페이지 건반 애니메이션 추가
+  - 마우스 커서 삭제
+  - About 페이지 내용 및 UI 변경
+  - Carrer 페이지 UI 변경
+  - Skills 페이지 애니메이션 추가
+  - Project 페이지(구 Work 페이지) UI 변경 및 프로젝트 추가 및 팝업창 생성
+  - Contact 페이지(구 Link 페이지) 이메일 폼 생성 및 전송 기능 추가 및 UI 변경
