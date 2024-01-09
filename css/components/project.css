@@ -225,6 +225,7 @@
 /* popup-show area */
 .popup-box > .popup-show {
   position: relative;
+  width: 45%;
 }
 
 .popup-show swiper-container {
@@ -269,6 +270,10 @@
 
 /* popup-content area */
 /* popup-content-title area */
+.popup-content {
+  width: 55%;
+}
+
 .popup-content > .popup-content-title {
   padding: 10px;
 }
