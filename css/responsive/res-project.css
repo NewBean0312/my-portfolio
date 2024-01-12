@@ -151,6 +151,15 @@
     overflow: scroll;
   }
 
+  .popup-box > .popup-show {
+    position: relative;
+    width: 100%;
+  }
+
+  .popup-box > .popup-content {
+    width: 100%;
+  }
+
   .popup-show swiper-container {
     width: 100%;
     padding-top: 40px;

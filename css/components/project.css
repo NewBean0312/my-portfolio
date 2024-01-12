@@ -270,7 +270,7 @@
 
 /* popup-content area */
 /* popup-content-title area */
-.popup-content {
+.popup-box > .popup-content {
   width: 55%;
 }
 
