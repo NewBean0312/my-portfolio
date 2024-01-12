@@ -17,6 +17,15 @@ const pyeongChang2018PopupClose = () => {
   document.querySelector("#PyeongChang2018").classList.add("hidden");
 };
 
+// makeup-shoping-mall
+const makeupShoppingMallPopupOpen = () => {
+  document.querySelector("#makeupShoppingMall").classList.remove("hidden");
+};
+
+const makeupShoppingMallPopupClose = () => {
+  document.querySelector("#makeupShoppingMall").classList.add("hidden");
+};
+
 // dokDo
 const dokDoPopupOpen = () => {
   document.querySelector("#Dokdo").classList.remove("hidden");
