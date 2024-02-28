@@ -33,4 +33,5 @@ floatingCircle(".github-logo");
 floatingCircle(".figma-logo");
 floatingCircle(".express-logo");
 floatingCircle(".postman-logo");
+floatingCircle(".slack-logo");
 

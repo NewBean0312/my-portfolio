@@ -302,6 +302,7 @@
   font-family: "DNFForgedBladeNormal";
   color: var(--color-text2);
   letter-spacing: 2px;
+  word-break: keep-all;
   user-select: none;
 }
 
@@ -361,9 +362,12 @@
 }
 
 .function-list > .function-item a {
-  word-wrap: break-word;
   text-decoration: none;
   color: var(--color-text3);
+}
+
+.function-list > .function-item a:hover {
+  text-decoration: underline;
 }
 /* // popup-content-function area */
 /* // popup-content area */
