@@ -8,6 +8,15 @@ const naeiltourPopupClose = () => {
   document.querySelector("#naeiltour").classList.add("hidden");
 };
 
+// liverpool
+const liverpoolPopupOpen = () => {
+  document.querySelector("#liverpool").classList.remove("hidden");
+}
+
+const liverpoolPopupClose = () => {
+  document.querySelector("#liverpool").classList.add("hidden");
+};
+
 // pyeongChang2018
 const pyeongChang2018PopupOpen = () => {
   document.querySelector("#PyeongChang2018").classList.remove("hidden");

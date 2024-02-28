@@ -5,58 +5,37 @@
   }
 
   .about-container .about-show {
-    width: 100%;
-    height: 50%;
+    display: none;
   }
 
-  .about-show #img-box1,
-  #img-box2,
-  #img-box3,
-  #img-box4,
-  #img-box5,
-  #img-box6,
-  #img-box7 {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  .about-content h4 {
+    display: none;
   }
 
-  .about-content > p,
+  .about-content p {
+    line-height: 30px;
+    font-size: 80%;
+  }
+
   .about-content span {
     line-height: 30px;
-  }
-
-  .about-content p > br.mobile-hidden {
-    display: none;
+    font-size: 100%;
   }
 }
 
 /* tablet-screen-media */
 @media screen and (max-width: 768px) {
   .about-box .about-container {
-    height: 750px;
     flex-direction: column-reverse;
   }
 
   .about-container .about-show {
     width: 100%;
-    height: 50%;
+    padding-top: 30px;
+    z-index: -1;
   }
 
   /* img-box 위치 CSS */
-  .about-show #img-box1,
-  #img-box2,
-  #img-box3,
-  #img-box4,
-  #img-box5,
-  #img-box6,
-  #img-box7 {
-    position: relative;
-    width: 80%;
-    height: 400px;
-    margin-left: 5%;
-  }
 
   .about-show #img-box1 {
     top: 0;
@@ -88,20 +67,19 @@
 
   .about-container .about-content {
     width: 100%;
-    height: 50%;
   }
 
   .about-content h4 {
-    display: none;
+    margin: 20px 0 10px;
+    text-align: center;
   }
 
   .about-content p {
+    width: 90%;
+    height: 100%;
     margin-top: 0;
-    margin-left: 12%;
-  }
-
-  .about-content span.enter-place {
-    display: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -112,32 +90,43 @@
   }
 
   /* img-box 위치 CSS */
+  .about-show #img-box1,
+  #img-box2,
+  #img-box3,
+  #img-box4,
+  #img-box5,
+  #img-box6,
+  #img-box7 {
+    position: relative;
+    margin: 0 auto;
+  }
+
   .about-show #img-box1 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show #img-box2 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show #img-box3 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show #img-box4 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show #img-box5 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show #img-box6 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show #img-box7 {
-    left: 40px;
+    left: auto;
   }
 
   .about-show img {
@@ -146,10 +135,16 @@
   }
 
   .about-content p {
-    font-size: 1rem;
+    line-height: 30px;
+    font-size: 90%;
   }
 
-  .about-content span {
-    font-size: 1.1rem;
+  .about-content span[id] {
+    line-height: 30px;
+    font-size: 110%;
+  }
+
+  .about-content br.pc-br {
+    display: none;
   }
 }

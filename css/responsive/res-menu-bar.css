@@ -1,8 +1,42 @@
 /* mobile-screen-media */
 @media screen and (max-width: 500px) {
+  .menu-bar {
+    border-left: none;
+    border-right: none;
+  }
+
+  .menu-bar .white-box:first-child {
+    display: none;
+  }
+
+  .menu-bar .white-box:nth-child(2) {
+    border-left: none;
+  }
+
   .menu-bar .white-box .btn-nav {
     font-size: 13px;
   }
+
+  /* black-box 위치 지정 CSS */
+.menu-bar .black-box:nth-child(8) {
+  left: 12%;
+}
+
+.menu-bar .black-box:nth-child(9) {
+  left: 29%;
+}
+
+.menu-bar .black-box:nth-child(10) {
+  left: 46%;
+}
+
+.menu-bar .black-box:nth-child(11) {
+  left: 63%;
+}
+
+.menu-bar .black-box:nth-child(12) {
+  left: 80%;
+}
 }
 
 /* tablet-screen-media */
