@@ -30,6 +30,12 @@ body {
   outline: none;
 }
 
+@media screen and (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+  }
+}
+
 /**
    * Render the `main` element consistently in IE.
    */
