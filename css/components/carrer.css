@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "DNFForgedBladeLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeNormal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf")
+    format("opentype");
+}
+
 /* carrer-main area */
 .carrer-main {
   display: flex;
@@ -24,6 +48,12 @@
   font-size: 4rem;
   font-style: italic;
   color: var(--color-text1);
+}
+
+.carrer-header > p {
+  font-family: "DNFForgedBladeNormal";
+  font-size: 20px;
+  color: var(--color-text2);
 }
 
 /* carrer-section area */
@@ -156,6 +186,7 @@
   color: var(--color-text1);
   margin-left: 0;
   margin-top: 30px;
+  font-family: "DNFForgedBladeBold";
   font-size: 1.3rem;
 }
 
@@ -163,9 +194,8 @@
   width: 100%;
   margin-top: 30px;
   line-height: 35px;
-  font-family: "Noto Serif KR", serif;
+  font-family: "DNFForgedBladeBold";
   font-size: 1.2rem;
-  font-weight: bold;
   word-break: keep-all;
 }
 
