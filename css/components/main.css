@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "DNFForgedBladeLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeNormal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf")
+    format("opentype");
+}
+
 /* header area */
 .main-header {
   display: flex;
@@ -28,8 +52,7 @@
 .main-text {
   margin-top: 50px;
   font-size: 25px;
-  font-weight: 400;
-  font-style: italic;
+  font-family: "DNFForgedBladeNormal";
   color: var(--color-text1);
   text-align: center;
   user-select: none;
@@ -73,7 +96,7 @@
   position: absolute;
   z-index: 1;
   width: 9%;
-  height: 200px;
+  height: 150px;
   background-color: var(--color-bg1);
   border: none;
   bottom: 150px;
