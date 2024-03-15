@@ -191,8 +191,8 @@
           </div>
           <div class="note-box-row">
             <div class="logo-box">
-              <div class="logo-img html-logo">
-                <img src="../images/skills-img/html-logo.png" alt="html-logo" />
+              <div class="logo-img html-logo" >
+                <img src="../images/skills-img/html-logo.png" alt="html-logo" onclick="htmlPopupOpen()" />
               </div>
               <div class="logo-img css-logo">
                 <img src="../images/skills-img/css-logo.png" alt="css-logo" />
@@ -259,8 +259,8 @@
           </div>
           <div class="note-box-row">
             <div class="logo-box">
-              <div class="logo-img dbms-logo">
-                <img src="../images/skills-img/dbms-logo.png" alt="dbms-logo" />
+              <div class="logo-img mysql-logo">
+                <img src="../images/skills-img/mysql-logo.png" alt="mysql-logo" />
               </div>
               <div class="logo-img linux-logo">
                 <img
@@ -340,18 +340,21 @@
           </div>
           <div class="note-box-row">
             <div class="logo-box">
-              <div class="logo-img figma-logo">
+              <div class="logo-img sourcetree-logo">
+                <img src="../images/skills-img/sourcetree-logo.png" alt="sourcetree-logo">
+              </div>
+              <!-- <div class="logo-img figma-logo">
                 <img
                   src="../images/skills-img/figma-logo.png"
                   alt="figma-logo"
                 />
-              </div>
-              <div class="logo-img slack-logo">
+              </div> -->
+              <!-- <div class="logo-img slack-logo">
                 <img
                   src="../images/skills-img/slack-logo.png"
-                  alt="figma-logo"
+                  alt="slack-logo"
                 />
-              </div>
+              </div> -->
             </div>
             <div class="note-box-col"></div>
             <div class="note-box-col"></div>
@@ -367,8 +370,31 @@
         </div>
       </section>
       <!-- // section area -->
+      
     </main>
     <!-- // main area -->
+
+    <section class="skills-popup-section hidden" id="html">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="htmlPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/html-logo.png" alt="html-logo">
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>HTML</h1>
+            </div>
+            <div class="popup-desc">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- js script -->
     <script src="../js/screen-tran.js" defer></script>
@@ -379,5 +405,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="../js/logo-move.js" defer></script>
+    <script src="../js/popup.js" defer></script>
   </body>
 </html>

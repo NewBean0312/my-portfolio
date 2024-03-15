@@ -1,4 +1,14 @@
-// 팝업창
+// skills page popup
+// html
+const htmlPopupOpen = () => {
+  document.querySelector("#html").classList.remove("hidden");
+};
+
+const htmlPopupClose = () => {
+  document.querySelector("#html").classList.add("hidden");
+};
+
+// project page popup
 // naeiltour
 const naeiltourPopupOpen = () => {
   document.querySelector("#naeiltour").classList.remove("hidden");
@@ -36,23 +46,22 @@ const makeupShoppingMallPopupClose = () => {
 };
 
 // dokDo
-const dokDoPopupOpen = () => {
-  document.querySelector("#Dokdo").classList.remove("hidden");
-};
+// const dokDoPopupOpen = () => {
+//   document.querySelector("#Dokdo").classList.remove("hidden");
+// };
 
-const dokDoPopupClose = () => {
-  document.querySelector("#Dokdo").classList.add("hidden");
-};
+// const dokDoPopupClose = () => {
+//   document.querySelector("#Dokdo").classList.add("hidden");
+// };
 
 // kakaoBank
-const kakaoBankPopupOpen = () => {
-  document.querySelector("#kakaoBank").classList.remove("hidden");
-};
+// const kakaoBankPopupOpen = () => {
+//   document.querySelector("#kakaoBank").classList.remove("hidden");
+// };
 
-const kakaoBankPopupClose = () => {
-  document.querySelector("#kakaoBank").classList.add("hidden");
-};
-
+// const kakaoBankPopupClose = () => {
+//   document.querySelector("#kakaoBank").classList.add("hidden");
+// };
 
 // todoList
 const todoListPopupOpen = () => {

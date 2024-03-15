@@ -27,12 +27,13 @@ floatingCircle(".react-logo");
 floatingCircle(".typescript-logo")
 floatingCircle(".sass-logo");
 floatingCircle(".next-logo");
-floatingCircle(".dbms-logo");
+floatingCircle(".mysql-logo");
 floatingCircle(".linux-logo");
-floatingCircle(".git-logo");
-floatingCircle(".github-logo");
-floatingCircle(".figma-logo");
 floatingCircle(".express-logo");
 floatingCircle(".postman-logo");
-floatingCircle(".slack-logo");
+floatingCircle(".git-logo");
+floatingCircle(".github-logo");
+floatingCircle(".sourcetree-logo");
+// floatingCircle(".figma-logo");
+// floatingCircle(".slack-logo");
 
