@@ -24,6 +24,15 @@
   color: var(--color-text1);
 }
 
+.skills-header > span {
+  display: block;
+  padding-right: 10px;
+  color: var(--color-text1);
+  font-family: "DNFForgedBladeNormal";
+  font-size: 1rem;
+  text-align: right;
+}
+
 .skills-header > div {
   width: 100%;
   height: 4px;
@@ -89,6 +98,12 @@
   height: 50px;
 }
 
+.skills-section .logo-bg-img {
+  border-radius: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
 .logo-img > img {
   width: 100%;
   height: 100%;
@@ -111,7 +126,7 @@
   height: 160px;
   background-color: var(--color-border1);
   transform: translateX(-10px);
-  content: '';
+  content: "";
 }
 
 .skills-popup-section {
@@ -198,14 +213,23 @@
 /* skill-show area */
 .popup-container > .skill-show {
   display: flex;
-  flex:0.6;
+  flex: 0.6;
 }
 
 .skill-show > .popup-img-box {
-  padding-top: 20px;
-  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
   width: 100px;
   height: 100px;
+}
+
+.skill-show > .popup-bg-img-box {
+  border-radius: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
 }
 
 .popup-img-box > img {
@@ -215,7 +239,8 @@
 
 /* skill-content area */
 .popup-container > .skill-content {
-  flex:1;
+  flex: 1;
+  user-select: none;
 }
 
 .skill-content > .popup-header {
@@ -226,6 +251,13 @@
 
 .popup-header > h1 {
   margin: 0;
+  font-size: 2rem;
+  color: var(--color-text1);
+}
+
+.skill-content span {
+  font-family: "DNFForgedBladeLight";
+  color: var(--color-text1);
 }
 
 .skill-content > .popup-desc {
@@ -234,5 +266,9 @@
 }
 
 .popup-desc > p {
-  padding-top: 30px;
+  padding-top: 20px;
+  font-family: "DNFForgedBladeNormal";
+  font-size: 1rem;
+  color: var(--color-text2);
+  line-height: 1.5;
 }

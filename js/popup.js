@@ -8,6 +8,124 @@ const htmlPopupClose = () => {
   document.querySelector("#html").classList.add("hidden");
 };
 
+// css
+const cssPopupOpen = () => {
+  document.querySelector("#css").classList.remove("hidden");
+};
+
+const cssPopupClose = () => {
+  document.querySelector("#css").classList.add("hidden");
+};
+
+// javascript
+const javascriptPopupOpen = () => {
+  document.querySelector("#javascript").classList.remove("hidden");
+};
+
+const javascriptPopupClose = () => {
+  document.querySelector("#javascript").classList.add("hidden");
+};
+
+// react
+const reactPopupOpen = () => {
+  document.querySelector("#react").classList.remove("hidden");
+};
+
+const reactPopupClose = () => {
+  document.querySelector("#react").classList.add("hidden");
+};
+
+// typescript
+const typescriptPopupOpen = () => {
+  document.querySelector("#typescript").classList.remove("hidden");
+};
+
+const typescriptPopupClose = () => {
+  document.querySelector("#typescript").classList.add("hidden");
+};
+
+// sass
+const sassPopupOpen = () => {
+  document.querySelector("#sass").classList.remove("hidden");
+};
+
+const sassPopupClose = () => {
+  document.querySelector("#sass").classList.add("hidden");
+};
+
+// next
+const nextPopupOpen = () => {
+  document.querySelector("#next").classList.remove("hidden");
+};
+
+const nextPopupClose = () => {
+  document.querySelector("#next").classList.add("hidden");
+};
+
+// mysql
+const mysqlPopupOpen = () => {
+  document.querySelector("#mysql").classList.remove("hidden");
+};
+
+const mysqlPopupClose = () => {
+  document.querySelector("#mysql").classList.add("hidden");
+};
+
+// linux
+const linuxPopupOpen = () => {
+  document.querySelector("#linux").classList.remove("hidden");
+};
+
+const linuxPopupClose = () => {
+  document.querySelector("#linux").classList.add("hidden");
+};
+
+// express
+const expressPopupOpen = () => {
+  document.querySelector("#express").classList.remove("hidden");
+};
+
+const expressPopupClose = () => {
+  document.querySelector("#express").classList.add("hidden");
+};
+
+// postman
+const postmanPopupOpen = () => {
+  document.querySelector("#postman").classList.remove("hidden");
+};
+
+const postmanPopupClose = () => {
+  document.querySelector("#postman").classList.add("hidden");
+};
+
+// git
+const gitPopupOpen = () => {
+  document.querySelector("#git").classList.remove("hidden");
+};
+
+const gitPopupClose = () => {
+  document.querySelector("#git").classList.add("hidden");
+};
+
+// github
+const githubPopupOpen = () => {
+  document.querySelector("#github").classList.remove("hidden");
+};
+
+const githubPopupClose = () => {
+  document.querySelector("#github").classList.add("hidden");
+};
+
+// sourcetree
+const sourcetreePopupOpen = () => {
+  document.querySelector("#sourcetree").classList.remove("hidden");
+};
+
+const sourcetreePopupClose = () => {
+  document.querySelector("#sourcetree").classList.add("hidden");
+};
+
+
 // project page popup
 // naeiltour
 const naeiltourPopupOpen = () => {

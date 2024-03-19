@@ -170,6 +170,7 @@
 }
 
 .close-btn::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,11 +178,11 @@
   height: 30px;
   border-radius: 10px;
   background-color: #000;
-  content: "";
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .close-btn::after {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -189,7 +190,6 @@
   height: 30px;
   border-radius: 10px;
   background-color: #000;
-  content: "";
   transform: translate(-50%, -50%) rotate(45deg);
 }
 

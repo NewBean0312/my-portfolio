@@ -174,6 +174,7 @@
       <!-- header area -->
       <header class="skills-header">
         <h1>Skills</h1>
+        <span>로고를 클릭해보세요!</span>
         <div></div>
       </header>
       <!-- // header area -->
@@ -191,19 +192,32 @@
           </div>
           <div class="note-box-row">
             <div class="logo-box">
-              <div class="logo-img html-logo" >
-                <img src="../images/skills-img/html-logo.png" alt="html-logo" onclick="htmlPopupOpen()" />
+              <div class="logo-img html-logo">
+                <img
+                  src="../images/skills-img/html-logo.png"
+                  alt="html-logo"
+                  onclick="htmlPopupOpen()"
+                />
               </div>
               <div class="logo-img css-logo">
-                <img src="../images/skills-img/css-logo.png" alt="css-logo" />
+                <img
+                  src="../images/skills-img/css-logo.png"
+                  alt="css-logo"
+                  onclick="cssPopupOpen()"
+                />
               </div>
-              <div class="logo-img js-logo">
-                <img src="../images/skills-img/js-logo.png" alt="js-logo" />
+              <div class="logo-img javascript-logo">
+                <img
+                  src="../images/skills-img/javascript-logo.png"
+                  alt="javascript"
+                  onclick="javascriptPopupOpen()"
+                />
               </div>
               <div class="logo-img react-logo">
                 <img
                   src="../images/skills-img/react-logo.png"
                   alt="react-logo"
+                  onclick="reactPopupOpen()"
                 />
               </div>
             </div>
@@ -220,20 +234,22 @@
                 <img
                   src="../images/skills-img/typescript-logo.png"
                   alt="typescript-logo"
+                  onclick="typescriptPopupOpen()"
                 />
               </div>
               <div class="logo-img sass-logo">
-                <img src="../images/skills-img/sass-logo.png" alt="sass-logo" />
+                <img
+                  src="../images/skills-img/sass-logo.png"
+                  alt="sass-logo"
+                  onclick="sassPopupOpen()"
+                />
               </div>
-              <div
-                class="logo-img next-logo"
-                style="
-                  border-radius: 100%;
-                  border: 1px solid #000;
-                  background-color: #fff;
-                "
-              >
-                <img src="../images/skills-img/next-logo.png" alt="next-logo" />
+              <div class="logo-img logo-bg-img next-logo">
+                <img
+                  src="../images/skills-img/next-logo.png"
+                  alt="next-logo"
+                  onclick="nextPopupOpen()"
+                />
               </div>
             </div>
             <div class="note-box-col"></div>
@@ -260,12 +276,17 @@
           <div class="note-box-row">
             <div class="logo-box">
               <div class="logo-img mysql-logo">
-                <img src="../images/skills-img/mysql-logo.png" alt="mysql-logo" />
+                <img
+                  src="../images/skills-img/mysql-logo.png"
+                  alt="mysql-logo"
+                  onclick="mysqlPopupOpen()"
+                />
               </div>
               <div class="logo-img linux-logo">
                 <img
                   src="../images/skills-img/linux-logo.png"
                   alt="linux-logo"
+                  onclick="linuxPopupOpen()"
                 />
               </div>
             </div>
@@ -278,23 +299,18 @@
           </div>
           <div class="note-box-row">
             <div class="logo-box">
-              <div
-                class="logo-img express-logo"
-                style="
-                  border-radius: 100%;
-                  border: 1px solid #000;
-                  background-color: #fff;
-                "
-              >
+              <div class="logo-img logo-bg-img express-logo">
                 <img
                   src="../images/skills-img/express-logo.png"
                   alt="express-logo"
+                  onclick="expressPopupOpen()"
                 />
               </div>
               <div class="logo-img postman-logo">
                 <img
                   src="../images/skills-img/postman-logo.png"
                   alt="postman-logo"
+                  onclick="postmanPopupOpen()"
                 />
               </div>
             </div>
@@ -322,12 +338,17 @@
           <div class="note-box-row">
             <div class="logo-box">
               <div class="logo-img git-logo">
-                <img src="../images/skills-img/git-logo.png" alt="git-logo" />
+                <img
+                  src="../images/skills-img/git-logo.png"
+                  alt="git-logo"
+                  onclick="gitPopupOpen()"
+                />
               </div>
               <div class="logo-img github-logo">
                 <img
                   src="../images/skills-img/github-logo.png"
                   alt="github-logo"
+                  onclick="githubPopupOpen()"
                 />
               </div>
             </div>
@@ -341,7 +362,11 @@
           <div class="note-box-row">
             <div class="logo-box">
               <div class="logo-img sourcetree-logo">
-                <img src="../images/skills-img/sourcetree-logo.png" alt="sourcetree-logo">
+                <img
+                  src="../images/skills-img/sourcetree-logo.png"
+                  alt="sourcetree-logo"
+                  onclick="sourcetreePopupOpen()"
+                />
               </div>
               <!-- <div class="logo-img figma-logo">
                 <img
@@ -370,10 +395,10 @@
         </div>
       </section>
       <!-- // section area -->
-      
     </main>
     <!-- // main area -->
 
+    <!-- html section area -->
     <section class="skills-popup-section hidden" id="html">
       <div class="dimmed-layer"></div>
       <div class="skills-popup-wrapper">
@@ -381,20 +406,427 @@
         <div class="popup-container">
           <div class="skill-show">
             <div class="popup-img-box">
-              <img src="../images/skills-img/html-logo.png" alt="html-logo">
+              <img src="../images/skills-img/html-logo.png" alt="html-logo" />
             </div>
           </div>
           <div class="skill-content">
             <div class="popup-header">
-              <h1>HTML</h1>
+              <h1>HTML5</h1>
             </div>
             <div class="popup-desc">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                저는 웹 개발에서 핵심적 역할을 하는 HTML에 대한 지식을 보유하고
+                있습니다.<br />
+                HTML을 활용하여 시맨틱하고 효율적인 코드를 작성할 수 있습니다.
+                <br />
+                또한 웹 표준 및 웹 접근성을 준수하며, 상황에 맞는 적절한 태그를
+                사용할 수 있습니다.<br />
+                미디어 쿼리를 활용해 반응형 웹 디자인을 구현할 수 있습니다.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- // html section area -->
+
+    <!-- css section area -->
+    <section class="skills-popup-section hidden" id="css">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="cssPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/css-logo.png" alt="css-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>CSS3</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 flex와 position을 활용해 다양한 웹 요소에 대한 스타일링을
+                효과적으로 구현하며, 레이아웃을 디자인할 수 있습니다.<br />
+                또한, 애니메이션 및 전환 효과를 적용할 수 있습니다. <br />
+                반응형 디자인에 대한 이해를 바탕으로 미디어 쿼리를 활용해 다양한
+                화면 크기와 장치에 호환되는 스타일을 제작할 수 있습니다. <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // css section area -->
+
+    <!-- javascript section area -->
+    <section class="skills-popup-section hidden" id="javascript">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="javascriptPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img
+                src="../images/skills-img/javascript-logo.png"
+                alt="javascript-logo"
+              />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>JavaScript <span>(핵심)</span></h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                웹 페이지에 동적인 기능을 구현하고 사용자와의 상호작용을
+                강화하는 데에 이를 활용할 수 있습니다.<br />
+                이벤트 처리, JavaScript 프레임워크 및 라이브러리 활용에 대한
+                깊은 지식을 바탕으로 웹 애플리케이션의 개발과 최적화를 수행할 수
+                있습니다.<br />
+                이를 활용하여, 여러 프로젝트에 JavaScript를 사용하였습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // javascript section area -->
+
+    <!-- react section area -->
+    <section class="skills-popup-section hidden" id="react">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="reactPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/react-logo.png" alt="react-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>React <span>(핵심)</span></h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                React의 핵심을 이해하고 있으며, 다양한 라이브러리와 도구들에
+                대한 경험이 풍부합니다.<br />
+                Recoil을 사용해 상태를 효율적으로 관리하고, Router을 통해 다른
+                컴포넌트를 렌더링 할 수 있습니다.<br />
+                MUI, Material-UI, 시맨틱 UI React를 통해 UI를 구축하는 데
+                능숙합니다.<br />
+                외부 API를 효과적으로 활용한 경험도 있습니다.<br />
+                이러한 지식을 통해 TodoList와 API를 활용한 도감을 만든
+                프로젝트가 존재합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // react section area -->
+
+    <!-- typescript section area -->
+    <section class="skills-popup-section hidden" id="typescript">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="typescriptPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img
+                src="../images/skills-img/typescript-logo.png"
+                alt="typescript-logo"
+              />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>TypeScript</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                TypeScript의 인터페이스 및 함수 활용을 할 수 있으며, 클래스,
+                제네릭, 여러 유틸리티 타입에 대해 공부한 경험이 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // typescript section area -->
+
+    <!-- sass section area -->
+    <section class="skills-popup-section hidden" id="sass">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="sassPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/sass-logo.png" alt="sass-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>Sass</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 Sass를 활용해 CSS 코드를 효율적으로 작성할 수 있습니다.<br />
+                Sass의 변수, Mixin, function, & 선택자 등 여러 기능을 이용해
+                프로젝트의 스타일을 관리하였습니다.<br />
+                이러한 경험을 바탕으로 네이버 주문 페이지 클론코딩을 한 경험이
+                있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // sass section area -->
+
+    <!-- next section area -->
+    <section class="skills-popup-section hidden" id="next">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="nextPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box popup-bg-img-box">
+              <img src="../images/skills-img/next-logo.png" alt="next-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>Next.js</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 Next.js를 활용해 반응형 웹 애플리케이션을 개발한 경험이
+                있습니다.<br />
+                SSR과 CSR를 유연하게 조합하여, UX를 향상시키고 SEO 최적화를
+                실현하는 데 중점을 두었습니다. <br />
+                또한, API Routes로 백엔드와의 통신을 관리한 경험이 있습니다.<br />
+                이러한 지식으로 화장품 쇼핑몰을 만든 프로젝트가 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // next section area -->
+
+    <!-- mysql section area -->
+    <section class="skills-popup-section hidden" id="mysql">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="mysqlPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/mysql-logo.png" alt="mysql-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>MySQL</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 SQLyog로 쿼리 작성 및 관리 능력을 보유하고 있으며, 이를
+                연계하여 JSON 작업을 할 수 있습니다. <br />
+                또한, JDBC를 통해 DB를 쿼리하거나 업데이트한 경험이 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // mysql section area -->
+
+    <!-- linux section area -->
+    <section class="skills-popup-section hidden" id="linux">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="linuxPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/linux-logo.png" alt="linux-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>Linux</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 Virtual Box를 통해 Linux의 개념에 대해 배우고 웹 or DB
+                서버를 만든 경험이 있습니다.<br />
+                또한, Shell 스크립트의 문법과 그를 활용한 사칙연산 프로그램을
+                만들어 보았으며, PHP를 사용한 구구단 서비스, PHP의 DB 연동을
+                배운 경험이 있습니다.<br />
+                그리고 Docker에 대해 배우고 실습한 경험이 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // linux section area -->
+
+    <!-- express section area -->
+    <section class="skills-popup-section hidden" id="express">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="expressPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img
+                src="../images/skills-img/express-logo.png"
+                alt="express-logo"
+              />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>Express</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 Express로 DB를 연동해 JSON을 응답받은 경험이 있습니다. 이를
+                통해 todo 리스트를 만든 경험이 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // express section area -->
+
+    <!-- postman section area -->
+    <section class="skills-popup-section hidden" id="postman">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="postmanPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img
+                src="../images/skills-img/postman-logo.png"
+                alt="postman-logo"
+              />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>Postman</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 POST, DELETE, PATCH 등 기본 사용 방법에 대해 공부한 경험이
+                있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // postman section area -->
+
+    <!-- git section area -->
+    <section class="skills-popup-section hidden" id="git">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="gitPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img src="../images/skills-img/git-logo.png" alt="git-logo" />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>Git</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 Git을 활용해 관리 및 버전 관리를 할 수 있습니다. 또한,
+                reset과 revert, 브랜치와 merge, rebase등 여러 기능을 사용할 수
+                있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // git section area -->
+
+    <!-- github section area -->
+    <section class="skills-popup-section hidden" id="github">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="githubPopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img
+                src="../images/skills-img/github-logo.png"
+                alt="github-logo"
+              />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>GitHub</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 Git을 활용해 관리 및 버전 관리를 할 수 있습니다. 또한,
+                reset과 revert, 브랜치와 merge, rebase등 여러 기능을 사용할 수
+                있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // github section area -->
+
+    <!-- sourcetree section area -->
+    <section class="skills-popup-section hidden" id="sourcetree">
+      <div class="dimmed-layer"></div>
+      <div class="skills-popup-wrapper">
+        <button class="close-btn" onclick="sourcetreePopupClose()"></button>
+        <div class="popup-container">
+          <div class="skill-show">
+            <div class="popup-img-box">
+              <img
+                src="../images/skills-img/sourcetree-logo.png"
+                alt="sourcetree-logo"
+              />
+            </div>
+          </div>
+          <div class="skill-content">
+            <div class="popup-header">
+              <h1>SourceTree</h1>
+            </div>
+            <div class="popup-desc">
+              <p>
+                저는 SourceTree를 통해 브랜치 관리 및 시각화 도구를 활용할 줄
+                알며, 비교 및 병합 기능 또한 활용하여 원격 저장소를 관리할 수
+                있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // sourcetree section area -->
 
     <!-- js script -->
     <script src="../js/screen-tran.js" defer></script>
