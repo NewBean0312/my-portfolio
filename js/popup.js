@@ -36,13 +36,13 @@ const reactPopupClose = () => {
 };
 
 // typescript
-const typescriptPopupOpen = () => {
-  document.querySelector("#typescript").classList.remove("hidden");
-};
+// const typescriptPopupOpen = () => {
+//   document.querySelector("#typescript").classList.remove("hidden");
+// };
 
-const typescriptPopupClose = () => {
-  document.querySelector("#typescript").classList.add("hidden");
-};
+// const typescriptPopupClose = () => {
+//   document.querySelector("#typescript").classList.add("hidden");
+// };
 
 // sass
 const sassPopupOpen = () => {

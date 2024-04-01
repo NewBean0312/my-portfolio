@@ -24,7 +24,7 @@ floatingCircle(".html-logo");
 floatingCircle(".css-logo");
 floatingCircle(".javascript-logo");
 floatingCircle(".react-logo");
-floatingCircle(".typescript-logo")
+// floatingCircle(".typescript-logo")
 floatingCircle(".sass-logo");
 floatingCircle(".next-logo");
 floatingCircle(".mysql-logo");

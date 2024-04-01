@@ -158,13 +158,13 @@
 
 ---
 
-## step 4. CarrerPage 생성
+## step 4. careerPage 생성
 
-- [CarrerPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/9e2f982dfe32c8d9ce560f839ebe73a89c61639d)
+- [careerPage 1차 완성](https://github.com/NewBean0312/my-portfolio/commit/9e2f982dfe32c8d9ce560f839ebe73a89c61639d)
   - navBar 첨부
   - 피아노 건반 정렬
-- [CarrerPage 2차 완성](https://github.com/NewBean0312/my-portfolio/commit/f5e791b010d7f22df93f3cd83589251c65e97e14)
-  - Carrer 박스 반응형으로 설정
+- [careerPage 2차 완성](https://github.com/NewBean0312/my-portfolio/commit/f5e791b010d7f22df93f3cd83589251c65e97e14)
+  - career 박스 반응형으로 설정
 
 ---
 
@@ -228,7 +228,7 @@
   - 메인 페이지 건반 애니메이션 추가
   - 마우스 커서 삭제
   - About 페이지 내용 및 UI 변경
-  - Carrer 페이지 UI 변경
+  - career 페이지 UI 변경
   - Skills 페이지 애니메이션 추가
   - Project 페이지(구 Work 페이지) UI 변경 및 프로젝트 추가 및 팝업창 생성
   - Contact 페이지(구 Link 페이지) 이메일 폼 생성 및 전송 기능 추가 및 UI 변경
