@@ -1,8 +1,4 @@
 @media screen and (max-width: 500px) {
-  .content-box > .img-area {
-    margin-right: 0;
-  }
-
   .desc-area p {
     font-size: 1rem;
   }
@@ -11,17 +7,11 @@
 @media screen and (max-width: 768px) {
   .career-main {
     display: block;
-    margin-top: 120px;
+    margin-top: 130px;
   }
 
   .career-header > p {
     margin-bottom: 20px;
-  }
-
-  .content-box > .img {
-    flex: 0.3;
-    margin: 20px 87.5px;
-    transition: margin 1s;
   }
 
   .career-main .career-section {
@@ -40,13 +30,9 @@
     position: relative;
     border: 6px solid var(--color-border1);
   }
-
-  .career-section .career-list {
-    height: 1700px;
-  }
-
   .career-section .career-item {
-    height: 200px;
+    height: 100px;
+    border: none;
   }
 
   .white-box > .content-box {
@@ -81,8 +67,7 @@
   }
 
   .career-section .white-box:nth-child(8) {
-    background-color: #000;
-    border: none;
+    background-color: var(--color-bg2);
   }
 
   .career-section .white-box:nth-child(8) h2 {

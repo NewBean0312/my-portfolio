@@ -60,6 +60,8 @@
   }
 
   .popup-content-desc > p {
+    height: 200px;
+    overflow-y: scroll;
     font-size: 1rem;
   }
 

@@ -1,10 +1,10 @@
 @keyframes keyboard-wave {
   0% {
-    bottom: 0;
+    height: 80%;
   }
 
   100% {
-    bottom: -40px;
+    height: 100%;
   }
 }
 
